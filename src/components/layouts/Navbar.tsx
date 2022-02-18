@@ -24,22 +24,26 @@ const Navbar: React.FC = () => {
 
           <ul>
             <li>
-              <StyledLinkMenu href="/movies">
-                <Unicons.UilFilm size="1.2rem" />
-                Movies
-              </StyledLinkMenu>
+              <Link to="/movies">
+                <StyledLinkMenu>
+                  <Unicons.UilFilm size="1.2rem" />
+                  Movies
+                </StyledLinkMenu>
+              </Link>
             </li>
             <li>
-              <StyledLinkMenu href="/series">
-                <Unicons.UilTvRetro size="1.2rem" />
-                TV Series
-              </StyledLinkMenu>
+              <Link to="/series">
+                <StyledLinkMenu>
+                  <Unicons.UilTvRetro size="1.2rem" />
+                  TV Series
+                </StyledLinkMenu></Link>
             </li>
             <li>
-              <StyledLinkMenu href="/chart">
+              <Link to="/chart">
+              <StyledLinkMenu>
                 <Unicons.UilChart size="1.2rem" />
                 Chart
-              </StyledLinkMenu>
+              </StyledLinkMenu></Link>
             </li>
           </ul>
         </Nav>

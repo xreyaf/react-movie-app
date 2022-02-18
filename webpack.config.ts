@@ -1,5 +1,6 @@
 const path = require("path");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
+const InterpolateHtmlPlugin = require("interpolate-html-plugin")
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
@@ -14,6 +15,9 @@ module.exports = {
     extensions: [".ts", ".tsx", ".js"],
   },
   plugins: [
+    new InterpolateHtmlPlugin({
+      PUBLIC_URL: 'public'
+    }),
     new HTMLWebpackPlugin({
       template: "./public/index.html",
     }),
