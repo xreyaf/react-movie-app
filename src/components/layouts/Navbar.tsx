@@ -7,8 +7,6 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const Navbar: React.FC = () => {
-  // @ts-ignore
-
   return (
     <Header>
       <Container>

@@ -1,6 +1,6 @@
 import { css } from "@emotion/react";
 import { theme } from "./theme";
-import back from '../assets/img/bg.png'
+import back from "../assets/img/bg.png";
 
 export const GlobalStyle = css`
   //fonts
@@ -21,8 +21,8 @@ export const GlobalStyle = css`
   body {
     margin: 5rem 0 0 0;
     font-family: var(--body-font);
-    background-color: ${theme.colors.tertary900};
-    background-image: url(${back}});
+    background-color: ${theme.colors.grey900};
+    background-image: url(${back});
     background-size: 100%;
     background-position: 50% -160px;
     background-repeat: repeat-y;
@@ -36,6 +36,7 @@ export const GlobalStyle = css`
     line-height: 5rem;
     color: ${theme.colors.grey50};
   }
+
   h2,
   h3 {
     font-weight: 600;
@@ -43,19 +44,23 @@ export const GlobalStyle = css`
     line-height: 1.5;
     text-overflow: ellipsis;
   }
+
   p {
     color: ${theme.colors.grey400};
     font-weight: 500;
   }
+
   a {
     text-decoration: none;
     color: ${theme.colors.primary400};
     background-color: transparent;
   }
+
   img {
     max-width: 100%;
     height: auto;
   }
+
   ul {
     list-style: none;
   }
@@ -63,8 +68,8 @@ export const GlobalStyle = css`
   //variables
   :root {
     --body-font: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-      sans-serif;
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
   }
 
   //scroll bar

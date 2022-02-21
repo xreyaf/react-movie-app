@@ -1,12 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
-import movieApi from "../features/movies/movieApi";
+import TMDBApi from '../features/movies/TMDBApi'
 
 export const store = configureStore({
   reducer: {
-    [movieApi.reducerPath]: movieApi.reducer
+    [TMDBApi.reducerPath]: TMDBApi.reducer
   },
   middleware: (getDefaultMiddleware) => {
-    return getDefaultMiddleware().concat(movieApi.middleware);
+    return getDefaultMiddleware().concat(TMDBApi.middleware);
   }
 });
 export type AppDispatch = typeof store.dispatch;

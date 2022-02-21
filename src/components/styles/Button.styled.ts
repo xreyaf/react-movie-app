@@ -1,7 +1,8 @@
 import styled from "@emotion/styled";
 import { theme } from "../../styles/theme";
+import { motion } from "framer-motion";
 
-export const Button = styled.button`
+export const Button = styled(motion.button)`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,15 +15,4 @@ export const Button = styled.button`
   padding: 1rem 3rem;
   font-size: 1rem;
   line-height: 1.5rem;
-  &:hover {
-    background: ${theme.colors.primary500};
-    transition: 0.5s;
-    cursor: pointer;
-  }
-  &:focus {
-    border: none;
-    outline: none;
-    background: ${theme.colors.primary400};
-    box-shadow: 0 0 0 4px ${theme.colors.primary500_10};
-  }
 `;

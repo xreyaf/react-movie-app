@@ -1,38 +1,17 @@
 import React from "react";
 import { Container } from "../components/styles/Container.styled";
-import Card from "../components/Card";
 import { GridStyled } from "../components/styles/Grid.styled";
+import Card from "../components/Card";
+import { useGetTrendingMoviesQuery } from "../features/movies/TMDBApi";
 
 const Movies = () => {
+  const { data } = useGetTrendingMoviesQuery();
   return (
     <Container>
       <h1>Movies page</h1>
-     <br/>
+      <br />
       <GridStyled>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
+        {data && <Card movies={data} />}
       </GridStyled>
 
     </Container>

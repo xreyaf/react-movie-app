@@ -1,41 +1,27 @@
 import React from "react";
 import { Container } from "../components/styles/Container.styled";
 import { Button } from "../components/styles/Button.styled";
-// @ts-ignore
-import * as Unicons from "@iconscout/react-unicons";
 import { GridStyled } from "../components/styles/Grid.styled";
 import Card from "../components/Card";
-import { useGetMoviesQuery } from "../features/movies/movieApi";
-
+import { useGetTrendingMoviesQuery } from "../features/movies/TMDBApi";
+import { theme } from "../styles/theme";
+// @ts-ignore
+import * as Unicons from "@iconscout/react-unicons";
 
 const Main = () => {
-const {  data } = useGetMoviesQuery()
-  console.log(data);
+  const { data } = useGetTrendingMoviesQuery();
+
   return (
     <main>
       <Container>
         <h1>Main</h1>
-        <Button>
-          {" "}
+        <Button whileHover={{ y: -3, backgroundColor: theme.colors.primary500, cursor: "pointer" }}>
           Search
           <Unicons.UilSearch size="1.2rem" />
         </Button>
-        <br/>
+        <br />
         <GridStyled>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
-
-
+          {data && <Card movies={data} />}
         </GridStyled>
       </Container>
     </main>
