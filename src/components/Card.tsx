@@ -1,18 +1,19 @@
 import { StyledCard } from "./styles/Card.styled";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { IMovies } from "../features/movies/types";
+import { ICard } from "../features/movies/types";
 import { RatingStyled } from "./styles/Rating.styled";
 // @ts-ignore
 import * as Unicons from "@iconscout/react-unicons";
 
 export const imagesURL = "https://image.tmdb.org/t/p/original";
 
-const Card = ({ movies }: { movies: IMovies[] }) => {
 
+const Card = ({ props }: { props: ICard[] }) => {
+  console.log(props);
   return (
     <>
-      {movies?.map(item => <StyledCard>
+      {props?.map(item => <StyledCard>
         <Link to={`/movies/${item.id}`}>
           <div className="card__content">
             <RatingStyled>
@@ -21,12 +22,12 @@ const Card = ({ movies }: { movies: IMovies[] }) => {
             </RatingStyled>
             <div className="card__image">
               <motion.img src={imagesURL + item.poster_path}
-                          alt={item.original_title}
+                          alt={item.title || item.name}
                           whileHover={{ scale: 1.05 }} />
             </div>
 
             <div className="card__info">
-              <a>{item.original_title}</a>
+              <a>{item.title || item.name}</a>
             </div>
           </div>
         </Link></StyledCard>)}

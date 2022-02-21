@@ -10,6 +10,7 @@ export interface IMovies {
   backdrop_path: string;
   genre_ids: number[];
   id: number;
+  name: string;
   original_language: string;
   original_title: string;
   overview: string;
@@ -30,19 +31,27 @@ export interface SeriesResponse {
 }
 
 export interface ISeries {
-  poster_path: string;
-  title: string;
-  video: boolean;
-  vote_average: number;
-  overview: string;
-  release_date: string;
-  adult: boolean;
   backdrop_path: string;
-  id: number;
+  first_air_date: string;
   genre_ids: number[];
-  vote_count: number;
+  id: number;
+  name: string;
+  title: string;
+  origin_country: string[];
   original_language: string;
-  original_title: string;
+  original_name: string;
+  overview: string;
   popularity: number;
-  media_type: string;
+  poster_path: string;
+  vote_average: number;
+  vote_count: number;
+}
+
+export interface ICard{
+  id: number;
+  name: string;
+  title: string;
+  poster_path: string;
+  vote_average: number;
+
 }

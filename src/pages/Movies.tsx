@@ -11,7 +11,7 @@ const Movies = () => {
       <h1>Movies page</h1>
       <br />
       <GridStyled>
-        {data && <Card movies={data} />}
+        {data && <Card props={data} />}
       </GridStyled>
 
     </Container>

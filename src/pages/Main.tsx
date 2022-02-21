@@ -21,7 +21,7 @@ const Main = () => {
         </Button>
         <br />
         <GridStyled>
-          {data && <Card movies={data} />}
+          {data && <Card props={data} />}
         </GridStyled>
       </Container>
     </main>
