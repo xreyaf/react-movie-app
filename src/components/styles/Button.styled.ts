@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { theme } from "../../styles/theme";
 import { motion } from "framer-motion";
 
-export const Button = styled(motion.button)`
+export const ButtonStyled = styled(motion.button)`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,4 +15,5 @@ export const Button = styled(motion.button)`
   padding: 1rem 3rem;
   font-size: 1rem;
   line-height: 1.5rem;
+  margin-bottom: .6rem;
 `;

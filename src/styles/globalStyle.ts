@@ -1,6 +1,6 @@
 import { css } from "@emotion/react";
 import { theme } from "./theme";
-import back from "../assets/img/bg.png";
+import back from "../assets/img/bg-min.png";
 
 export const GlobalStyle = css`
   //fonts

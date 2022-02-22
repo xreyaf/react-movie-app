@@ -1,7 +1,8 @@
 import styled from "@emotion/styled";
 import { theme } from "../../styles/theme";
+import { motion } from "framer-motion";
 
-export const Header = styled.header`
+export const HeaderStyled = styled.header`
   position: fixed;
   top: 0;
   left: 0;
@@ -24,7 +25,7 @@ export const Nav = styled.nav`
   }
 `;
 
-export const Logo = styled.img`
+export const Logo = styled(motion.img)`
   max-width: 3rem;
 `;
 

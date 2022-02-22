@@ -1,5 +1,5 @@
 import Navbar from "./components/layouts/Navbar";
-import Main from "./pages/Main";
+import Home from "./pages/Home";
 import Footer from "./components/layouts/Footer";
 import { Global, ThemeProvider } from "@emotion/react";
 import { GlobalStyle } from "./styles/globalStyle";
@@ -16,7 +16,7 @@ function App() {
         <Global styles={GlobalStyle} />
         <Navbar />
         <Routes>
-          <Route path="/" element={<Main />} />
+          <Route path="/" element={<Home />} />
           <Route path="/movies" element={<Movies />} />
           <Route path="/series" element={<Series />} />
           <Route path="/chart" element={<Chart />} />

@@ -1,10 +1,18 @@
 import React from "react";
-import { Container } from "../components/styles/Container.styled";
+import { ContainerStyled } from "../components/styles/Container.styled";
+import { ButtonStyled } from "../components/styles/Button.styled";
+import { theme } from "../styles/theme";
+// @ts-ignore
+import * as Unicons from "@iconscout/react-unicons";
 
 const Chart = () => {
   return (
-    <Container>
+    <ContainerStyled>
       <h1>Chart</h1>
+      <ButtonStyled whileHover={{ y: -3, backgroundColor: theme.colors.primary500, cursor: "pointer" }}>
+        Search
+        <Unicons.UilSearch size="1.2rem" />
+      </ButtonStyled>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aut
         consectetur cum deserunt eligendi eum excepturi facilis, fugit incidunt
@@ -78,7 +86,7 @@ const Chart = () => {
         optio sit voluptatum? Aperiam cum ducimus eum minima nostrum officiis
         provident reprehenderit totam!
       </p>
-    </Container>
+    </ContainerStyled>
   );
 };
 

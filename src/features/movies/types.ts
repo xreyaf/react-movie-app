@@ -1,11 +1,4 @@
-export interface MovieResponse {
-  page: number;
-  results: IMovies[];
-  total_pages: number;
-  total_results: number;
-}
-
-export interface IMovies {
+export interface IMedia {
   adult: boolean;
   backdrop_path: string;
   genre_ids: number[];
@@ -21,37 +14,22 @@ export interface IMovies {
   video: boolean;
   vote_average: number;
   vote_count: number;
+  first_air_date: string;
+  origin_country: string[];
+  original_name: string;
 }
 
-export interface SeriesResponse {
+export interface IResponse {
   page: number;
-  results: ISeries[];
+  results: IMedia[];
   total_pages: number;
   total_results: number;
 }
 
-export interface ISeries {
-  backdrop_path: string;
-  first_air_date: string;
-  genre_ids: number[];
-  id: number;
-  name: string;
-  title: string;
-  origin_country: string[];
-  original_language: string;
-  original_name: string;
-  overview: string;
-  popularity: number;
-  poster_path: string;
-  vote_average: number;
-  vote_count: number;
-}
-
-export interface ICard{
+export interface ICard {
   id: number;
   name: string;
   title: string;
   poster_path: string;
   vote_average: number;
-
 }

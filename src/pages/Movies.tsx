@@ -1,20 +1,20 @@
 import React from "react";
-import { Container } from "../components/styles/Container.styled";
+import { ContainerStyled } from "../components/styles/Container.styled";
 import { GridStyled } from "../components/styles/Grid.styled";
 import Card from "../components/Card";
-import { useGetTrendingMoviesQuery } from "../features/movies/TMDBApi";
+import { useGetTrendingQuery } from "../features/movies/TMDBApi";
 
 const Movies = () => {
-  const { data } = useGetTrendingMoviesQuery();
+  const { data } = useGetTrendingQuery('movie');
   return (
-    <Container>
+    <ContainerStyled>
       <h1>Movies page</h1>
       <br />
       <GridStyled>
-        {data && <Card props={data} />}
+        {data && <Card type='movie' props={data} />}
       </GridStyled>
 
-    </Container>
+    </ContainerStyled>
   );
 };
 

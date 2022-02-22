@@ -1,16 +1,15 @@
 import React from "react";
-import { Container } from "../styles/Container.styled";
-import { StyledFooter } from "../styles/Footer.styled";
+import { ContainerStyled } from "../styles/Container.styled";
+import { FooterStyled,  } from "../styles/Footer.styled";
 import { Logo } from "../styles/Header.styled";
 import { css } from "@emotion/react";
 import { ExternalLink } from "../styles/Links";
 
 const Footer = () => {
   return (
-    <StyledFooter>
-      <Container>
+    <FooterStyled>
+      <ContainerStyled>
         <Logo src="../logo.svg" alt="Logo" />
-
         <p
           css={css`
             max-width: 560px;
@@ -27,8 +26,8 @@ const Footer = () => {
             Pramod Poudel
           </ExternalLink>
         </p>
-      </Container>
-    </StyledFooter>
+      </ContainerStyled>
+    </FooterStyled>
   );
 };
 

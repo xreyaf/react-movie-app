@@ -1,20 +1,20 @@
 import React from "react";
-import { Container } from "../components/styles/Container.styled";
+import { ContainerStyled } from "../components/styles/Container.styled";
 import { GridStyled } from "../components/styles/Grid.styled";
-import {  useGetTopRatedSeriesQuery } from "../features/movies/TMDBApi";
+import {  useGetPopularQuery } from "../features/movies/TMDBApi";
 import Card from "../components/Card";
 
 const Series = () => {
-  const {data} = useGetTopRatedSeriesQuery()
+  const {data} = useGetPopularQuery("tv")
 
   return (
-    <Container>
+    <ContainerStyled>
       <h1>TV Series</h1>
       <br/>
       <GridStyled>
-        {data && <Card props={data} />}
+        {data && <Card type='tv' props={data} />}
       </GridStyled>
-    </Container>
+    </ContainerStyled>
   );
 };
 

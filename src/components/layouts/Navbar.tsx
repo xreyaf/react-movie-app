@@ -1,23 +1,18 @@
 import React from "react";
-import { Container } from "../styles/Container.styled";
-import { Header, Logo, Nav, StyledLinkMenu } from "../styles/Header.styled";
+import { ContainerStyled } from "../styles/Container.styled";
+import { Logo, Nav, StyledLinkMenu, HeaderStyled } from "../styles/Header.styled";
 // @ts-ignore
 import * as Unicons from "@iconscout/react-unicons";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
 
 const Navbar: React.FC = () => {
   return (
-    <Header>
-      <Container>
+    <HeaderStyled>
+      <ContainerStyled>
         <Nav>
           <Link to="/">
-            <motion.div
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.8, animation: "ease-out" }}
-            >
-              <Logo src="../logo.svg" alt="Logo" />
-            </motion.div>
+            <Logo src="../logo.svg" alt="Logo" whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.8, animation: "ease-out" }} />
           </Link>
 
           <ul>
@@ -38,15 +33,15 @@ const Navbar: React.FC = () => {
             </li>
             <li>
               <Link to="/chart">
-              <StyledLinkMenu>
-                <Unicons.UilChart size="1.2rem" />
-                Chart
-              </StyledLinkMenu></Link>
+                <StyledLinkMenu>
+                  <Unicons.UilChart size="1.2rem" />
+                  Chart
+                </StyledLinkMenu></Link>
             </li>
           </ul>
         </Nav>
-      </Container>
-    </Header>
+      </ContainerStyled>
+    </HeaderStyled>
   );
 };
 
