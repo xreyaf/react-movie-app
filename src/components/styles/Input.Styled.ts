@@ -8,14 +8,13 @@ export const InputStyled = styled.div`
 
   label {
     position: absolute;
-    top: 2rem;
+    top: 1.75rem;
     left: 4rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: ${theme.colors.grey600};
     cursor: text;
     user-select: none;
     transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1);
-
   }
 `;
 
@@ -25,7 +24,7 @@ export const InputContent = styled.input`
   z-index: 3;
   width: 100%;
   height: 5rem;
-  padding: 2rem 1.3rem 1rem 3.9rem;
+  padding: 1rem 1.3rem 1rem 3.9rem;
   font-size: 1.3rem;
   border-radius: 1rem;
   color: ${theme.colors.grey400};
@@ -34,17 +33,14 @@ export const InputContent = styled.input`
 
   &:focus {
     border-color: ${theme.colors.primary500};
-
     & + label {
       transform: translateY(-1.2rem);
       font-size: 1rem;
     }
-
     &::placeholder {
       opacity: 0.5;
       transition: all .2s
     }
-
   }
 
   &::placeholder {
@@ -60,7 +56,7 @@ export const InputContent = styled.input`
 export const IconWrapper = styled.div`
   display: inline-block;
   position: absolute;
-  top: 2rem;
+  top: 1.75rem;
   left: 1.5rem;
   color: ${theme.colors.grey600};
 `;

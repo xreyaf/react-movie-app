@@ -1,19 +1,26 @@
 import React from "react";
 import { ContainerStyled } from "../components/styles/Container.styled";
 import { GridStyled } from "../components/styles/Grid.styled";
-import {  useGetPopularQuery } from "../features/movies/TMDBApi";
+import { useGetPopularQuery } from "../features/movies/TMDBApi";
 import Card from "../components/Card";
 
 const Series = () => {
-  const {data} = useGetPopularQuery("tv")
-
+  const type = "tv";
+  const { data, isLoading, error } = useGetPopularQuery(type);
   return (
     <ContainerStyled>
-      <h1>TV Series</h1>
-      <br/>
-      <GridStyled>
-        {data && <Card type='tv' props={data} />}
-      </GridStyled>
+      {isLoading && <h1>Loading...</h1>}
+      {error && <h1>Some error occurred...</h1>}
+      {data && <>
+        <h1>TV Series</h1>
+        <br />
+        <GridStyled>
+          {data && data.length &&
+            data.map(show => <Card key={show.id} type={type} item={show} />)
+          }
+        </GridStyled>
+      </>
+      }
     </ContainerStyled>
   );
 };

@@ -8,8 +8,8 @@ export const HeaderStyled = styled.header`
   left: 0;
   width: 100%;
   z-index: 100;
-  background: ${theme.colors.grey900_90};
-  backdrop-filter: blur(2px);
+  background: ${theme.colors.grey900_80};
+  backdrop-filter: blur(24px);
 `;
 
 export const Nav = styled.nav`

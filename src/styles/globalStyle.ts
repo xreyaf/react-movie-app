@@ -37,17 +37,50 @@ export const GlobalStyle = css`
     color: ${theme.colors.grey50};
   }
 
-  h2,
-  h3 {
+  h2 {
     font-weight: 600;
+    font-size: 3rem;
     color: ${theme.colors.grey50};
     line-height: 1.5;
     text-overflow: ellipsis;
   }
 
-  p {
+  h3 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: ${theme.colors.grey50};
+    line-height: 1.5;
+    text-overflow: ellipsis;
+  }
+
+  h4 {
+    font-weight: 600;
+    font-size: 2rem;
+    color: ${theme.colors.grey50};
+    line-height: 1.5;
+    text-overflow: ellipsis;
+  }
+
+  h5 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: ${theme.colors.grey50};
+    line-height: 1.5;
+    text-overflow: ellipsis;
+  }
+
+  h6 {
+    font-weight: 600;
+    font-size: 1rem;
+    color: ${theme.colors.grey50};
+    line-height: 1.5;
+    text-overflow: ellipsis;
+  }
+
+  p, span {
     color: ${theme.colors.grey400};
     font-weight: 500;
+    line-height: 1.5rem;
   }
 
   a {
@@ -58,8 +91,7 @@ export const GlobalStyle = css`
 
   img {
     max-width: 100%;
-    height: auto;
-  }
+    height: auto;  }
 
   ul {
     list-style: none;
