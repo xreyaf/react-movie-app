@@ -18,7 +18,7 @@ const Navbar: React.FC = () => {
           <ul>
             <li>
               <Link to="/movies">
-                <StyledLinkMenu>
+                <StyledLinkMenu whileHover={{ y: -3 }}>
                   <Unicons.UilFilm size="1.2rem" />
                   Movies
                 </StyledLinkMenu>
@@ -26,14 +26,14 @@ const Navbar: React.FC = () => {
             </li>
             <li>
               <Link to="/series">
-                <StyledLinkMenu>
+                <StyledLinkMenu whileHover={{ y: -3 }}>
                   <Unicons.UilTvRetro size="1.2rem" />
                   TV Series
                 </StyledLinkMenu></Link>
             </li>
             <li>
               <Link to="/chart">
-                <StyledLinkMenu>
+                <StyledLinkMenu whileHover={{ y: -3 }}>
                   <Unicons.UilChart size="1.2rem" />
                   Chart
                 </StyledLinkMenu></Link>

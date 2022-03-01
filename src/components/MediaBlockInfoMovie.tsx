@@ -9,7 +9,7 @@ const MediaBlockInfoMovie = (details :IDetails) => {
     <MediaInfoContainer >
 
       <MediaInfoBlock>
-        <h2>{details.tagline}</h2>
+        <h3>{details.tagline}</h3>
         <p>{details.overview}</p>
       </MediaInfoBlock>
       <MediaInfoRating>

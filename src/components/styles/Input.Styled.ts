@@ -56,7 +56,7 @@ export const InputContent = styled.input`
 export const IconWrapper = styled.div`
   display: inline-block;
   position: absolute;
-  top: 1.75rem;
+  top: 1.8rem;
   left: 1.5rem;
   color: ${theme.colors.grey600};
 `;

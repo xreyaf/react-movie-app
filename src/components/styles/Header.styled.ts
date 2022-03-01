@@ -29,16 +29,16 @@ export const Logo = styled(motion.img)`
   max-width: 3rem;
 `;
 
-export const StyledLinkMenu = styled.a`
+export const StyledLinkMenu = styled(motion.a)`
   display: inline-flex;
   gap: 0.5rem;
+  align-items: center;
   padding: 1rem 1rem;
   font-weight: 700;
   font-size: 1.2rem;
+  cursor: pointer;
   color: ${theme.colors.grey400};
   &:hover {
     color: ${theme.colors.primary400};
-    cursor: pointer;
-    transition-duration: 0.5s;
   }
 `;

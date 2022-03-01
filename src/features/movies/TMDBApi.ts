@@ -3,6 +3,7 @@ import axios, { AxiosRequestConfig, AxiosError } from "axios";
 import { IDetails, IMedia, IResponse } from "./types";
 
 const API_KEY = "b50461522e6b25f122838ff594a78e50";
+const enLANG = "en-US";
 
 const axiosBaseQuery =
   (
@@ -37,7 +38,7 @@ const TMDBApi = createApi({
         method: "get",
         params: {
           api_key: API_KEY,
-          language: "en_US"
+          language: enLANG
         }
       }),
       transformResponse: (response: IResponse) => response.results
@@ -48,7 +49,7 @@ const TMDBApi = createApi({
         method: "get",
         params: {
           api_key: API_KEY,
-          language: "en_US"
+          language: enLANG
         }
       }),
       transformResponse: (response: IResponse) => response.results
@@ -59,7 +60,7 @@ const TMDBApi = createApi({
         method: "get",
         params: {
           api_key: API_KEY,
-          language: "en_US",
+          language: enLANG,
           query: searchTitle
         }
       }),
@@ -71,7 +72,7 @@ const TMDBApi = createApi({
         method: "get",
         params: {
           api_key: API_KEY,
-          language: "en_US"
+          language: enLANG
         }
       })
     })

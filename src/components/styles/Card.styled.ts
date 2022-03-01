@@ -8,15 +8,16 @@ export const CardStyled = styled(motion.div)`
   overflow: hidden;
   background-color: ${theme.colors.grey900_90};
   width: 100%;
+  height: 100%;
 
 `;
 export const CardImageWrapper = styled.div`
   display: inline-block;
   width: 100%;
-  height: 100%;
+  height: 88%;
   border-radius: 1rem;
   overflow: hidden;
-`;
+  `;
 
 export const ImageStyled = styled(motion.img)`
   object-fit: cover;

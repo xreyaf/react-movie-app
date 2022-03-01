@@ -8,7 +8,7 @@ export const MediaDetailsBanner = styled.div`
   overflow: hidden;
   z-index: 1;
 `;
-export const Poster = styled.div`
+export const PosterStyled = styled.div`
   width: 50%;
   height: 720px;
   border-radius: 5rem;

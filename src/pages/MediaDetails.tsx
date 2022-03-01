@@ -3,7 +3,7 @@ import { ContainerStyled } from "../components/styles/Container.styled";
 import {
   MediaDetailsBanner,
   MediaDetailsTitle,
-  MediaDetailsWrapper, Poster
+  MediaDetailsWrapper, PosterStyled,
 } from "../components/styles/MediaDetails.styled";
 import { useGetDetailsQuery } from "../features/movies/TMDBApi";
 import { useParams } from "react-router-dom";
@@ -35,10 +35,10 @@ const MediaDetails = () => {
         </MediaDetailsTitle>
 
         <MediaDetailsWrapper>
-          <Poster>
+          <PosterStyled>
             <ImageStyled src={w500ImagesURL + details.poster_path}
                          alt={details.title || details.name} />
-          </Poster>
+          </PosterStyled>
 
           {mediaType=== 'movie' ? <MediaBlockInfoMovie {...details}/> : <MediaBlockInfoTV {...details}/> }
 

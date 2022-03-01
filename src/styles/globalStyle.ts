@@ -3,8 +3,7 @@ import { theme } from "./theme";
 import back from "../assets/img/bg-min.png";
 
 export const GlobalStyle = css`
-  //fonts
-  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
   *,
   ::before,
@@ -20,7 +19,8 @@ export const GlobalStyle = css`
 
   body {
     margin: 5rem 0 0 0;
-    font-family: var(--body-font);
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
     background-color: ${theme.colors.grey900};
     background-image: url(${back});
     background-size: 100%;
@@ -32,25 +32,27 @@ export const GlobalStyle = css`
 
   h1 {
     font-weight: 600;
-    font-size: 4rem;
+    font-size: 3.8rem;
     line-height: 5rem;
     color: ${theme.colors.grey50};
+    margin-bottom: 1.5rem;
   }
 
   h2 {
     font-weight: 600;
-    font-size: 3rem;
+    font-size: 2.6rem;
     color: ${theme.colors.grey50};
     line-height: 1.5;
     text-overflow: ellipsis;
+
   }
 
   h3 {
     font-weight: 600;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     color: ${theme.colors.grey50};
-    line-height: 1.5;
     text-overflow: ellipsis;
+    margin-bottom: 1.3rem;
   }
 
   h4 {
@@ -91,20 +93,13 @@ export const GlobalStyle = css`
 
   img {
     max-width: 100%;
-    height: auto;  }
+    height: auto;
+  }
 
   ul {
     list-style: none;
   }
 
-  //variables
-  :root {
-    --body-font: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
-  }
-
-  //scroll bar
   ::-webkit-scrollbar {
     width: 0.5rem;
     border-radius: 0.5rem;
@@ -116,6 +111,7 @@ export const GlobalStyle = css`
 
       &:hover {
         background-color: ${theme.colors.grey700};
+
       }
     }
   }
