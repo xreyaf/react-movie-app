@@ -17,7 +17,6 @@ const MediaBlockInfoTV = (details: IDetails) => {
 
   return (
     <MediaInfoContainer>
-
       <MediaInfoBlock>
         <h4>{details.tagline}</h4>
         <p>{details.overview}</p>
@@ -31,7 +30,8 @@ const MediaBlockInfoTV = (details: IDetails) => {
         <MediaInfoBlock>
           <Label>Network</Label>
           <Logo>
-            <img style={{ display:'block', verticalAlign: "center" }} src={w500ImagesURL + details.networks[0].logo_path}
+            <img style={{ display: "block", verticalAlign: "center" }}
+                 src={w500ImagesURL + details.networks[0].logo_path}
                  alt={details.networks[0].name} />
           </Logo>
         </MediaInfoBlock>
@@ -61,7 +61,6 @@ const MediaBlockInfoTV = (details: IDetails) => {
           <LargeText>{details.number_of_episodes}</LargeText>
         </MediaInfoBlock>
       </MediaFlex>
-
       <MediaInfoBlock>
         <Label>Genres</Label>
         {

@@ -79,5 +79,7 @@ const TMDBApi = createApi({
   })
 });
 
+
+
 export const { useGetTrendingQuery, useGetPopularQuery, useSearchMediaQuery, useGetDetailsQuery } = TMDBApi;
 export default TMDBApi;

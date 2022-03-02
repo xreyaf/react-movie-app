@@ -32,6 +32,17 @@ export const MediaDetailsTitle = styled.div`
 export const MediaDetailsWrapper = styled.div`
   margin: 5rem;
   display: flex;
+
+  @media screen and (max-width: 1199.98px) {
+    margin: 5rem 2rem;
+  }
+  @media screen and (max-width: 816.98px) {
+    margin: 5rem 0;
+  }
+  @media screen and (max-width: 575.98px) {
+    margin: 5rem 0;
+  }
+
 `;
 export const MediaInfoContainer = styled.div`
   width: 50%;

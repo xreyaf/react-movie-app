@@ -39,15 +39,11 @@ const MediaDetails = () => {
             <ImageStyled src={w500ImagesURL + details.poster_path}
                          alt={details.title || details.name} />
           </PosterStyled>
-
           {mediaType=== 'movie' ? <MediaBlockInfoMovie {...details}/> : <MediaBlockInfoTV {...details}/> }
-
         </MediaDetailsWrapper>
       </>
       }
     </ContainerStyled>
-
-
   );
 };
 

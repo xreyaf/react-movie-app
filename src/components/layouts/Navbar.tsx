@@ -1,9 +1,9 @@
 import React from "react";
-import { ContainerStyled } from "../styles/Container.styled";
 import { Logo, Nav, StyledLinkMenu, HeaderStyled } from "../styles/Header.styled";
 // @ts-ignore
 import * as Unicons from "@iconscout/react-unicons";
 import { Link } from "react-router-dom";
+import { ContainerStyled } from "../styles/Container.styled";
 
 const Navbar: React.FC = () => {
   return (

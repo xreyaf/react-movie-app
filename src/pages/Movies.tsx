@@ -19,8 +19,6 @@ const Movies = () => {
             data.map(movie => <Card type={type} item={movie} />)
           }
         </GridStyled></>}
-
-
     </ContainerStyled>
   );
 };

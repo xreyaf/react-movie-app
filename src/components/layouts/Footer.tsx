@@ -1,5 +1,4 @@
 import React from "react";
-import { ContainerStyled } from "../styles/Container.styled";
 import { FooterStyled,  } from "../styles/Footer.styled";
 import { Logo } from "../styles/Header.styled";
 import { css } from "@emotion/react";
@@ -8,7 +7,6 @@ import { ExternalLink } from "../styles/Links";
 const Footer = () => {
   return (
     <FooterStyled>
-      <ContainerStyled>
         <Logo src="../logo.svg" alt="Logo" />
         <p
           css={css`
@@ -26,7 +24,6 @@ const Footer = () => {
             Pramod Poudel
           </ExternalLink>
         </p>
-      </ContainerStyled>
     </FooterStyled>
   );
 };

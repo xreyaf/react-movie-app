@@ -4,10 +4,9 @@ import { IDetails } from "../features/movies/types";
 // @ts-ignore
 import * as Unicons from "@iconscout/react-unicons";
 
-const MediaBlockInfoMovie = (details :IDetails) => {
+const MediaBlockInfoMovie = (details: IDetails) => {
   return (
-    <MediaInfoContainer >
-
+    <MediaInfoContainer>
       <MediaInfoBlock>
         <h3>{details.tagline}</h3>
         <p>{details.overview}</p>
@@ -41,7 +40,6 @@ const MediaBlockInfoMovie = (details :IDetails) => {
           details.genres.map((item: any) => <span key={item.id}>{item.name}</span>)
         }
       </MediaInfoBlock>
-
     </MediaInfoContainer>
   );
 };

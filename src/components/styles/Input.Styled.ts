@@ -24,7 +24,7 @@ export const InputContent = styled.input`
   z-index: 3;
   width: 100%;
   height: 5rem;
-  padding: 1rem 1.3rem 1rem 3.9rem;
+  padding: 1rem 1.3rem 0.3rem 3.9rem;
   font-size: 1.3rem;
   border-radius: 1rem;
   color: ${theme.colors.grey400};

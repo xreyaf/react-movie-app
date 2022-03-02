@@ -4,12 +4,18 @@ import { motion } from "framer-motion";
 
 export const HeaderStyled = styled.header`
   position: fixed;
+width: 100%;
+height: 10%;
   top: 0;
   left: 0;
-  width: 100%;
+
+
   z-index: 100;
   background: ${theme.colors.grey900_80};
   backdrop-filter: blur(24px);
+
+  
+
 `;
 
 export const Nav = styled.nav`
@@ -17,6 +23,7 @@ export const Nav = styled.nav`
   align-items: center;
   justify-content: space-between;
   height: 3rem;
+
   ul {
     display: flex;
     flex-direction: row;
@@ -38,6 +45,7 @@ export const StyledLinkMenu = styled(motion.a)`
   font-size: 1.2rem;
   cursor: pointer;
   color: ${theme.colors.grey400};
+
   &:hover {
     color: ${theme.colors.primary400};
   }
