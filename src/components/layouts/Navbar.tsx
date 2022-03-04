@@ -1,9 +1,15 @@
 import React from "react";
-import { Logo, Nav, StyledLinkMenu, HeaderStyled } from "../styles/Header.styled";
+import {
+  Logo,
+  Nav,
+  StyledLinkMenu,
+  HeaderStyled,
+} from "../styles/Header.styled";
 // @ts-ignore
 import * as Unicons from "@iconscout/react-unicons";
 import { Link } from "react-router-dom";
 import { ContainerStyled } from "../styles/Container.styled";
+import logosvg from "../../assets/svg/logo.svg";
 
 const Navbar: React.FC = () => {
   return (
@@ -11,8 +17,12 @@ const Navbar: React.FC = () => {
       <ContainerStyled>
         <Nav>
           <Link to="/">
-            <Logo src="../logo.svg" alt="Logo" whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.8, animation: "ease-out" }} />
+            <Logo
+              src={logosvg}
+              alt="Logo"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.8, animation: "ease-out" }}
+            />
           </Link>
 
           <ul>
@@ -29,14 +39,16 @@ const Navbar: React.FC = () => {
                 <StyledLinkMenu whileHover={{ y: -3 }}>
                   <Unicons.UilTvRetro size="1.2rem" />
                   TV Series
-                </StyledLinkMenu></Link>
+                </StyledLinkMenu>
+              </Link>
             </li>
             <li>
               <Link to="/chart">
                 <StyledLinkMenu whileHover={{ y: -3 }}>
                   <Unicons.UilChart size="1.2rem" />
                   Chart
-                </StyledLinkMenu></Link>
+                </StyledLinkMenu>
+              </Link>
             </li>
           </ul>
         </Nav>
