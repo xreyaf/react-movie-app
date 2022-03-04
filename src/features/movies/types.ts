@@ -35,7 +35,6 @@ export interface ICard {
   vote_average: number;
 }
 
-
 export interface Genre {
   id: number;
   name: string;
@@ -80,7 +79,6 @@ export interface IDetails {
   type: string;
 }
 
-
 export interface EpisodeToAir {
   air_date: string;
   episode_number: number;
@@ -111,4 +109,38 @@ export interface Season {
   season_number: number;
 }
 
+export interface IStats {
+  total: number;
+  totalCoins: number;
+  totalMarkets: number;
+  totalExchanges: number;
+  totalMarketCap: string;
+  total24hVolume: string;
+}
 
+export interface ICoin {
+  uuid: string;
+  symbol: string;
+  name: string;
+  color: string;
+  iconUrl: string;
+  marketCap: string;
+  price: string;
+  listedAt: number;
+  tier: number;
+  change: string;
+  rank: number;
+  sparkline: string[];
+  lowVolume: boolean;
+  coinrankingUrl: string;
+  btcPrice: string;
+}
+
+export interface IDataCoins {
+  stats: IStats;
+  coins: ICoin[];
+}
+export interface RootObject {
+  status: string;
+  data: IDataCoins;
+}
