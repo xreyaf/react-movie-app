@@ -22,6 +22,7 @@ module.exports = {
     new HTMLWebpackPlugin({
       title: "Movie App",
       template: "./public/index.html",
+      favicon: "./public/favicon.ico",
     }),
     new CleanWebpackPlugin(),
   ],
