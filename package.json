@@ -32,7 +32,7 @@
   },
   "scripts": {
     "start": "webpack-dev-server --config webpack.config.ts",
-    "build": "webpack --mode production",
+    "build": "webpack --mode production --config webpack.config.ts",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

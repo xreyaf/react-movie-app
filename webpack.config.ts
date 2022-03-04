@@ -1,6 +1,6 @@
 const path = require("path");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
-const InterpolateHtmlPlugin = require("interpolate-html-plugin")
+const InterpolateHtmlPlugin = require("interpolate-html-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
@@ -9,7 +9,7 @@ module.exports = {
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
-    publicPath: "/"
+    publicPath: "/",
   },
   devtool: "source-map",
   resolve: {
@@ -17,9 +17,10 @@ module.exports = {
   },
   plugins: [
     new InterpolateHtmlPlugin({
-      PUBLIC_URL: 'public'
+      PUBLIC_URL: "public",
     }),
     new HTMLWebpackPlugin({
+      title: "Movie App",
       template: "./public/index.html",
     }),
     new CleanWebpackPlugin(),
