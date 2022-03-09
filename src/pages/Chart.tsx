@@ -1,7 +1,9 @@
 import React from "react";
 import { ContainerStyled } from "../components/styles/Container.styled";
-import BarChart from "../charts/BarChart";
-import DoughnutChart from "../charts/DoughnutChart";
+import BarChart from "../components/charts/BarChart";
+import DoughnutChart from "../components/charts/DoughnutChart";
+import Player from "../components/Player";
+
 
 const Chart = () => {
   return (
@@ -9,7 +11,10 @@ const Chart = () => {
       <BarChart />
       <br />
       <DoughnutChart />
+      <br />
+      <Player />
     </ContainerStyled>
+
   );
 };
 

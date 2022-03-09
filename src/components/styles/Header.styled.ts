@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export const HeaderStyled = styled.header`
   position: fixed;
 width: 100%;
-height: 10%;
+height: 5rem;
   top: 0;
   left: 0;
 

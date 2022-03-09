@@ -13,11 +13,12 @@ import {
 } from "chart.js";
 
 import faker from "@faker-js/faker";
-import { theme } from "../styles/theme";
-import { ButtonStyled } from "../components/styles/Button.styled";
+import { theme } from "../../styles/theme";
+import { ButtonStyled } from "../styles/Button.styled";
 
 // @ts-ignore
 import * as Unicons from "@iconscout/react-unicons";
+
 
 ChartJS.register(
   CategoryScale,
