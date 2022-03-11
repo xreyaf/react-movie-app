@@ -10,6 +10,7 @@ import Series from "./pages/Series";
 import Chart from "./pages/Chart";
 import MediaDetails from "./pages/MediaDetails";
 
+
 function App() {
   return (
     <>
@@ -21,12 +22,13 @@ function App() {
           <Route path="/movies" element={<Movies />} />
           <Route path="/series" element={<Series />} />
           <Route path="/chart" element={<Chart />} />
-          <Route path="/:mediaType/:id" element={<MediaDetails  />} />
+          <Route path="/:mediaType/:id" element={<MediaDetails />} />
         </Routes>
         <Footer />
       </ThemeProvider>
     </>
-  );
+  )
+    ;
 }
 
 export default App;

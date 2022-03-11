@@ -9,11 +9,11 @@ import { ICoin, RootObject } from "../../features/movies/types";
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 const baseUrl = "https://coinranking1.p.rapidapi.com/coins";
-const rapidApiKey = "9c749be5bbmshbf2b6070c4ac61ep1fb823jsnbd14b8a6500c";
+const rapidApiKey = process.env.RADAPI_KEY;
 
 //const baseUrl = "https://api.coinranking.com/v2/coins";
 //const proxyUrl = "https://cors-anywhere.herokuapp.com/";
-//const apiKey = "coinranking8a3f6f2ffac3f16a5472c2261db10840b0ac3ea6fd45496e";
+//const apiKey = process.env.COIN_KEY;
 
 const DoughnutChart = () => {
   const { response, loading, error } = useAxios<RootObject>({

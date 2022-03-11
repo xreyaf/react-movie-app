@@ -2,6 +2,7 @@ const path = require("path");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
 const InterpolateHtmlPlugin = require("interpolate-html-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const Dotenv = require("dotenv-webpack");
 
 module.exports = {
   mode: "development",
@@ -25,6 +26,7 @@ module.exports = {
       favicon: "./public/favicon.ico",
     }),
     new CleanWebpackPlugin(),
+    new Dotenv(),
   ],
   module: {
     rules: [

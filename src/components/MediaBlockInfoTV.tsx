@@ -12,7 +12,6 @@ import { IDetails } from "../features/movies/types";
 import * as Unicons from "@iconscout/react-unicons";
 import { w500ImagesURL } from "./Card";
 
-
 const MediaBlockInfoTV = (details: IDetails) => {
 
   return (
@@ -29,11 +28,13 @@ const MediaBlockInfoTV = (details: IDetails) => {
       <MediaFlex>
         <MediaInfoBlock>
           <Label>Network</Label>
-          <Logo>
-            <img style={{ display: "block", verticalAlign: "center" }}
-                 src={w500ImagesURL + details.networks[0].logo_path}
-                 alt={details.networks[0].name} />
-          </Logo>
+          <a href={details.homepage}>
+            <Logo>
+              <img style={{ display: "block", verticalAlign: "center" }}
+                   src={w500ImagesURL + details.networks[0].logo_path}
+                   alt={details.networks[0].name} />
+            </Logo>
+          </a>
         </MediaInfoBlock>
         <MediaInfoBlock>
           <Label>Status</Label>
@@ -67,7 +68,6 @@ const MediaBlockInfoTV = (details: IDetails) => {
           details.genres.map((item: any) => <span key={item.id}>{item.name}</span>)
         }
       </MediaInfoBlock>
-
     </MediaInfoContainer>
   );
 };

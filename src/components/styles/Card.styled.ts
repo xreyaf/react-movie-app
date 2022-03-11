@@ -19,9 +19,10 @@ export const CardImageWrapper = styled.div`
 `;
 
 export const ImageStyled = styled(motion.img)`
+  display: block;
   object-fit: cover;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   vertical-align: middle;
 `;
 

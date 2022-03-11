@@ -5,6 +5,7 @@ import { IDetails } from "../features/movies/types";
 import * as Unicons from "@iconscout/react-unicons";
 
 const MediaBlockInfoMovie = (details: IDetails) => {
+
   return (
     <MediaInfoContainer>
       <MediaInfoBlock>

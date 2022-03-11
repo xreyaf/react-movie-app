@@ -1,9 +1,9 @@
 import { createApi, BaseQueryFn } from "@reduxjs/toolkit/query/react";
 import axios, { AxiosRequestConfig, AxiosError } from "axios";
-import { IDetails, IMedia, IResponse } from "./types";
+import { Backdrop, IDetails, IImages, IMedia, IResponse, IVideos, Result } from "./types";
 
-const API_KEY = "b50461522e6b25f122838ff594a78e50";
-const enLANG = "en-US";
+const API_KEY = process.env.TMDB_KEY;
+const enLANG = process.env.EN_US;
 
 const axiosBaseQuery =
   (
@@ -35,7 +35,7 @@ const TMDBApi = createApi({
     getTrending: builder.query<IMedia[], unknown>({
       query: ({ media_type, time }) => ({
         url: `/trending/${media_type}/${time}`,
-        method: "get",
+        method: "GET",
         params: {
           api_key: API_KEY,
           language: enLANG
@@ -46,7 +46,7 @@ const TMDBApi = createApi({
     getPopular: builder.query<IMedia[], string | void>({
       query: (media_type) => ({
         url: `/${media_type}/popular`,
-        method: "get",
+        method: "GET",
         params: {
           api_key: API_KEY,
           language: enLANG
@@ -57,7 +57,7 @@ const TMDBApi = createApi({
     searchMedia: builder.query<IMedia[], string | void>({
       query: (searchTitle) => ({
         url: `/search/multi`,
-        method: "get",
+        method: "GET",
         params: {
           api_key: API_KEY,
           language: enLANG,
@@ -69,17 +69,36 @@ const TMDBApi = createApi({
     getDetails: builder.query<IDetails, unknown>({
       query: ({ mediaType, id }) => ({
         url: `/${mediaType}/${id}`,
-        method: "get",
+        method: "GET",
         params: {
           api_key: API_KEY,
           language: enLANG
         }
       })
-    })
+    }),
+    getBackdrop: builder.query<Backdrop[], unknown>({
+      query: ({ mediaType, id }) => ({
+        url: `/${mediaType}/${id}/images`,
+        method: "GET",
+        params: {
+          api_key: API_KEY,
+        }
+      }),
+      transformResponse: (response:IImages) => response.backdrops
+    }),
+    getVideos: builder.query< Result[], unknown>({
+      query: ({ mediaType, id }) => ({
+        url: `/${mediaType}/${id}/videos`,
+        method: "GET",
+        params: {
+          api_key: API_KEY,
+        }
+      }),
+      transformResponse: (response:IVideos) => response.results
+    }),
   })
 });
 
 
-
-export const { useGetTrendingQuery, useGetPopularQuery, useSearchMediaQuery, useGetDetailsQuery } = TMDBApi;
+export const { useGetTrendingQuery, useGetPopularQuery, useSearchMediaQuery, useGetDetailsQuery, useGetBackdropQuery, useGetVideosQuery } = TMDBApi;
 export default TMDBApi;

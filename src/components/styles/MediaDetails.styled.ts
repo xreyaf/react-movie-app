@@ -1,22 +1,23 @@
 import styled from "@emotion/styled";
 import { theme } from "../../styles/theme";
+import { motion } from "framer-motion";
 
-export const MediaDetailsBanner = styled.div`
+export const MediaBannerStyled = styled(motion.div)`
   width: 100%;
-  height: 480px;
-  border-radius: 5rem;
+  height: auto;
+  border-radius: 2rem;
   overflow: hidden;
   z-index: 1;
 `;
 export const PosterStyled = styled.div`
   width: 50%;
   height: 720px;
-  border-radius: 5rem;
+  border-radius: 3rem;
   overflow: hidden;
   z-index: 1;
 `;
 
-export const MediaDetailsTitle = styled.div`
+export const MediaDetailsTitle = styled(motion.div)`
   position: relative;
   z-index: 2;
   padding: 40px;
@@ -29,7 +30,7 @@ export const MediaDetailsTitle = styled.div`
   backdrop-filter: blur(24px);
 `;
 
-export const MediaDetailsWrapper = styled.div`
+export const MediaDetailsWrapper = styled(motion.div)`
   margin: 5rem;
   display: flex;
 

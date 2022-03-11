@@ -11,6 +11,8 @@ export const GlobalStyle = css`
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    --swiper-navigation-color: white !important;
+    --swiper-theme-color: white !important;
   }
 
   html {
