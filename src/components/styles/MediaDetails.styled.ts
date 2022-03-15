@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { theme } from "../../styles/theme";
 import { motion } from "framer-motion";
 
-export const MediaBannerStyled = styled(motion.div)`
+export const MediaBannerWrapper= styled(motion.div)`
   width: 100%;
   height: auto;
   border-radius: 2rem;

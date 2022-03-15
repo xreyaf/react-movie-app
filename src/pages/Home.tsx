@@ -7,6 +7,7 @@ import { IconWrapper, InputContent, InputStyled } from "../components/styles/Inp
 import debounce from "lodash/debounce";
 // @ts-ignore
 import * as Unicons from "@iconscout/react-unicons";
+import Spinner from "../components/Spinner";
 
 
 const Home = () => {
@@ -39,7 +40,7 @@ const Home = () => {
         <InputContent name="search" id="search" type="text" placeholder="eg. Spider-Man" onChange={onChangeInput} />
         <label htmlFor="search">Search movies or TV series</label>
       </InputStyled>
-      {isLoadingTrending && isLoadingSearch && <h1>Loading...</h1>}
+      {isLoadingTrending && isLoadingSearch && <Spinner />}
       {errorTrending && errorSearch && <h1>Some error occurred...</h1>}
       {data && data.length != 0 ? (
         <>

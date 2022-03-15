@@ -12,7 +12,7 @@ const Player = () => {
   const { isPlaying, setIsPlaying } = useAudio(url);
   return (
     <>
-      <h1>Fill the beat</h1>
+      <h1>Feel the beat</h1>
       <audio controls>
         <source src={url} type="audio/mp3" />
         <p>Ваш браузер не поддерживает HTML5 аудио.</p>

@@ -3,7 +3,7 @@ import {
   Logo,
   Nav,
   StyledLinkMenu,
-  HeaderStyled,
+  HeaderStyled
 } from "../styles/Header.styled";
 // @ts-ignore
 import * as Unicons from "@iconscout/react-unicons";

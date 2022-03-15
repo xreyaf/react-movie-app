@@ -1,8 +1,7 @@
 import React, { useEffect } from "react";
 import { ContainerStyled } from "../components/styles/Container.styled";
 import {
-  MediaBannerStyled,
-
+  MediaBannerWrapper,
   MediaDetailsTitle,
   MediaDetailsWrapper, PosterStyled
 } from "../components/styles/MediaDetails.styled";
@@ -21,6 +20,7 @@ import { useInView } from "react-intersection-observer";
 
 // @ts-ignore
 import * as Unicons from "@iconscout/react-unicons";
+import Spinner from "../components/Spinner";
 
 
 export const w1280ImagesURL = "https://image.tmdb.org/t/p/w1280";
@@ -45,12 +45,12 @@ const MediaDetails = () => {
     <ScrollToTop>
       <div style={{ position: "absolute", height: "5px" }} ref={ref} />
       <ContainerStyled>
-        {isLoading && <h3>Loading...</h3>}
+        {isLoading && <Spinner />}
         {error && <h3>Some error occurred...</h3>}
         {details && <>
-          <MediaBannerStyled>
+          <MediaBannerWrapper>
             <MediaBanner mediaType={mediaType} id={id} />
-          </MediaBannerStyled>
+          </MediaBannerWrapper>
           <MediaDetailsTitle animate={animation} initial={{ y: 90 }}>
             <h2>{details.title || details.name}</h2>
           </MediaDetailsTitle>

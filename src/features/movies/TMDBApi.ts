@@ -64,7 +64,7 @@ const TMDBApi = createApi({
           query: searchTitle
         }
       }),
-      transformResponse: (response: IResponse) => response.results
+      transformResponse: (response: IResponse) => response.results.filter(value => value.media_type != 'person')
     }),
     getDetails: builder.query<IDetails, unknown>({
       query: ({ mediaType, id }) => ({

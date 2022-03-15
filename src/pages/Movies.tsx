@@ -3,6 +3,7 @@ import { ContainerStyled } from "../components/styles/Container.styled";
 import { GridStyled } from "../components/styles/Grid.styled";
 import Card from "../components/Card";
 import { useGetPopularQuery } from "../features/movies/TMDBApi";
+import Spinner from "../components/Spinner";
 
 const Movies = () => {
   const type = "movie";
@@ -10,9 +11,9 @@ const Movies = () => {
   console.log(data);
   return (
     <ContainerStyled>
-      {isLoading && <h1>Loading...</h1>}
+      {isLoading && <Spinner />}
       {error && <h1>Some error occurred...</h1>}
-      {data && <><h1>Movies on hype</h1>
+      {data && <><h1>Popular movies</h1>
         <br />
         <GridStyled>
           {data && data.length &&

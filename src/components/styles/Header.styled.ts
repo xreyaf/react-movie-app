@@ -4,18 +4,13 @@ import { motion } from "framer-motion";
 
 export const HeaderStyled = styled.header`
   position: fixed;
-width: 100%;
-height: 5rem;
+  width: 100%;
+  height: 5rem;
   top: 0;
   left: 0;
-
-
   z-index: 100;
   background: ${theme.colors.grey900_80};
   backdrop-filter: blur(24px);
-
-  
-
 `;
 
 export const Nav = styled.nav`
@@ -33,7 +28,7 @@ export const Nav = styled.nav`
 `;
 
 export const Logo = styled(motion.img)`
-  max-width: 3rem;
+  max-width: 2.5rem;
 `;
 
 export const StyledLinkMenu = styled(motion.a)`

@@ -26,6 +26,7 @@
     "react-redux": "^7.2.6",
     "react-router-dom": "^6.2.1",
     "react-scripts": "^3.0.1",
+    "react-spinners-kit": "^1.9.1",
     "sass": "^1.49.7",
     "scss-loader": "^0.0.1",
     "style-loader": "^3.3.1",
