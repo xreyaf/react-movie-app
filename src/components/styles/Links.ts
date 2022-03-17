@@ -1,5 +1,5 @@
-import styled from "@emotion/styled";
-import { theme } from "../../styles/theme";
+import styled from '@emotion/styled';
+import theme from '../../styles/theme';
 
 export const ExternalLink = styled.a`
   color: ${theme.colors.primary400};
@@ -8,7 +8,7 @@ export const ExternalLink = styled.a`
   overflow: hidden;
   text-decoration: none;
   &::after {
-    content: "";
+    content: '';
     background: ${theme.colors.primary400};
     position: absolute;
     left: 0;

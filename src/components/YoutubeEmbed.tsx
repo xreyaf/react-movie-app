@@ -1,10 +1,12 @@
-import { VideoContainer } from "./styles/VideoContainer.Styled";
+import React from 'react';
 
-const YoutubeEmbed = ({ embedId }: { embedId: string | undefined }) => {
+import { VideoContainer } from './styles/VideoContainer.Styled';
 
+function YoutubeEmbed({ embedId }: { embedId: string | undefined }) {
   return (
     <VideoContainer>
       <iframe
+        title="YouTube Trailer"
         id="ytplayer"
         width="auto"
         height="auto"
@@ -15,6 +17,6 @@ const YoutubeEmbed = ({ embedId }: { embedId: string | undefined }) => {
       />
     </VideoContainer>
   );
-};
+}
 
 export default YoutubeEmbed;

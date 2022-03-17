@@ -140,6 +140,7 @@ export interface IDataCoins {
   stats: IStats;
   coins: ICoin[];
 }
+
 export interface RootObject {
   status: string;
   data: IDataCoins;
@@ -176,4 +177,9 @@ export interface Result {
 export interface IVideos {
   id: number;
   results: Result[];
+}
+
+export interface ISliderData {
+  images: Backdrop[];
+  videos: Result[];
 }

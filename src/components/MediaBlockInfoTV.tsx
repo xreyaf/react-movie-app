@@ -1,19 +1,20 @@
-import React from "react";
+import React from 'react';
+// @ts-ignore
+import * as Unicons from '@iconscout/react-unicons';
 import {
   MediaInfoBlock,
   MediaInfoContainer,
   MediaInfoRating,
   MediaFlex,
   Label,
-  LargeText, Logo
-} from "./styles/MediaDetails.styled";
-import { IDetails } from "../features/movies/types";
-// @ts-ignore
-import * as Unicons from "@iconscout/react-unicons";
-import { w500ImagesURL } from "./Card";
+  LargeText,
+  Logo,
+} from './styles/MediaDetails.styled';
+import { IDetails } from '../features/movies/types';
 
-const MediaBlockInfoTV = (details: IDetails) => {
+import { w500ImagesURL } from './ImgWithFallback';
 
+function MediaBlockInfoTV(details: IDetails) {
   return (
     <MediaInfoContainer>
       <MediaInfoBlock>
@@ -30,9 +31,11 @@ const MediaBlockInfoTV = (details: IDetails) => {
           <Label>Network</Label>
           <a href={details.homepage}>
             <Logo>
-              <img style={{ display: "block", verticalAlign: "center" }}
-                   src={w500ImagesURL + details.networks[0].logo_path}
-                   alt={details.networks[0].name} />
+              <img
+                style={{ display: 'block', verticalAlign: 'center' }}
+                src={w500ImagesURL + details.networks[0].logo_path}
+                alt={details.networks[0].name}
+              />
             </Logo>
           </a>
         </MediaInfoBlock>
@@ -64,12 +67,12 @@ const MediaBlockInfoTV = (details: IDetails) => {
       </MediaFlex>
       <MediaInfoBlock>
         <Label>Genres</Label>
-        {
-          details.genres.map((item: any) => <span key={item.id}>{item.name}</span>)
-        }
+        {details.genres.map((item: any) => (
+          <span key={item.id}>{item.name}</span>
+        ))}
       </MediaInfoBlock>
     </MediaInfoContainer>
   );
-};
+}
 
 export default MediaBlockInfoTV;

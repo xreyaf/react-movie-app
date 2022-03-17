@@ -1,6 +1,6 @@
-import styled from "@emotion/styled";
-import { theme } from "../../styles/theme";
-import { motion } from "framer-motion";
+import styled from '@emotion/styled';
+import { motion } from 'framer-motion';
+import theme from '../../styles/theme';
 
 export const CardStyled = styled(motion.div)`
   position: relative;
@@ -18,17 +18,9 @@ export const CardImageWrapper = styled.div`
   overflow: hidden;
 `;
 
-export const ImageStyled = styled(motion.img)`
-  display: block;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  vertical-align: middle;
-`;
-
 export const CardInfo = styled.div`
-  padding: .5rem;
-  margin-bottom: .5rem;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
   overflow: hidden;
 
   a {
@@ -37,7 +29,7 @@ export const CardInfo = styled.div`
 
     &:hover {
       color: ${theme.colors.white100};
-      transition: color .3s;
+      transition: color 0.3s;
     }
   }
 `;

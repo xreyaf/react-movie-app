@@ -1,13 +1,13 @@
-import React from "react";
-import { Route, Routes } from "react-router-dom";
-import Home from "../pages/Home";
-import Movies from "../pages/Movies";
-import Series from "../pages/Series";
-import Chart from "../pages/Chart";
-import MediaDetails from "../pages/MediaDetails";
-import NotFound from "../pages/NotFound";
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import Home from '../pages/Home';
+import Movies from '../pages/Movies';
+import Series from '../pages/Series';
+import Chart from '../pages/Chart';
+import MediaDetails from '../pages/MediaDetails';
+import NotFound from '../pages/NotFound';
 
-const AppRouter = () => {
+function AppRouter() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
@@ -18,6 +18,6 @@ const AppRouter = () => {
       <Route path="/*" element={<NotFound />} />
     </Routes>
   );
-};
+}
 
 export default AppRouter;

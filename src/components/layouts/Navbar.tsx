@@ -1,27 +1,27 @@
-import React from "react";
+import React from 'react';
+// @ts-ignore
+import * as Unicons from '@iconscout/react-unicons';
+import { Link } from 'react-router-dom';
 import {
   Logo,
   Nav,
   StyledLinkMenu,
-  HeaderStyled
-} from "../styles/Header.styled";
-// @ts-ignore
-import * as Unicons from "@iconscout/react-unicons";
-import { Link } from "react-router-dom";
-import { ContainerStyled } from "../styles/Container.styled";
-import logosvg from "../../assets/svg/logo.svg";
+  HeaderStyled,
+} from '../styles/Header.styled';
+import { ContainerStyled } from '../styles/Container.styled';
+import logo from '../../assets/svg/logo.svg';
 
-const Navbar: React.FC = () => {
+function Navbar() {
   return (
     <HeaderStyled>
       <ContainerStyled>
         <Nav>
           <Link to="/">
             <Logo
-              src={logosvg}
+              src={logo}
               alt="Logo"
               whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.8, animation: "ease-out" }}
+              whileTap={{ scale: 0.8, animation: 'ease-out' }}
             />
           </Link>
 
@@ -55,6 +55,6 @@ const Navbar: React.FC = () => {
       </ContainerStyled>
     </HeaderStyled>
   );
-};
+}
 
 export default Navbar;

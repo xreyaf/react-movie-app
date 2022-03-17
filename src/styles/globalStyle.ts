@@ -1,6 +1,6 @@
-import { css } from "@emotion/react";
-import { theme } from "./theme";
-import back from "../assets/img/bg-min.png";
+import { css } from '@emotion/react';
+import theme from './theme';
+import back from '../assets/img/bg-min.png';
 
 export const GlobalStyle = css`
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
@@ -21,8 +21,9 @@ export const GlobalStyle = css`
 
   body {
     margin: 5rem 0 0 0;
-    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
-    "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+      Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+      sans-serif;
     background-color: ${theme.colors.grey900};
     background-image: url(${back});
     background-size: 100%;
@@ -46,7 +47,6 @@ export const GlobalStyle = css`
     color: ${theme.colors.grey50};
     line-height: 1.5;
     text-overflow: ellipsis;
-
   }
 
   h3 {
@@ -81,7 +81,8 @@ export const GlobalStyle = css`
     text-overflow: ellipsis;
   }
 
-  p, span {
+  p,
+  span {
     color: ${theme.colors.grey400};
     font-weight: 500;
     line-height: 1.5rem;
@@ -113,7 +114,6 @@ export const GlobalStyle = css`
 
       &:hover {
         background-color: ${theme.colors.grey700};
-
       }
     }
   }

@@ -1,11 +1,16 @@
-import React from "react";
-import { MediaInfoBlock, MediaInfoContainer, MediaInfoRating, Label, LargeText } from "./styles/MediaDetails.styled";
-import { IDetails } from "../features/movies/types";
+import React from 'react';
 // @ts-ignore
-import * as Unicons from "@iconscout/react-unicons";
+import * as Unicons from '@iconscout/react-unicons';
+import {
+  MediaInfoBlock,
+  MediaInfoContainer,
+  MediaInfoRating,
+  Label,
+  LargeText,
+} from './styles/MediaDetails.styled';
+import { IDetails } from '../features/movies/types';
 
 const MediaBlockInfoMovie = (details: IDetails) => {
-
   return (
     <MediaInfoContainer>
       <MediaInfoBlock>
@@ -20,10 +25,10 @@ const MediaBlockInfoMovie = (details: IDetails) => {
       <MediaInfoBlock>
         <Label>Budget</Label>
         <LargeText>
-          {new Intl.NumberFormat("en-US", {
-            style: "currency",
-            currency: "USD",
-            minimumFractionDigits: 0
+          {new Intl.NumberFormat('en-US', {
+            style: 'currency',
+            currency: 'USD',
+            minimumFractionDigits: 0,
           }).format(details.budget)}
         </LargeText>
       </MediaInfoBlock>
@@ -37,9 +42,9 @@ const MediaBlockInfoMovie = (details: IDetails) => {
       </MediaInfoBlock>
       <MediaInfoBlock>
         <Label>Genres</Label>
-        {
-          details.genres.map((item: any) => <span key={item.id}>{item.name}</span>)
-        }
+        {details.genres.map((item: any) => (
+          <span key={item.id}>{item.name}</span>
+        ))}
       </MediaInfoBlock>
     </MediaInfoContainer>
   );

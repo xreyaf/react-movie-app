@@ -1,7 +1,9 @@
-import { useLocation } from "react-router-dom";
-import React, { useEffect } from "react";
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
-const ScrollToTop: ({ children }: { children: any }) => any = ({ children }) => {
+const ScrollToTop: ({ children }: { children: any }) => any = ({
+  children,
+}) => {
   const { pathname } = useLocation();
 
   useEffect(() => {

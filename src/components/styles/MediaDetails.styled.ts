@@ -1,8 +1,8 @@
-import styled from "@emotion/styled";
-import { theme } from "../../styles/theme";
-import { motion } from "framer-motion";
+import styled from '@emotion/styled';
+import theme from '../../styles/theme';
+import { motion } from 'framer-motion';
 
-export const MediaBannerWrapper= styled(motion.div)`
+export const MediaBannerWrapper = styled(motion.div)`
   width: 100%;
   height: auto;
   border-radius: 2rem;
@@ -43,12 +43,10 @@ export const MediaDetailsWrapper = styled(motion.div)`
   @media screen and (max-width: 575.98px) {
     margin: 5rem 0;
   }
-
 `;
 export const MediaInfoContainer = styled.div`
   width: 50%;
   padding-left: 5rem;
-
 `;
 
 export const MediaFlex = styled.div`
@@ -68,7 +66,7 @@ export const MediaInfoBlock = styled.div`
 
     &:not(:first-of-type) {
       &::before {
-        content: ", ";
+        content: ', ';
       }
     }
   }
@@ -77,7 +75,7 @@ export const MediaInfoBlock = styled.div`
 export const Logo = styled.div`
   background-color: ${theme.colors.white20};
   border-radius: 1rem;
-  padding: .6rem;
+  padding: 0.6rem;
   width: 60%;
 `;
 
@@ -104,5 +102,4 @@ export const MediaInfoRating = styled.div`
   p {
     color: ${theme.colors.warning500};
   }
-
 `;

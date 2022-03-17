@@ -1,6 +1,6 @@
-import styled from "@emotion/styled";
-import { theme } from "../../styles/theme";
-import { motion } from "framer-motion";
+import styled from '@emotion/styled';
+import theme from '../../styles/theme';
+import { motion } from 'framer-motion';
 
 export const ButtonStyled = styled(motion.button)`
   display: flex;
@@ -14,8 +14,8 @@ export const ButtonStyled = styled(motion.button)`
   color: ${theme.colors.white100};
   padding: 1rem 2rem;
   font-size: 1rem;
-  margin-bottom: .6rem;
-  svg{
+  margin-bottom: 0.6rem;
+  svg {
     align-self: baseline;
   }
 `;

@@ -1,6 +1,6 @@
-import styled from "@emotion/styled";
-import { theme } from "../../styles/theme";
-import { motion } from "framer-motion";
+import styled from '@emotion/styled';
+import theme from '../../styles/theme';
+import { motion } from 'framer-motion';
 
 export const HeaderStyled = styled.header`
   position: fixed;

@@ -1,5 +1,5 @@
-import styled from "@emotion/styled";
-import { theme } from "../../styles/theme";
+import styled from '@emotion/styled';
+import theme from '../../styles/theme';
 
 export const InputStyled = styled.div`
   position: relative;
@@ -14,7 +14,7 @@ export const InputStyled = styled.div`
     color: ${theme.colors.grey600};
     cursor: text;
     user-select: none;
-    transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 `;
 
@@ -39,7 +39,7 @@ export const InputContent = styled.input`
     }
     &::placeholder {
       opacity: 0.5;
-      transition: all .2s
+      transition: all 0.2s;
     }
   }
 
