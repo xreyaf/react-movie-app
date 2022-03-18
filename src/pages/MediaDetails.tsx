@@ -1,9 +1,8 @@
-import React, { useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-import { useAnimation } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
+import React, { useEffect, useRef } from 'react';
 // @ts-ignore
 import * as Unicons from '@iconscout/react-unicons';
+import { useParams } from 'react-router-dom';
+import { useAnimation } from 'framer-motion';
 import { ContainerStyled } from '../components/styles/Container.styled';
 import {
   MediaBannerWrapper,
@@ -18,9 +17,11 @@ import ScrollToTop from '../components/ScrollToTop';
 import MediaBanner from '../components/MediaBanner';
 import Spinner from '../components/Spinner';
 import ImgWithFallback, { w500ImagesURL } from '../components/ImgWithFallback';
+import useInView from '../hooks/useInView';
 
 function MediaDetails() {
-  const { ref, inView } = useInView();
+  const animateElement = useRef(null);
+  const inView = useInView(animateElement);
   const animation = useAnimation();
   const { mediaType, id } = useParams();
   const {
@@ -41,7 +42,10 @@ function MediaDetails() {
 
   return (
     <ScrollToTop>
-      <div style={{ position: 'absolute', height: '5px' }} ref={ref} />
+      <div
+        style={{ position: 'absolute', height: '5px' }}
+        ref={animateElement}
+      />
       <ContainerStyled>
         {isLoading && <Spinner />}
         {error && <h3>Some error occurred...</h3>}
