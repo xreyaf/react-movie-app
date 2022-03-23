@@ -2,11 +2,10 @@ import React from 'react';
 import { css } from '@emotion/react';
 import logo from '../../assets/svg/logo.svg';
 import styled from '@emotion/styled';
-import theme from '../../styles/theme';
 import { Logo } from './Navbar';
 
 const FooterStyled = styled.footer`
-  background: ${theme.colors.grey900_80};
+  background: ${(props) => props.theme.colors.grey900_80};
   backdrop-filter: blur(2px);
   padding: 6rem 5rem;
   text-align: center;
@@ -23,14 +22,14 @@ const FooterStyled = styled.footer`
 `;
 
 const ExternalLink = styled.a`
-  color: ${theme.colors.primary400};
+  color: ${(props) => props.theme.colors.primary400};
   font-weight: 700;
   position: relative;
   overflow: hidden;
   text-decoration: none;
   &::after {
     content: '';
-    background: ${theme.colors.primary400};
+    background: ${(props) => props.theme.colors.primary400};
     position: absolute;
     left: 0;
     bottom: -4px;

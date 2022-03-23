@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import nf from '../assets/svg/404.svg';
-import theme from '../styles/theme';
 import Button from '../components/Button';
 import Container from '../components/Container';
 import styled from '@emotion/styled';
+import { useTheme } from '@emotion/react';
 
 const NotFoundWrapper = styled.div`
   min-height: calc(100vh - 184px);
@@ -24,7 +24,8 @@ const NotFoundWrapper = styled.div`
   }
 `;
 
-function NotFound() {
+const NotFound = () => {
+  const theme = useTheme();
   return (
     <Container>
       <NotFoundWrapper>
@@ -55,6 +56,6 @@ function NotFound() {
       </NotFoundWrapper>
     </Container>
   );
-}
+};
 
 export default NotFound;

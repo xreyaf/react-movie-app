@@ -5,11 +5,12 @@ import BarChart from '../components/charts/BarChart';
 import DoughnutChart from '../components/charts/DoughnutChart';
 import Player from '../components/Player';
 import useNetworkState from '../hooks/useNetworkState';
-import theme from '../styles/theme';
 import Container from '../components/Container';
+import { useTheme } from '@emotion/react';
 
 const Chart = () => {
   const isOnline = useNetworkState();
+  const theme = useTheme();
   return (
     <Container>
       <BarChart />

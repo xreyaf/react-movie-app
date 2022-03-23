@@ -4,7 +4,6 @@ import * as Unicons from '@iconscout/react-unicons';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/svg/logo.svg';
 import styled from '@emotion/styled';
-import theme from '../../styles/theme';
 import { motion } from 'framer-motion';
 import Container from '../Container';
 
@@ -15,7 +14,7 @@ const HeaderStyled = styled.header`
   top: 0;
   left: 0;
   z-index: 100;
-  background: ${theme.colors.grey900_80};
+  background: ${(props) => props.theme.colors.grey900_80};
   backdrop-filter: blur(24px);
 `;
 
@@ -45,10 +44,10 @@ const StyledLinkMenu = styled(motion.a)`
   font-weight: 700;
   font-size: 1.2rem;
   cursor: pointer;
-  color: ${theme.colors.grey400};
+  color: ${(props) => props.theme.colors.grey400};
 
   &:hover {
-    color: ${theme.colors.primary400};
+    color: ${(props) => props.theme.colors.primary400};
   }
 `;
 

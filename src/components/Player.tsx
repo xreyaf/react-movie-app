@@ -1,14 +1,15 @@
 import React from 'react';
 // @ts-ignore
 import * as Unicons from '@iconscout/react-unicons';
-import theme from '../styles/theme';
 import useAudio from '../hooks/useAudio';
 import Button from './Button';
+import { useTheme } from '@emotion/react';
 
 const url = 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3';
 
-function Player() {
+const Player = () => {
   const { isPlaying, setIsPlaying } = useAudio(url);
+  const theme = useTheme();
   return (
     <>
       <h1>Feel the beat</h1>
@@ -33,6 +34,6 @@ function Player() {
       </Button>
     </>
   );
-}
+};
 
 export default Player;

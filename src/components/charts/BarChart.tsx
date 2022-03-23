@@ -15,8 +15,8 @@ import {
 import faker from '@faker-js/faker';
 // @ts-ignore
 import * as Unicons from '@iconscout/react-unicons';
-import theme from '../../styles/theme';
 import Button from '../Button';
+import { useTheme } from '@emotion/react';
 
 ChartJS.register(
   CategoryScale,
@@ -34,30 +34,6 @@ function makeArray<T>(length: number, generator: () => T): T[] {
 }
 
 const labels: string[] = makeArray(10, faker.random.word);
-
-export const data = {
-  labels,
-  datasets: [
-    {
-      label: 'First Dataset',
-      data: labels.map(() => faker.datatype.number({ min: 10, max: 500 })),
-      borderColor: `${theme.colors.warning400}`,
-      backgroundColor: `${theme.colors.warning500}`,
-    },
-    {
-      label: 'Second Dataset',
-      data: labels.map(() => faker.datatype.number({ min: 10, max: 500 })),
-      borderColor: `${theme.colors.error400}`,
-      backgroundColor: `${theme.colors.error500}`,
-    },
-    {
-      label: 'Third Dataset',
-      data: labels.map(() => faker.datatype.number({ min: 10, max: 500 })),
-      borderColor: `${theme.colors.success400}`,
-      backgroundColor: `${theme.colors.success500}`,
-    },
-  ],
-};
 
 export const options = {
   responsive: true,
@@ -77,8 +53,9 @@ export const options = {
   },
 };
 
-function BarChart() {
+const BarChart = () => {
   const ref = useRef<any>(null);
+  const theme = useTheme();
 
   const downloadImage = useCallback(() => {
     const link = document.createElement('a');
@@ -87,6 +64,31 @@ function BarChart() {
     console.log(typeof ref.current);
     link.click();
   }, []);
+
+  const data = {
+    labels,
+    datasets: [
+      {
+        label: 'First Dataset',
+        data: labels.map(() => faker.datatype.number({ min: 10, max: 500 })),
+        borderColor: `${theme.colors.warning400}`,
+        backgroundColor: `${theme.colors.warning500}`,
+      },
+      {
+        label: 'Second Dataset',
+        data: labels.map(() => faker.datatype.number({ min: 10, max: 500 })),
+        borderColor: `${theme.colors.error400}`,
+        backgroundColor: `${theme.colors.error500}`,
+      },
+      {
+        label: 'Third Dataset',
+        data: labels.map(() => faker.datatype.number({ min: 10, max: 500 })),
+        borderColor: `${theme.colors.success400}`,
+        backgroundColor: `${theme.colors.success500}`,
+      },
+    ],
+  };
+
   return (
     <>
       <h1>Bar Chart</h1>
@@ -106,6 +108,6 @@ function BarChart() {
       <Bar ref={ref} options={options} data={data} />
     </>
   );
-}
+};
 
 export default BarChart;

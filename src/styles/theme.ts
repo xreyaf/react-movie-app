@@ -1,4 +1,16 @@
-const theme = {
+import '@emotion/react';
+
+declare module '@emotion/react' {
+  type Color = {
+    [key: string]: string;
+  };
+
+  export interface Theme {
+    colors: Color;
+  }
+}
+
+export const theme = {
   colors: {
     primary50: 'hsla(246, 91.3%, 95.5%, 1)',
     primary100: 'hsla(245, 89.5%, 92.5%, 1)',
@@ -97,5 +109,3 @@ const theme = {
     white100: 'hsla(0, 0%, 100%, 1)',
   },
 };
-
-export default theme;

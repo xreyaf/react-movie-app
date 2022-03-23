@@ -4,7 +4,6 @@ import * as Unicons from '@iconscout/react-unicons';
 import { IDetails } from '../features/movies/types';
 import { w500ImagesURL } from './ImgWithFallback';
 import styled from '@emotion/styled';
-import theme from '../styles/theme';
 import {
   Label,
   LargeText,
@@ -19,7 +18,7 @@ const MediaFlex = styled.div`
 `;
 
 const Logo = styled.div`
-  background-color: ${theme.colors.white20};
+  background-color: ${(props) => props.theme.colors.white20};
   border-radius: 1rem;
   padding: 0.6rem;
   width: 60%;

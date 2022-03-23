@@ -6,13 +6,12 @@ import { ICard } from '../features/movies/types';
 import ImgWithFallback, { w500ImagesURL } from './ImgWithFallback';
 import styled from '@emotion/styled';
 import { motion } from 'framer-motion';
-import theme from '../styles/theme';
 
 const CardStyled = styled(motion.div)`
   position: relative;
   border-radius: 1rem;
   overflow: hidden;
-  background-color: ${theme.colors.grey900_90};
+  background-color: ${(props) => props.theme.colors.grey900_90};
   width: 100%;
   min-height: 100%;
 `;
@@ -30,19 +29,19 @@ const CardInfo = styled.div`
   overflow: hidden;
 
   p {
-    color: ${theme.colors.grey50};
+    color: ${(props) => props.theme.colors.grey50};
     font-weight: 600;
 
     &:hover {
-      color: ${theme.colors.white100};
+      color: ${(props) => props.theme.colors.white100};
       transition: color 0.3s;
     }
   }
 `;
 
 const RatingStyled = styled.div`
-  color: ${theme.colors.warning400};
-  background-color: ${theme.colors.black75};
+  color: ${(props) => props.theme.colors.warning400};
+  background-color: ${(props) => props.theme.colors.black75};
   border-radius: 0.5rem;
   display: flex;
   flex-direction: row;
@@ -54,7 +53,7 @@ const RatingStyled = styled.div`
   position: absolute;
   padding: 0.25rem 0.5rem;
   p {
-    color: ${theme.colors.warning400};
+    color: ${(props) => props.theme.colors.warning400};
   }
 `;
 

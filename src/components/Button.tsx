@@ -1,6 +1,5 @@
 import styled from '@emotion/styled';
 import { motion } from 'framer-motion';
-import theme from '../styles/theme';
 
 const StyledButton = styled(motion.button)`
   display: flex;
@@ -10,8 +9,8 @@ const StyledButton = styled(motion.button)`
   outline: none;
   border: none;
   border-radius: 1rem;
-  background: ${theme.colors.primary400};
-  color: ${theme.colors.white100};
+  background: ${(props) => props.theme.colors.primary400};
+  color: ${(props) => props.theme.colors.white100};
   padding: 1rem 2rem;
   font-size: 1rem;
   margin-bottom: 0.6rem;

@@ -3,7 +3,6 @@ import React from 'react';
 import * as Unicons from '@iconscout/react-unicons';
 import { IDetails } from '../features/movies/types';
 import styled from '@emotion/styled';
-import theme from '../styles/theme';
 
 export const MediaInfoContainer = styled.div`
   width: 50%;
@@ -15,7 +14,7 @@ export const MediaInfoBlock = styled.div`
   margin-bottom: 2rem;
 
   span {
-    color: ${theme.colors.grey50};
+    color: ${(props) => props.theme.colors.grey50};
     font-size: 1.25rem;
     line-height: 2rem;
     font-weight: 400;
@@ -29,10 +28,10 @@ export const MediaInfoBlock = styled.div`
 `;
 
 export const Label = styled.p`
-  color: ${theme.colors.grey400};
+  color: ${(props) => props.theme.colors.grey400};
 `;
 export const LargeText = styled.p`
-  color: ${theme.colors.grey50};
+  color: ${(props) => props.theme.colors.grey50};
   font-size: 1.25rem;
   line-height: 2rem;
   font-weight: 400;
@@ -45,11 +44,11 @@ export const MediaInfoRating = styled.div`
   align-items: center;
   border-radius: 0.6rem;
   gap: 0.6rem;
-  background-color: ${theme.colors.black65};
-  color: ${theme.colors.warning500};
+  background-color: ${(props) => props.theme.colors.black65};
+  color: ${(props) => props.theme.colors.warning500};
 
   p {
-    color: ${theme.colors.warning500};
+    color: ${(props) => props.theme.colors.warning500};
   }
 `;
 

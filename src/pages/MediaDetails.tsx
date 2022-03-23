@@ -13,7 +13,6 @@ import ImgWithFallback, { w500ImagesURL } from '../components/ImgWithFallback';
 import useInView from '../hooks/useInView';
 import Container from '../components/Container';
 import styled from '@emotion/styled';
-import theme from '../styles/theme';
 
 const MediaBannerWrapper = styled(motion.div)`
   width: 100%;
@@ -39,7 +38,7 @@ const MediaDetailsTitle = styled(motion.div)`
   max-width: 560px;
   margin-top: -4.5rem;
   margin-left: 5rem;
-  background: ${theme.colors.grey900_80};
+  background: ${(props) => props.theme.colors.grey900_80};
   backdrop-filter: blur(24px);
 `;
 
@@ -58,7 +57,7 @@ export const MediaDetailsWrapper = styled(motion.div)`
   }
 `;
 
-function MediaDetails() {
+const MediaDetails = () => {
   const animateElement = useRef(null);
   const inView = useInView(animateElement);
   const animation = useAnimation();
@@ -115,6 +114,6 @@ function MediaDetails() {
       </Container>
     </ScrollToTop>
   );
-}
+};
 
 export default MediaDetails;

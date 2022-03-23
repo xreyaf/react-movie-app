@@ -3,7 +3,6 @@ import React, { ChangeEventHandler } from 'react';
 // @ts-ignore
 import * as Unicons from '@iconscout/react-unicons';
 import styled from '@emotion/styled';
-import theme from '../styles/theme';
 
 const InputStyled = styled.div`
   position: relative;
@@ -15,7 +14,7 @@ const InputStyled = styled.div`
     top: 1.75rem;
     left: 4rem;
     font-size: 1.3rem;
-    color: ${theme.colors.grey600};
+    color: ${(props) => props.theme.colors.grey600};
     cursor: text;
     user-select: none;
     transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -24,19 +23,19 @@ const InputStyled = styled.div`
 
 const InputContent = styled.input`
   background: transparent;
-  background: ${theme.colors.black10};
+  background: ${(props) => props.theme.colors.black10};
   z-index: 3;
   width: 100%;
   height: 5rem;
   padding: 1rem 1.3rem 0.3rem 3.9rem;
   font-size: 1.3rem;
   border-radius: 1rem;
-  color: ${theme.colors.grey400};
-  border: 3px solid ${theme.colors.grey800};
+  color: ${(props) => props.theme.colors.grey400};
+  border: 3px solid ${(props) => props.theme.colors.grey800};
   outline: none;
 
   &:focus {
-    border-color: ${theme.colors.primary500};
+    border-color: ${(props) => props.theme.colors.primary500};
     & + label {
       transform: translateY(-1.2rem);
       font-size: 1rem;
@@ -62,7 +61,7 @@ const IconWrapper = styled.div`
   position: absolute;
   top: 1.8rem;
   left: 1.5rem;
-  color: ${theme.colors.grey600};
+  color: ${(props) => props.theme.colors.grey600};
 `;
 
 const Search = ({
