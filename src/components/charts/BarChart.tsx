@@ -16,7 +16,7 @@ import faker from '@faker-js/faker';
 // @ts-ignore
 import * as Unicons from '@iconscout/react-unicons';
 import theme from '../../styles/theme';
-import { ButtonStyled } from '../styles/Button.styled';
+import Button from '../Button';
 
 ChartJS.register(
   CategoryScale,
@@ -90,17 +90,17 @@ function BarChart() {
   return (
     <>
       <h1>Bar Chart</h1>
-      <ButtonStyled
+      <Button
         onClick={downloadImage}
         whileHover={{
-          y: -3,
           backgroundColor: theme.colors.primary500,
           cursor: 'pointer',
         }}
+        whileTap={{ scale: 0.9, y: 3 }}
       >
         <Unicons.UilImageDownload size={16} />
         Download
-      </ButtonStyled>
+      </Button>
       <br />
       <br />
       <Bar ref={ref} options={options} data={data} />

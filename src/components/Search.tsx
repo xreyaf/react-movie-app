@@ -1,7 +1,11 @@
-import styled from '@emotion/styled';
-import theme from '../../styles/theme';
+import React, { ChangeEventHandler } from 'react';
 
-export const InputStyled = styled.div`
+// @ts-ignore
+import * as Unicons from '@iconscout/react-unicons';
+import styled from '@emotion/styled';
+import theme from '../styles/theme';
+
+const InputStyled = styled.div`
   position: relative;
   border-radius: 1rem;
   margin-bottom: 3rem;
@@ -18,7 +22,7 @@ export const InputStyled = styled.div`
   }
 `;
 
-export const InputContent = styled.input`
+const InputContent = styled.input`
   background: transparent;
   background: ${theme.colors.black10};
   z-index: 3;
@@ -53,10 +57,34 @@ export const InputContent = styled.input`
   }
 `;
 
-export const IconWrapper = styled.div`
+const IconWrapper = styled.div`
   display: inline-block;
   position: absolute;
   top: 1.8rem;
   left: 1.5rem;
   color: ${theme.colors.grey600};
 `;
+
+const Search = ({
+  onChange,
+}: {
+  onChange: ChangeEventHandler<HTMLInputElement>;
+}) => {
+  return (
+    <InputStyled>
+      <IconWrapper>
+        <Unicons.UilSearch size={24} />
+      </IconWrapper>
+      <InputContent
+        name="search"
+        id="search"
+        type="text"
+        placeholder="eg. Spider-Man"
+        onChange={onChange}
+      />
+      <label htmlFor="search">Search movies or TV series</label>
+    </InputStyled>
+  );
+};
+
+export default Search;

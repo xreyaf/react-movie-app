@@ -1,17 +1,17 @@
 import React from 'react';
 // @ts-ignore
 import * as Unicons from '@iconscout/react-unicons';
-import { ContainerStyled } from '../components/styles/Container.styled';
 import BarChart from '../components/charts/BarChart';
 import DoughnutChart from '../components/charts/DoughnutChart';
 import Player from '../components/Player';
 import useNetworkState from '../hooks/useNetworkState';
 import theme from '../styles/theme';
+import Container from '../components/Container';
 
 const Chart = () => {
   const isOnline = useNetworkState();
   return (
-    <ContainerStyled>
+    <Container>
       <BarChart />
       <br />
       <DoughnutChart />
@@ -24,7 +24,7 @@ const Chart = () => {
       ) : (
         <Unicons.UilCloudTimes color={theme.colors.error500} />
       )}
-    </ContainerStyled>
+    </Container>
   );
 };
 

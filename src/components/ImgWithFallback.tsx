@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styled from '@emotion/styled';
-import { motion } from 'framer-motion';
 import placeholder from '../assets/img/placeholder.png';
 import placeholderBack from '../assets/img/placeholderBack.png';
 
@@ -34,4 +33,4 @@ const ImgWithFallback = ({
   );
 };
 
-export default motion(ImgWithFallback);
+export default ImgWithFallback;

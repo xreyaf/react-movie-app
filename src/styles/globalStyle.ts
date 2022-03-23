@@ -24,7 +24,6 @@ export const GlobalStyle = css`
     font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI',
       Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
       sans-serif;
-    background-color: ${theme.colors.grey900};
     background-image: url(${back});
     background-size: 100%;
     background-position: 50% -160px;

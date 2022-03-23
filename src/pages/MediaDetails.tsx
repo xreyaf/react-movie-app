@@ -2,14 +2,7 @@ import React, { useEffect, useRef } from 'react';
 // @ts-ignore
 import * as Unicons from '@iconscout/react-unicons';
 import { useParams } from 'react-router-dom';
-import { useAnimation } from 'framer-motion';
-import { ContainerStyled } from '../components/styles/Container.styled';
-import {
-  MediaBannerWrapper,
-  MediaDetailsTitle,
-  MediaDetailsWrapper,
-  PosterStyled,
-} from '../components/styles/MediaDetails.styled';
+import { motion, useAnimation } from 'framer-motion';
 import { useGetDetailsQuery } from '../features/movies/TMDBApi';
 import MediaBlockInfoMovie from '../components/MediaBlockInfoMovie';
 import MediaBlockInfoTV from '../components/MediaBlockInfoTV';
@@ -18,6 +11,52 @@ import MediaBanner from '../components/MediaBanner';
 import Spinner from '../components/Spinner';
 import ImgWithFallback, { w500ImagesURL } from '../components/ImgWithFallback';
 import useInView from '../hooks/useInView';
+import Container from '../components/Container';
+import styled from '@emotion/styled';
+import theme from '../styles/theme';
+
+const MediaBannerWrapper = styled(motion.div)`
+  width: 100%;
+  height: auto;
+  border-radius: 2rem;
+  overflow: hidden;
+  z-index: 1;
+`;
+const PosterStyled = styled.div`
+  width: 50%;
+  height: 720px;
+  border-radius: 3rem;
+  overflow: hidden;
+  z-index: 1;
+`;
+
+const MediaDetailsTitle = styled(motion.div)`
+  position: relative;
+  z-index: 2;
+  padding: 40px;
+  border-radius: 2rem;
+  width: 100%;
+  max-width: 560px;
+  margin-top: -4.5rem;
+  margin-left: 5rem;
+  background: ${theme.colors.grey900_80};
+  backdrop-filter: blur(24px);
+`;
+
+export const MediaDetailsWrapper = styled(motion.div)`
+  margin: 5rem;
+  display: flex;
+
+  @media screen and (max-width: 1199.98px) {
+    margin: 5rem 2rem;
+  }
+  @media screen and (max-width: 816.98px) {
+    margin: 5rem 0;
+  }
+  @media screen and (max-width: 575.98px) {
+    margin: 5rem 0;
+  }
+`;
 
 function MediaDetails() {
   const animateElement = useRef(null);
@@ -46,7 +85,7 @@ function MediaDetails() {
         style={{ position: 'absolute', height: '5px' }}
         ref={animateElement}
       />
-      <ContainerStyled>
+      <Container>
         {isLoading && <Spinner />}
         {error && <h3>Some error occurred...</h3>}
         {details && (
@@ -73,7 +112,7 @@ function MediaDetails() {
             </MediaDetailsWrapper>
           </>
         )}
-      </ContainerStyled>
+      </Container>
     </ScrollToTop>
   );
 }

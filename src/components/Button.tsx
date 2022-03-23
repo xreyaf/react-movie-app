@@ -1,8 +1,8 @@
 import styled from '@emotion/styled';
-import theme from '../../styles/theme';
 import { motion } from 'framer-motion';
+import theme from '../styles/theme';
 
-export const ButtonStyled = styled(motion.button)`
+const StyledButton = styled(motion.button)`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,3 +19,9 @@ export const ButtonStyled = styled(motion.button)`
     align-self: baseline;
   }
 `;
+
+const Button = (props: any) => {
+  return <StyledButton {...props} />;
+};
+
+export default Button;

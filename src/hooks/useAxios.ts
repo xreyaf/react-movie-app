@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, SetStateAction } from 'react';
 import axios, { AxiosError, AxiosRequestConfig } from 'axios';
 
 const useAxios = <T>(axiosParams: AxiosRequestConfig) => {
@@ -10,7 +10,7 @@ const useAxios = <T>(axiosParams: AxiosRequestConfig) => {
     try {
       const result = await axios.request(params);
       setResponse(result.data);
-    } catch (err) {
+    } catch (err: SetStateAction<any> | undefined) {
       setError(err);
     } finally {
       setLoading(false);

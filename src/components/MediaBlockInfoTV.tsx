@@ -1,18 +1,29 @@
 import React from 'react';
 // @ts-ignore
 import * as Unicons from '@iconscout/react-unicons';
+import { IDetails } from '../features/movies/types';
+import { w500ImagesURL } from './ImgWithFallback';
+import styled from '@emotion/styled';
+import theme from '../styles/theme';
 import {
+  Label,
+  LargeText,
   MediaInfoBlock,
   MediaInfoContainer,
   MediaInfoRating,
-  MediaFlex,
-  Label,
-  LargeText,
-  Logo,
-} from './styles/MediaDetails.styled';
-import { IDetails } from '../features/movies/types';
+} from './MediaBlockInfoMovie';
 
-import { w500ImagesURL } from './ImgWithFallback';
+const MediaFlex = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
+const Logo = styled.div`
+  background-color: ${theme.colors.white20};
+  border-radius: 1rem;
+  padding: 0.6rem;
+  width: 60%;
+`;
 
 function MediaBlockInfoTV(details: IDetails) {
   return (

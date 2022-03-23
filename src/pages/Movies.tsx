@@ -1,29 +1,29 @@
 import React from 'react';
-import { ContainerStyled } from '../components/styles/Container.styled';
-import { GridStyled } from '../components/styles/Grid.styled';
 import Card from '../components/Card';
 import { useGetPopularQuery } from '../features/movies/TMDBApi';
 import Spinner from '../components/Spinner';
+import Grid from '../components/Grid';
+import Container from '../components/Container';
 
 function Movies() {
   const type = 'movie';
   const { data, isLoading, error } = useGetPopularQuery(type);
   return (
-    <ContainerStyled>
+    <Container>
       {isLoading && <Spinner />}
       {error && <h1>Some error occurred...</h1>}
       {data && (
         <>
           <h1>Popular movies</h1>
           <br />
-          <GridStyled>
+          <Grid>
             {data &&
               data.length &&
               data.map((movie) => <Card type={type} item={movie} />)}
-          </GridStyled>
+          </Grid>
         </>
       )}
-    </ContainerStyled>
+    </Container>
   );
 }
 
