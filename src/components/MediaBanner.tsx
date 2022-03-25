@@ -1,6 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import 'swiper/css/virtual';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 

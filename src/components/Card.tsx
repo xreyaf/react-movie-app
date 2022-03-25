@@ -11,7 +11,7 @@ const CardStyled = styled(motion.div)`
   position: relative;
   border-radius: 1rem;
   overflow: hidden;
-  background-color: ${(props) => props.theme.colors.grey900_90};
+  background-color: ${({ theme }) => theme.colors.grey900_90};
   width: 100%;
   min-height: 100%;
 `;
@@ -29,19 +29,19 @@ const CardInfo = styled.div`
   overflow: hidden;
 
   p {
-    color: ${(props) => props.theme.colors.grey50};
+    color: ${({ theme }) => theme.colors.grey50};
     font-weight: 600;
 
     &:hover {
-      color: ${(props) => props.theme.colors.white100};
+      color: ${({ theme }) => theme.colors.white100};
       transition: color 0.3s;
     }
   }
 `;
 
 const RatingStyled = styled.div`
-  color: ${(props) => props.theme.colors.warning400};
-  background-color: ${(props) => props.theme.colors.black75};
+  color: ${({ theme }) => theme.colors.warning400};
+  background-color: ${({ theme }) => theme.colors.black75};
   border-radius: 0.5rem;
   display: flex;
   flex-direction: row;
@@ -53,7 +53,7 @@ const RatingStyled = styled.div`
   position: absolute;
   padding: 0.25rem 0.5rem;
   p {
-    color: ${(props) => props.theme.colors.warning400};
+    color: ${({ theme }) => theme.colors.warning400};
   }
 `;
 

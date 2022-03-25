@@ -1,13 +1,13 @@
 import React, { ChangeEvent, useCallback, useState } from 'react';
+// @ts-ignore
+import * as Unicons from '@iconscout/react-unicons';
 import Card from '../components/Card';
 import {
   useGetTrendingQuery,
   useSearchMediaQuery,
 } from '../features/movies/TMDBApi';
-
 import debounce from 'lodash/debounce';
-// @ts-ignore
-import * as Unicons from '@iconscout/react-unicons';
+
 import Spinner from '../components/Spinner';
 import Search from '../components/Search';
 import Grid from '../components/Grid';
@@ -47,7 +47,11 @@ const Home = () => {
   return (
     <Container>
       <h1>Trending now</h1>
-      <Search onChange={onChangeInput} />
+      <Search
+        onChange={onChangeInput}
+        placeholder="eg. Spider-Man"
+        label="Search movies or TV series"
+      />
       {isLoadingTrending && isLoadingSearch && <Spinner />}
       {errorTrending && errorSearch && <h1>Some error occurred...</h1>}
       {data && data.length != 0 ? (

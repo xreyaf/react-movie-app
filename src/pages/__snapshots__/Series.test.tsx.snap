@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it works 1`] = `
+.emotion-0 {
+  width: 100%;
+  max-width: 1440px;
+  padding: 1rem 5rem;
+  margin: 0 auto 2rem auto;
+  height: 100%;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .emotion-0 {
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .emotion-0 {
+    padding: 1rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 816.98px) {
+  .emotion-0 {
+    padding: 1rem 1.2rem;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .emotion-0 {
+    padding: 1rem 1rem;
+  }
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  padding: 3rem 0;
+}
+
+<div
+  class="emotion-0"
+>
+  <div
+    class="emotion-1"
+  >
+    <div
+      class="flapper__Wrapper-kzbmuk-0 jYJyDw"
+      size="78"
+    >
+      <div
+        class="flapper__Ball-kzbmuk-1 gTEOpN"
+        color="hsla(246, 88.5%, 62.4%, 1)"
+        size="78"
+        x="-26"
+        y="13"
+      />
+      <div
+        class="flapper__Ball-kzbmuk-1 cCTXgQ"
+        color="hsla(246, 88.5%, 62.4%, 1)"
+        size="78"
+        x="4.491427816253161"
+        y="-1.6838977275093896"
+      />
+      <div
+        class="flapper__Ball-kzbmuk-1 lEfGR"
+        color="hsla(246, 88.5%, 62.4%, 1)"
+        size="78"
+        x="12.022188575091121"
+        y="-34.678316424296256"
+      />
+      <div
+        class="flapper__Ball-kzbmuk-1 bgGXxN"
+        color="hsla(246, 88.5%, 62.4%, 1)"
+        size="78"
+        x="-9.078534174415228"
+        y="-61.13778584819434"
+      />
+      <div
+        class="flapper__Ball-kzbmuk-1 imBqUM"
+        color="hsla(246, 88.5%, 62.4%, 1)"
+        size="78"
+        x="-42.92146582558476"
+        y="-61.13778584819435"
+      />
+      <div
+        class="flapper__Ball-kzbmuk-1 eMxqxJ"
+        color="hsla(246, 88.5%, 62.4%, 1)"
+        size="78"
+        x="-64.02218857509112"
+        y="-34.678316424296234"
+      />
+      <div
+        class="flapper__Ball-kzbmuk-1 eyqkaq"
+        color="hsla(246, 88.5%, 62.4%, 1)"
+        size="78"
+        x="-56.491427816253164"
+        y="-1.6838977275093967"
+      />
+    </div>
+  </div>
+</div>
+`;

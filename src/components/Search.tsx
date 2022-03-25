@@ -4,7 +4,7 @@ import React, { ChangeEventHandler } from 'react';
 import * as Unicons from '@iconscout/react-unicons';
 import styled from '@emotion/styled';
 
-const InputStyled = styled.div`
+const InputWrapper = styled.div`
   position: relative;
   border-radius: 1rem;
   margin-bottom: 3rem;
@@ -21,7 +21,7 @@ const InputStyled = styled.div`
   }
 `;
 
-const InputContent = styled.input`
+const StyledInput = styled.input`
   background: transparent;
   background: ${(props) => props.theme.colors.black10};
   z-index: 3;
@@ -35,7 +35,7 @@ const InputContent = styled.input`
   outline: none;
 
   &:focus {
-    border-color: ${(props) => props.theme.colors.primary500};
+    border: 3px solid ${(props) => props.theme.colors.primary500};
     & + label {
       transform: translateY(-1.2rem);
       font-size: 1rem;
@@ -66,23 +66,27 @@ const IconWrapper = styled.div`
 
 const Search = ({
   onChange,
+  label,
+  placeholder,
 }: {
   onChange: ChangeEventHandler<HTMLInputElement>;
+  label: string;
+  placeholder: string;
 }) => {
   return (
-    <InputStyled>
+    <InputWrapper>
       <IconWrapper>
         <Unicons.UilSearch size={24} />
       </IconWrapper>
-      <InputContent
+      <StyledInput
         name="search"
         id="search"
         type="text"
-        placeholder="eg. Spider-Man"
+        placeholder={placeholder}
         onChange={onChange}
       />
-      <label htmlFor="search">Search movies or TV series</label>
-    </InputStyled>
+      <label htmlFor="search">{label}</label>
+    </InputWrapper>
   );
 };
 
