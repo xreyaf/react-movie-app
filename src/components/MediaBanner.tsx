@@ -1,14 +1,14 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Keyboard, Lazy, Navigation } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-
 import {
   useGetBackdropQuery,
   useGetVideosQuery,
 } from '../features/movies/TMDBApi';
 import React, { useEffect, useState } from 'react';
-import { Keyboard, Lazy, Navigation } from 'swiper';
+
 import YoutubeEmbed from './YoutubeEmbed';
 import ImgWithFallback, { w1280ImagesURL } from './ImgWithFallback';
 import { ISliderData } from '../features/movies/types';

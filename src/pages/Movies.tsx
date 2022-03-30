@@ -19,7 +19,9 @@ function Movies() {
           <Grid>
             {data &&
               data.length &&
-              data.map((movie) => <Card type={type} item={movie} />)}
+              data.map((movie, index) => (
+                <Card key={index} type={type} item={movie} />
+              ))}
           </Grid>
         </>
       )}

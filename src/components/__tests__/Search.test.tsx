@@ -1,16 +1,20 @@
 import { render, screen } from '@testing-library/react';
-import Search from './Search';
-import { theme } from '../styles/theme';
 import { ThemeProvider } from '@emotion/react';
 import userEvent from '@testing-library/user-event';
 import { matchers } from '@emotion/jest';
+import { theme } from '../../styles/theme';
+import Search from '../Search';
+import toJson from 'enzyme-to-json';
+import { mount } from 'enzyme';
+import { createSerializer } from '@emotion/jest';
 
 expect.extend(matchers);
 const onChange = jest.fn();
+expect.addSnapshotSerializer(createSerializer());
 
 describe('Search component', () => {
   it('renders Search', () => {
-    const { container } = render(
+    const container = mount(
       <ThemeProvider theme={theme}>
         <Search
           onChange={onChange}
@@ -19,7 +23,8 @@ describe('Search component', () => {
         />
       </ThemeProvider>
     );
-    expect(container.firstChild).toMatchSnapshot();
+
+    expect(toJson(container)).toMatchSnapshot();
   });
   it('should implement onChange', () => {
     render(

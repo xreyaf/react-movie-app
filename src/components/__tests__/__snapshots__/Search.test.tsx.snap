@@ -1,0 +1,1070 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search component renders Search 1`] = `
+.emotion-0 {
+  position: relative;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+}
+
+.emotion-0 label {
+  position: absolute;
+  top: 1.75rem;
+  left: 4rem;
+  font-size: 1.3rem;
+  color: hsla(224, 19.3%, 34.5%, 1);
+  cursor: text;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.emotion-1 {
+  display: inline-block;
+  position: absolute;
+  top: 1.8rem;
+  left: 1.5rem;
+  color: hsla(224, 19.3%, 34.5%, 1);
+}
+
+.emotion-2 {
+  background: transparent;
+  background: hsla(0, 0%, 0%, 0.1);
+  z-index: 3;
+  width: 100%;
+  height: 5rem;
+  padding: 1rem 1.3rem 0.3rem 3.9rem;
+  font-size: 1.3rem;
+  border-radius: 1rem;
+  color: hsla(224, 12.3%, 52.2%, 1);
+  border: 3px solid hsla(224, 31.9%, 18.4%, 1);
+  outline: none;
+}
+
+.emotion-2:focus {
+  border: 3px solid hsla(246, 88.5%, 62.4%, 1);
+}
+
+.emotion-2:focus+label {
+  -webkit-transform: translateY(-1.2rem);
+  -moz-transform: translateY(-1.2rem);
+  -ms-transform: translateY(-1.2rem);
+  transform: translateY(-1.2rem);
+  font-size: 1rem;
+}
+
+.emotion-2:focus::-webkit-input-placeholder {
+  opacity: 0.5;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.emotion-2:focus::-moz-placeholder {
+  opacity: 0.5;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.emotion-2:focus:-ms-input-placeholder {
+  opacity: 0.5;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.emotion-2:focus::placeholder {
+  opacity: 0.5;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.emotion-2::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.emotion-2::-moz-placeholder {
+  opacity: 0;
+}
+
+.emotion-2:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.emotion-2::placeholder {
+  opacity: 0;
+}
+
+.emotion-2:not(:placeholder-shown)+label {
+  -webkit-transform: translateY(-1.2rem);
+  -moz-transform: translateY(-1.2rem);
+  -ms-transform: translateY(-1.2rem);
+  transform: translateY(-1.2rem);
+  font-size: 1rem;
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "colors": Object {
+        "black10": "hsla(0, 0%, 0%, 0.1)",
+        "black100": "hsla(0, 0%, 0%, 1)",
+        "black20": "hsla(0, 0%, 0%, 0.2)",
+        "black30": "hsla(0, 0%, 0%, 0.3)",
+        "black40": "hsla(0, 0%, 0%, 0.4)",
+        "black50": "hsla(0, 0%, 0%, 0.5)",
+        "black65": "hsla(0, 0%, 0%, 0.65)",
+        "black75": "hsla(0, 0%, 0%, 0.75)",
+        "error100": "hsla(0, 100%, 93.7%, 1)",
+        "error200": "hsla(0, 100%, 87.6%, 1)",
+        "error300": "hsla(0, 100%, 81.4%, 1)",
+        "error400": "hsla(0, 100%, 75.3%, 1)",
+        "error50": "hsla(0, 100%, 96.3%, 1)",
+        "error500": "hsla(0, 100%, 69%, 1)",
+        "error600": "hsla(0, 55.3%, 55.3%, 1)",
+        "error700": "hsla(0, 45%, 41.4%, 1)",
+        "error800": "hsla(0, 44.7%, 27.6%, 1)",
+        "error900": "hsla(0, 45.7%, 13.7%, 1)",
+        "grey100": "hsla(222, 16.5%, 79.8%, 1)",
+        "grey200": "hsla(224, 15.2%, 70.4%, 1)",
+        "grey300": "hsla(224, 13.6%, 61%, 1)",
+        "grey400": "hsla(224, 12.3%, 52.2%, 1)",
+        "grey50": "hsla(222, 33.3%, 94.1%, 1)",
+        "grey500": "hsla(224, 13.4%, 43.9%, 1)",
+        "grey600": "hsla(224, 19.3%, 34.5%, 1)",
+        "grey700": "hsla(224, 25.4%, 26.3%, 1)",
+        "grey800": "hsla(224, 31.9%, 18.4%, 1)",
+        "grey800_05": "hsla(224, 31.9%, 18.4%, 0.05)",
+        "grey800_80": "hsla(224, 31.9%, 18.4%, 0.8)",
+        "grey800_98": "hsla(224, 31.9%, 18.4%, 0.98)",
+        "grey900": "hsla(224, 39%, 11.6%, 1)",
+        "grey900_20": "hsla(224, 39%, 11.6%, 0.2)",
+        "grey900_40": "hsla(224, 39%, 11.6%, 0.4)",
+        "grey900_80": "hsla(224, 39%, 11.6%, 0.8)",
+        "grey900_90": "hsla(224, 39%, 11.6%, 0.9)",
+        "grey900_98": "hsla(224, 39%, 11.6%, 0.98)",
+        "primary100": "hsla(245, 89.5%, 92.5%, 1)",
+        "primary200": "hsla(246, 89.5%, 85.1%, 1)",
+        "primary300": "hsla(246, 87.9%, 77.3%, 1)",
+        "primary400": "hsla(246, 88.3%, 69.8%, 1)",
+        "primary50": "hsla(246, 91.3%, 95.5%, 1)",
+        "primary500": "hsla(246, 88.5%, 62.4%, 1)",
+        "primary500_10": "hsla(246, 88.5%, 62.4%, 0.1)",
+        "primary600": "hsla(246, 53.5%, 49.8%, 1)",
+        "primary700": "hsla(246, 53.7%, 37.3%, 1)",
+        "primary800": "hsla(246, 53.1%, 25.1%, 1)",
+        "primary900": "hsla(245, 53.1%, 12.5%, 1)",
+        "secondary100": "hsla(205, 95.7%, 91%, 1)",
+        "secondary200": "hsla(204, 97.8%, 82.2%, 1)",
+        "secondary300": "hsla(204, 97.1%, 73.1%, 1)",
+        "secondary400": "hsla(204, 97.8%, 64.3%, 1)",
+        "secondary50": "hsla(204, 100%, 94.7%, 1)",
+        "secondary500": "hsla(204, 97.4%, 55.3%, 1)",
+        "secondary600": "hsla(204, 78.8%, 44.3%, 1)",
+        "secondary700": "hsla(204, 78.7%, 33.1%, 1)",
+        "secondary800": "hsla(204, 78.8%, 22.2%, 1)",
+        "secondary900": "hsla(205, 78.6%, 11%, 1)",
+        "success100": "hsla(162, 66.7%, 88.2%, 1)",
+        "success200": "hsla(162, 66.7%, 76.5%, 1)",
+        "success300": "hsla(162, 67.6%, 64.9%, 1)",
+        "success400": "hsla(162, 67.4%, 53.1%, 1)",
+        "success50": "hsla(162, 66.7%, 92.9%, 1)",
+        "success500": "hsla(162, 95.3%, 41.4%, 1)",
+        "success600": "hsla(162, 95.3%, 33.1%, 1)",
+        "success700": "hsla(162, 95.3%, 24.9%, 1)",
+        "success800": "hsla(162, 95.2%, 16.5%, 1)",
+        "success900": "hsla(162, 95.2%, 8.2%, 1)",
+        "tertary100": "hsla(269, 100%, 94.3%, 1)",
+        "tertary200": "hsla(270, 100%, 88.6%, 1)",
+        "tertary300": "hsla(270, 100%, 82.7%, 1)",
+        "tertary400": "hsla(270, 100%, 77.1%, 1)",
+        "tertary50": "hsla(270, 100%, 96.5%, 1)",
+        "tertary500": "hsla(270, 100%, 71.4%, 1)",
+        "tertary600": "hsla(270, 53.4%, 57.1%, 1)",
+        "tertary700": "hsla(270, 40.4%, 42.7%, 1)",
+        "tertary800": "hsla(270, 39.7%, 28.6%, 1)",
+        "tertary900": "hsla(269, 39.7%, 14.3%, 1)",
+        "warning100": "hsla(33, 100%, 92.9%, 1)",
+        "warning200": "hsla(33, 100%, 85.7%, 1)",
+        "warning300": "hsla(33, 100%, 78.6%, 1)",
+        "warning400": "hsla(33, 100%, 71.4%, 1)",
+        "warning50": "hsla(33, 100%, 95.7%, 1)",
+        "warning500": "hsla(33, 100%, 64.3%, 1)",
+        "warning600": "hsla(33, 58.9%, 51.4%, 1)",
+        "warning700": "hsla(33, 55.3%, 38.6%, 1)",
+        "warning800": "hsla(33, 55.7%, 25.7%, 1)",
+        "warning900": "hsla(33, 54.5%, 12.9%, 1)",
+        "white10": "hsla(0, 0%, 100%, 0.1)",
+        "white100": "hsla(0, 0%, 100%, 1)",
+        "white20": "hsla(0, 0%, 100%, 0.2)",
+        "white30": "hsla(0, 0%, 100%, 0.3)",
+        "white40": "hsla(0, 0%, 100%, 0.4)",
+        "white50": "hsla(0, 0%, 100%, 0.5)",
+        "white65": "hsla(0, 0%, 100%, 0.65)",
+        "white75": "hsla(0, 0%, 100%, 0.75)",
+      },
+    }
+  }
+>
+  <Search
+    label="Search movies or TV series"
+    onChange={[MockFunction]}
+    placeholder="placeholder"
+  >
+    <Styled(div)>
+      <Insertion
+        cache={
+          Object {
+            "insert": [Function],
+            "inserted": Object {
+              "14cl6lm": true,
+              "1u0qsml": true,
+              "qz20b2": true,
+            },
+            "key": "css",
+            "nonce": undefined,
+            "registered": Object {},
+            "sheet": StyleSheet {
+              "_alreadyInsertedOrderInsensitiveRule": true,
+              "_insertTag": [Function],
+              "before": null,
+              "container": <head>
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .emotion-0{position:relative;border-radius:1rem;margin-bottom:3rem;}
+                </style>
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .emotion-0 label{position:absolute;top:1.75rem;left:4rem;font-size:1.3rem;color:hsla(224, 19.3%, 34.5%, 1);cursor:text;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-transition:all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);transition:all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);}
+                </style>
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .emotion-1{display:inline-block;position:absolute;top:1.8rem;left:1.5rem;color:hsla(224, 19.3%, 34.5%, 1);}
+                </style>
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .emotion-2{background:transparent;background:hsla(0, 0%, 0%, 0.1);z-index:3;width:100%;height:5rem;padding:1rem 1.3rem 0.3rem 3.9rem;font-size:1.3rem;border-radius:1rem;color:hsla(224, 12.3%, 52.2%, 1);border:3px solid hsla(224, 31.9%, 18.4%, 1);outline:none;}
+                </style>
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .emotion-2:focus{border:3px solid hsla(246, 88.5%, 62.4%, 1);}
+                </style>
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .emotion-2:focus+label{-webkit-transform:translateY(-1.2rem);-moz-transform:translateY(-1.2rem);-ms-transform:translateY(-1.2rem);transform:translateY(-1.2rem);font-size:1rem;}
+                </style>
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .emotion-2:focus::-webkit-input-placeholder{opacity:0.5;-webkit-transition:all 0.2s;transition:all 0.2s;}
+                </style>
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .emotion-2:focus::-moz-placeholder{opacity:0.5;-webkit-transition:all 0.2s;transition:all 0.2s;}
+                </style>
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .emotion-2:focus:-ms-input-placeholder{opacity:0.5;-webkit-transition:all 0.2s;transition:all 0.2s;}
+                </style>
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .emotion-2:focus::placeholder{opacity:0.5;-webkit-transition:all 0.2s;transition:all 0.2s;}
+                </style>
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .emotion-2::-webkit-input-placeholder{opacity:0;}
+                </style>
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .emotion-2::-moz-placeholder{opacity:0;}
+                </style>
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .emotion-2:-ms-input-placeholder{opacity:0;}
+                </style>
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .emotion-2::placeholder{opacity:0;}
+                </style>
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .emotion-2:not(:placeholder-shown)+label{-webkit-transform:translateY(-1.2rem);-moz-transform:translateY(-1.2rem);-ms-transform:translateY(-1.2rem);transform:translateY(-1.2rem);font-size:1rem;}
+                </style>
+              </head>,
+              "ctr": 15,
+              "insertionPoint": undefined,
+              "isSpeedy": false,
+              "key": "css",
+              "nonce": undefined,
+              "prepend": undefined,
+              "tags": Array [
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .emotion-0{position:relative;border-radius:1rem;margin-bottom:3rem;}
+                </style>,
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .emotion-0 label{position:absolute;top:1.75rem;left:4rem;font-size:1.3rem;color:hsla(224, 19.3%, 34.5%, 1);cursor:text;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-transition:all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);transition:all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);}
+                </style>,
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .emotion-1{display:inline-block;position:absolute;top:1.8rem;left:1.5rem;color:hsla(224, 19.3%, 34.5%, 1);}
+                </style>,
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .emotion-2{background:transparent;background:hsla(0, 0%, 0%, 0.1);z-index:3;width:100%;height:5rem;padding:1rem 1.3rem 0.3rem 3.9rem;font-size:1.3rem;border-radius:1rem;color:hsla(224, 12.3%, 52.2%, 1);border:3px solid hsla(224, 31.9%, 18.4%, 1);outline:none;}
+                </style>,
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .emotion-2:focus{border:3px solid hsla(246, 88.5%, 62.4%, 1);}
+                </style>,
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .emotion-2:focus+label{-webkit-transform:translateY(-1.2rem);-moz-transform:translateY(-1.2rem);-ms-transform:translateY(-1.2rem);transform:translateY(-1.2rem);font-size:1rem;}
+                </style>,
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .emotion-2:focus::-webkit-input-placeholder{opacity:0.5;-webkit-transition:all 0.2s;transition:all 0.2s;}
+                </style>,
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .emotion-2:focus::-moz-placeholder{opacity:0.5;-webkit-transition:all 0.2s;transition:all 0.2s;}
+                </style>,
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .emotion-2:focus:-ms-input-placeholder{opacity:0.5;-webkit-transition:all 0.2s;transition:all 0.2s;}
+                </style>,
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .emotion-2:focus::placeholder{opacity:0.5;-webkit-transition:all 0.2s;transition:all 0.2s;}
+                </style>,
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .emotion-2::-webkit-input-placeholder{opacity:0;}
+                </style>,
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .emotion-2::-moz-placeholder{opacity:0;}
+                </style>,
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .emotion-2:-ms-input-placeholder{opacity:0;}
+                </style>,
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .emotion-2::placeholder{opacity:0;}
+                </style>,
+                <style
+                  data-emotion="css"
+                  data-s=""
+                >
+                  
+                  .emotion-2:not(:placeholder-shown)+label{-webkit-transform:translateY(-1.2rem);-moz-transform:translateY(-1.2rem);-ms-transform:translateY(-1.2rem);transform:translateY(-1.2rem);font-size:1rem;}
+                </style>,
+              ],
+            },
+          }
+        }
+        isStringTag={true}
+        serialized={
+          Object {
+            "map": undefined,
+            "name": "14cl6lm",
+            "next": undefined,
+            "styles": "
+  position: relative;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+
+  label {
+    position: absolute;
+    top: 1.75rem;
+    left: 4rem;
+    font-size: 1.3rem;
+    color: hsla(224, 19.3%, 34.5%, 1);
+    cursor: text;
+    user-select: none;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+",
+            "toString": [Function],
+          }
+        }
+      />
+      <div
+        className="emotion-0"
+      >
+        <Styled(div)>
+          <Insertion
+            cache={
+              Object {
+                "insert": [Function],
+                "inserted": Object {
+                  "14cl6lm": true,
+                  "1u0qsml": true,
+                  "qz20b2": true,
+                },
+                "key": "css",
+                "nonce": undefined,
+                "registered": Object {},
+                "sheet": StyleSheet {
+                  "_alreadyInsertedOrderInsensitiveRule": true,
+                  "_insertTag": [Function],
+                  "before": null,
+                  "container": <head>
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-0{position:relative;border-radius:1rem;margin-bottom:3rem;}
+                    </style>
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-0 label{position:absolute;top:1.75rem;left:4rem;font-size:1.3rem;color:hsla(224, 19.3%, 34.5%, 1);cursor:text;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-transition:all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);transition:all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);}
+                    </style>
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-1{display:inline-block;position:absolute;top:1.8rem;left:1.5rem;color:hsla(224, 19.3%, 34.5%, 1);}
+                    </style>
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2{background:transparent;background:hsla(0, 0%, 0%, 0.1);z-index:3;width:100%;height:5rem;padding:1rem 1.3rem 0.3rem 3.9rem;font-size:1.3rem;border-radius:1rem;color:hsla(224, 12.3%, 52.2%, 1);border:3px solid hsla(224, 31.9%, 18.4%, 1);outline:none;}
+                    </style>
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2:focus{border:3px solid hsla(246, 88.5%, 62.4%, 1);}
+                    </style>
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2:focus+label{-webkit-transform:translateY(-1.2rem);-moz-transform:translateY(-1.2rem);-ms-transform:translateY(-1.2rem);transform:translateY(-1.2rem);font-size:1rem;}
+                    </style>
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2:focus::-webkit-input-placeholder{opacity:0.5;-webkit-transition:all 0.2s;transition:all 0.2s;}
+                    </style>
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2:focus::-moz-placeholder{opacity:0.5;-webkit-transition:all 0.2s;transition:all 0.2s;}
+                    </style>
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2:focus:-ms-input-placeholder{opacity:0.5;-webkit-transition:all 0.2s;transition:all 0.2s;}
+                    </style>
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2:focus::placeholder{opacity:0.5;-webkit-transition:all 0.2s;transition:all 0.2s;}
+                    </style>
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2::-webkit-input-placeholder{opacity:0;}
+                    </style>
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2::-moz-placeholder{opacity:0;}
+                    </style>
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2:-ms-input-placeholder{opacity:0;}
+                    </style>
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2::placeholder{opacity:0;}
+                    </style>
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2:not(:placeholder-shown)+label{-webkit-transform:translateY(-1.2rem);-moz-transform:translateY(-1.2rem);-ms-transform:translateY(-1.2rem);transform:translateY(-1.2rem);font-size:1rem;}
+                    </style>
+                  </head>,
+                  "ctr": 15,
+                  "insertionPoint": undefined,
+                  "isSpeedy": false,
+                  "key": "css",
+                  "nonce": undefined,
+                  "prepend": undefined,
+                  "tags": Array [
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-0{position:relative;border-radius:1rem;margin-bottom:3rem;}
+                    </style>,
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-0 label{position:absolute;top:1.75rem;left:4rem;font-size:1.3rem;color:hsla(224, 19.3%, 34.5%, 1);cursor:text;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-transition:all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);transition:all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);}
+                    </style>,
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-1{display:inline-block;position:absolute;top:1.8rem;left:1.5rem;color:hsla(224, 19.3%, 34.5%, 1);}
+                    </style>,
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2{background:transparent;background:hsla(0, 0%, 0%, 0.1);z-index:3;width:100%;height:5rem;padding:1rem 1.3rem 0.3rem 3.9rem;font-size:1.3rem;border-radius:1rem;color:hsla(224, 12.3%, 52.2%, 1);border:3px solid hsla(224, 31.9%, 18.4%, 1);outline:none;}
+                    </style>,
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2:focus{border:3px solid hsla(246, 88.5%, 62.4%, 1);}
+                    </style>,
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2:focus+label{-webkit-transform:translateY(-1.2rem);-moz-transform:translateY(-1.2rem);-ms-transform:translateY(-1.2rem);transform:translateY(-1.2rem);font-size:1rem;}
+                    </style>,
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2:focus::-webkit-input-placeholder{opacity:0.5;-webkit-transition:all 0.2s;transition:all 0.2s;}
+                    </style>,
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2:focus::-moz-placeholder{opacity:0.5;-webkit-transition:all 0.2s;transition:all 0.2s;}
+                    </style>,
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2:focus:-ms-input-placeholder{opacity:0.5;-webkit-transition:all 0.2s;transition:all 0.2s;}
+                    </style>,
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2:focus::placeholder{opacity:0.5;-webkit-transition:all 0.2s;transition:all 0.2s;}
+                    </style>,
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2::-webkit-input-placeholder{opacity:0;}
+                    </style>,
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2::-moz-placeholder{opacity:0;}
+                    </style>,
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2:-ms-input-placeholder{opacity:0;}
+                    </style>,
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2::placeholder{opacity:0;}
+                    </style>,
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2:not(:placeholder-shown)+label{-webkit-transform:translateY(-1.2rem);-moz-transform:translateY(-1.2rem);-ms-transform:translateY(-1.2rem);transform:translateY(-1.2rem);font-size:1rem;}
+                    </style>,
+                  ],
+                },
+              }
+            }
+            isStringTag={true}
+            serialized={
+              Object {
+                "map": undefined,
+                "name": "1u0qsml",
+                "next": undefined,
+                "styles": "
+  display: inline-block;
+  position: absolute;
+  top: 1.8rem;
+  left: 1.5rem;
+  color: hsla(224, 19.3%, 34.5%, 1);
+",
+                "toString": [Function],
+              }
+            }
+          />
+          <div
+            className="emotion-1"
+          >
+            <bP
+              color="currentColor"
+              size={24}
+            >
+              <svg
+                fill="currentColor"
+                height={24}
+                viewBox="0 0 24 24"
+                width={24}
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21.71,20.29,18,16.61A9,9,0,1,0,16.61,18l3.68,3.68a1,1,0,0,0,1.42,0A1,1,0,0,0,21.71,20.29ZM11,18a7,7,0,1,1,7-7A7,7,0,0,1,11,18Z"
+                />
+              </svg>
+            </bP>
+          </div>
+        </Styled(div)>
+        <Styled(input)
+          id="search"
+          name="search"
+          onChange={[MockFunction]}
+          placeholder="placeholder"
+          type="text"
+        >
+          <Insertion
+            cache={
+              Object {
+                "insert": [Function],
+                "inserted": Object {
+                  "14cl6lm": true,
+                  "1u0qsml": true,
+                  "qz20b2": true,
+                },
+                "key": "css",
+                "nonce": undefined,
+                "registered": Object {},
+                "sheet": StyleSheet {
+                  "_alreadyInsertedOrderInsensitiveRule": true,
+                  "_insertTag": [Function],
+                  "before": null,
+                  "container": <head>
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-0{position:relative;border-radius:1rem;margin-bottom:3rem;}
+                    </style>
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-0 label{position:absolute;top:1.75rem;left:4rem;font-size:1.3rem;color:hsla(224, 19.3%, 34.5%, 1);cursor:text;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-transition:all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);transition:all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);}
+                    </style>
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-1{display:inline-block;position:absolute;top:1.8rem;left:1.5rem;color:hsla(224, 19.3%, 34.5%, 1);}
+                    </style>
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2{background:transparent;background:hsla(0, 0%, 0%, 0.1);z-index:3;width:100%;height:5rem;padding:1rem 1.3rem 0.3rem 3.9rem;font-size:1.3rem;border-radius:1rem;color:hsla(224, 12.3%, 52.2%, 1);border:3px solid hsla(224, 31.9%, 18.4%, 1);outline:none;}
+                    </style>
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2:focus{border:3px solid hsla(246, 88.5%, 62.4%, 1);}
+                    </style>
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2:focus+label{-webkit-transform:translateY(-1.2rem);-moz-transform:translateY(-1.2rem);-ms-transform:translateY(-1.2rem);transform:translateY(-1.2rem);font-size:1rem;}
+                    </style>
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2:focus::-webkit-input-placeholder{opacity:0.5;-webkit-transition:all 0.2s;transition:all 0.2s;}
+                    </style>
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2:focus::-moz-placeholder{opacity:0.5;-webkit-transition:all 0.2s;transition:all 0.2s;}
+                    </style>
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2:focus:-ms-input-placeholder{opacity:0.5;-webkit-transition:all 0.2s;transition:all 0.2s;}
+                    </style>
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2:focus::placeholder{opacity:0.5;-webkit-transition:all 0.2s;transition:all 0.2s;}
+                    </style>
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2::-webkit-input-placeholder{opacity:0;}
+                    </style>
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2::-moz-placeholder{opacity:0;}
+                    </style>
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2:-ms-input-placeholder{opacity:0;}
+                    </style>
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2::placeholder{opacity:0;}
+                    </style>
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2:not(:placeholder-shown)+label{-webkit-transform:translateY(-1.2rem);-moz-transform:translateY(-1.2rem);-ms-transform:translateY(-1.2rem);transform:translateY(-1.2rem);font-size:1rem;}
+                    </style>
+                  </head>,
+                  "ctr": 15,
+                  "insertionPoint": undefined,
+                  "isSpeedy": false,
+                  "key": "css",
+                  "nonce": undefined,
+                  "prepend": undefined,
+                  "tags": Array [
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-0{position:relative;border-radius:1rem;margin-bottom:3rem;}
+                    </style>,
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-0 label{position:absolute;top:1.75rem;left:4rem;font-size:1.3rem;color:hsla(224, 19.3%, 34.5%, 1);cursor:text;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-transition:all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);transition:all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);}
+                    </style>,
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-1{display:inline-block;position:absolute;top:1.8rem;left:1.5rem;color:hsla(224, 19.3%, 34.5%, 1);}
+                    </style>,
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2{background:transparent;background:hsla(0, 0%, 0%, 0.1);z-index:3;width:100%;height:5rem;padding:1rem 1.3rem 0.3rem 3.9rem;font-size:1.3rem;border-radius:1rem;color:hsla(224, 12.3%, 52.2%, 1);border:3px solid hsla(224, 31.9%, 18.4%, 1);outline:none;}
+                    </style>,
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2:focus{border:3px solid hsla(246, 88.5%, 62.4%, 1);}
+                    </style>,
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2:focus+label{-webkit-transform:translateY(-1.2rem);-moz-transform:translateY(-1.2rem);-ms-transform:translateY(-1.2rem);transform:translateY(-1.2rem);font-size:1rem;}
+                    </style>,
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2:focus::-webkit-input-placeholder{opacity:0.5;-webkit-transition:all 0.2s;transition:all 0.2s;}
+                    </style>,
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2:focus::-moz-placeholder{opacity:0.5;-webkit-transition:all 0.2s;transition:all 0.2s;}
+                    </style>,
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2:focus:-ms-input-placeholder{opacity:0.5;-webkit-transition:all 0.2s;transition:all 0.2s;}
+                    </style>,
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2:focus::placeholder{opacity:0.5;-webkit-transition:all 0.2s;transition:all 0.2s;}
+                    </style>,
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2::-webkit-input-placeholder{opacity:0;}
+                    </style>,
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2::-moz-placeholder{opacity:0;}
+                    </style>,
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2:-ms-input-placeholder{opacity:0;}
+                    </style>,
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2::placeholder{opacity:0;}
+                    </style>,
+                    <style
+                      data-emotion="css"
+                      data-s=""
+                    >
+                      
+                      .emotion-2:not(:placeholder-shown)+label{-webkit-transform:translateY(-1.2rem);-moz-transform:translateY(-1.2rem);-ms-transform:translateY(-1.2rem);transform:translateY(-1.2rem);font-size:1rem;}
+                    </style>,
+                  ],
+                },
+              }
+            }
+            isStringTag={true}
+            serialized={
+              Object {
+                "map": undefined,
+                "name": "qz20b2",
+                "next": undefined,
+                "styles": "
+  background: transparent;
+  background: hsla(0, 0%, 0%, 0.1);
+  z-index: 3;
+  width: 100%;
+  height: 5rem;
+  padding: 1rem 1.3rem 0.3rem 3.9rem;
+  font-size: 1.3rem;
+  border-radius: 1rem;
+  color: hsla(224, 12.3%, 52.2%, 1);
+  border: 3px solid hsla(224, 31.9%, 18.4%, 1);
+  outline: none;
+
+  &:focus {
+    border: 3px solid hsla(246, 88.5%, 62.4%, 1);
+    & + label {
+      transform: translateY(-1.2rem);
+      font-size: 1rem;
+    }
+    &::placeholder {
+      opacity: 0.5;
+      transition: all 0.2s;
+    }
+  }
+
+  &::placeholder {
+    opacity: 0;
+  }
+
+  &:not(:placeholder-shown) + label {
+    transform: translateY(-1.2rem);
+    font-size: 1rem;
+  }
+",
+                "toString": [Function],
+              }
+            }
+          />
+          <input
+            className="emotion-2"
+            id="search"
+            name="search"
+            onChange={[MockFunction]}
+            placeholder="placeholder"
+            type="text"
+          />
+        </Styled(input)>
+        <label
+          htmlFor="search"
+        >
+          Search movies or TV series
+        </label>
+      </div>
+    </Styled(div)>
+  </Search>
+</ThemeProvider>
+`;

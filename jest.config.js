@@ -18,5 +18,5 @@ module.exports = {
   moduleDirectories: ['node_modules', 'src'],
   moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx'],
   setupFilesAfterEnv: ['<rootDir>/src/setupTests.ts'],
-  snapshotSerializers: ['@emotion/jest/serializer'],
+  snapshotSerializers: ['@emotion/jest/enzyme-serializer'],
 };
