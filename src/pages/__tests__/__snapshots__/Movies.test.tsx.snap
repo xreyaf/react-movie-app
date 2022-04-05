@@ -11,19 +11,19 @@ Object {
   height: 100%;
 }
 
-@media screen and (max-width: 1199.98px) {
+@media screen and (max-width: 1199.98px) and (min-width: 991.99px) {
   .emotion-0 {
     padding: 1rem 2rem;
   }
 }
 
-@media screen and (max-width: 991.98px) {
+@media screen and (max-width: 991.98px) and (min-width: 816.99px) {
   .emotion-0 {
     padding: 1rem 1.5rem;
   }
 }
 
-@media screen and (max-width: 816.98px) {
+@media screen and (max-width: 816.98px) and (min-width: 575.99px) {
   .emotion-0 {
     padding: 1rem 1.2rem;
   }
@@ -47,7 +47,7 @@ Object {
   align-items: start;
 }
 
-@media screen and (max-width: 1199.98px) {
+@media screen and (max-width: 1199.98px) and (min-width: 991.99px) {
   .emotion-1 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     -webkit-transition: all 0.5s;
@@ -55,7 +55,7 @@ Object {
   }
 }
 
-@media screen and (max-width: 991.98px) {
+@media screen and (max-width: 991.98px) and (min-width: 816.99px) {
   .emotion-1 {
     row-gap: 0.8rem;
     -webkit-column-gap: 0.8rem;
@@ -65,7 +65,7 @@ Object {
   }
 }
 
-@media screen and (max-width: 816.98px) {
+@media screen and (max-width: 816.98px) and (min-width: 575.99px) {
   .emotion-1 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     row-gap: 0.8rem;
@@ -282,6 +282,62 @@ Object {
             style="opacity: 0;"
           >
             <a
+              href="/movie/760868"
+            >
+              <div
+                class="emotion-3"
+              >
+                <svg
+                  fill="currentColor"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
+                  />
+                </svg>
+                <p>
+                  6
+                </p>
+              </div>
+              <div
+                class="emotion-4"
+              >
+                <picture>
+                  <source
+                    srcset="https://image.tmdb.org/t/p/w500/mcIYHZYwUbvhvUt8Lb5nENJ7AlX.jpg"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="placeholder.png"
+                    type="image/png"
+                  />
+                  <source
+                    srcset="placeholderBack.png"
+                    type="image/png"
+                  />
+                  <img
+                    alt="Black Crab"
+                    class="emotion-5"
+                  />
+                </picture>
+              </div>
+              <div
+                class="emotion-6"
+              >
+                <p>
+                  Black Crab
+                </p>
+              </div>
+            </a>
+          </div>
+          <div
+            class="emotion-2"
+            style="opacity: 0;"
+          >
+            <a
               href="/movie/696806"
             >
               <div
@@ -450,118 +506,6 @@ Object {
             style="opacity: 0;"
           >
             <a
-              href="/movie/760868"
-            >
-              <div
-                class="emotion-3"
-              >
-                <svg
-                  fill="currentColor"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  width="16"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
-                  />
-                </svg>
-                <p>
-                  6.1
-                </p>
-              </div>
-              <div
-                class="emotion-4"
-              >
-                <picture>
-                  <source
-                    srcset="https://image.tmdb.org/t/p/w500/mcIYHZYwUbvhvUt8Lb5nENJ7AlX.jpg"
-                    type="image/jpeg"
-                  />
-                  <source
-                    srcset="placeholder.png"
-                    type="image/png"
-                  />
-                  <source
-                    srcset="placeholderBack.png"
-                    type="image/png"
-                  />
-                  <img
-                    alt="Black Crab"
-                    class="emotion-5"
-                  />
-                </picture>
-              </div>
-              <div
-                class="emotion-6"
-              >
-                <p>
-                  Black Crab
-                </p>
-              </div>
-            </a>
-          </div>
-          <div
-            class="emotion-2"
-            style="opacity: 0;"
-          >
-            <a
-              href="/movie/656663"
-            >
-              <div
-                class="emotion-3"
-              >
-                <svg
-                  fill="currentColor"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  width="16"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
-                  />
-                </svg>
-                <p>
-                  7.1
-                </p>
-              </div>
-              <div
-                class="emotion-4"
-              >
-                <picture>
-                  <source
-                    srcset="https://image.tmdb.org/t/p/w500/ugIdyvtAzHWOguD91UjHKoAvfum.jpg"
-                    type="image/jpeg"
-                  />
-                  <source
-                    srcset="placeholder.png"
-                    type="image/png"
-                  />
-                  <source
-                    srcset="placeholderBack.png"
-                    type="image/png"
-                  />
-                  <img
-                    alt="Jackass Forever"
-                    class="emotion-5"
-                  />
-                </picture>
-              </div>
-              <div
-                class="emotion-6"
-              >
-                <p>
-                  Jackass Forever
-                </p>
-              </div>
-            </a>
-          </div>
-          <div
-            class="emotion-2"
-            style="opacity: 0;"
-          >
-            <a
               href="/movie/414906"
             >
               <div
@@ -609,62 +553,6 @@ Object {
               >
                 <p>
                   The Batman
-                </p>
-              </div>
-            </a>
-          </div>
-          <div
-            class="emotion-2"
-            style="opacity: 0;"
-          >
-            <a
-              href="/movie/833425"
-            >
-              <div
-                class="emotion-3"
-              >
-                <svg
-                  fill="currentColor"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  width="16"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
-                  />
-                </svg>
-                <p>
-                  6.5
-                </p>
-              </div>
-              <div
-                class="emotion-4"
-              >
-                <picture>
-                  <source
-                    srcset="https://image.tmdb.org/t/p/w500/5cnLoWq9o5tuLe1Zq4BTX4LwZ2B.jpg"
-                    type="image/jpeg"
-                  />
-                  <source
-                    srcset="placeholder.png"
-                    type="image/png"
-                  />
-                  <source
-                    srcset="placeholderBack.png"
-                    type="image/png"
-                  />
-                  <img
-                    alt="No Exit"
-                    class="emotion-5"
-                  />
-                </picture>
-              </div>
-              <div
-                class="emotion-6"
-              >
-                <p>
-                  No Exit
                 </p>
               </div>
             </a>
@@ -730,6 +618,62 @@ Object {
             style="opacity: 0;"
           >
             <a
+              href="/movie/656663"
+            >
+              <div
+                class="emotion-3"
+              >
+                <svg
+                  fill="currentColor"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
+                  />
+                </svg>
+                <p>
+                  7.1
+                </p>
+              </div>
+              <div
+                class="emotion-4"
+              >
+                <picture>
+                  <source
+                    srcset="https://image.tmdb.org/t/p/w500/ugIdyvtAzHWOguD91UjHKoAvfum.jpg"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="placeholder.png"
+                    type="image/png"
+                  />
+                  <source
+                    srcset="placeholderBack.png"
+                    type="image/png"
+                  />
+                  <img
+                    alt="Jackass Forever"
+                    class="emotion-5"
+                  />
+                </picture>
+              </div>
+              <div
+                class="emotion-6"
+              >
+                <p>
+                  Jackass Forever
+                </p>
+              </div>
+            </a>
+          </div>
+          <div
+            class="emotion-2"
+            style="opacity: 0;"
+          >
+            <a
               href="/movie/661791"
             >
               <div
@@ -777,6 +721,62 @@ Object {
               >
                 <p>
                   The Grandmother
+                </p>
+              </div>
+            </a>
+          </div>
+          <div
+            class="emotion-2"
+            style="opacity: 0;"
+          >
+            <a
+              href="/movie/833425"
+            >
+              <div
+                class="emotion-3"
+              >
+                <svg
+                  fill="currentColor"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
+                  />
+                </svg>
+                <p>
+                  6.5
+                </p>
+              </div>
+              <div
+                class="emotion-4"
+              >
+                <picture>
+                  <source
+                    srcset="https://image.tmdb.org/t/p/w500/5cnLoWq9o5tuLe1Zq4BTX4LwZ2B.jpg"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="placeholder.png"
+                    type="image/png"
+                  />
+                  <source
+                    srcset="placeholderBack.png"
+                    type="image/png"
+                  />
+                  <img
+                    alt="No Exit"
+                    class="emotion-5"
+                  />
+                </picture>
+              </div>
+              <div
+                class="emotion-6"
+              >
+                <p>
+                  No Exit
                 </p>
               </div>
             </a>
@@ -954,6 +954,118 @@ Object {
             style="opacity: 0;"
           >
             <a
+              href="/movie/476669"
+            >
+              <div
+                class="emotion-3"
+              >
+                <svg
+                  fill="currentColor"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
+                  />
+                </svg>
+                <p>
+                  7
+                </p>
+              </div>
+              <div
+                class="emotion-4"
+              >
+                <picture>
+                  <source
+                    srcset="https://image.tmdb.org/t/p/w500/aq4Pwv5Xeuvj6HZKtxyd23e6bE9.jpg"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="placeholder.png"
+                    type="image/png"
+                  />
+                  <source
+                    srcset="placeholderBack.png"
+                    type="image/png"
+                  />
+                  <img
+                    alt="The King's Man"
+                    class="emotion-5"
+                  />
+                </picture>
+              </div>
+              <div
+                class="emotion-6"
+              >
+                <p>
+                  The King's Man
+                </p>
+              </div>
+            </a>
+          </div>
+          <div
+            class="emotion-2"
+            style="opacity: 0;"
+          >
+            <a
+              href="/movie/585083"
+            >
+              <div
+                class="emotion-3"
+              >
+                <svg
+                  fill="currentColor"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
+                  />
+                </svg>
+                <p>
+                  7.1
+                </p>
+              </div>
+              <div
+                class="emotion-4"
+              >
+                <picture>
+                  <source
+                    srcset="https://image.tmdb.org/t/p/w500/teCy1egGQa0y8ULJvlrDHQKnxBL.jpg"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="placeholder.png"
+                    type="image/png"
+                  />
+                  <source
+                    srcset="placeholderBack.png"
+                    type="image/png"
+                  />
+                  <img
+                    alt="Hotel Transylvania: Transformania"
+                    class="emotion-5"
+                  />
+                </picture>
+              </div>
+              <div
+                class="emotion-6"
+              >
+                <p>
+                  Hotel Transylvania: Transformania
+                </p>
+              </div>
+            </a>
+          </div>
+          <div
+            class="emotion-2"
+            style="opacity: 0;"
+          >
+            <a
               href="/movie/619979"
             >
               <div
@@ -1066,7 +1178,7 @@ Object {
             style="opacity: 0;"
           >
             <a
-              href="/movie/753232"
+              href="/movie/800510"
             >
               <div
                 class="emotion-3"
@@ -1083,7 +1195,7 @@ Object {
                   />
                 </svg>
                 <p>
-                  6.6
+                  6.2
                 </p>
               </div>
               <div
@@ -1091,7 +1203,7 @@ Object {
               >
                 <picture>
                   <source
-                    srcset="https://image.tmdb.org/t/p/w500/mn1GYIQ1tvFuuu0YBNZBvrHyrkO.jpg"
+                    srcset="https://image.tmdb.org/t/p/w500/okNgwtxIWzGsNlR3GsOS0i0Qgbn.jpg"
                     type="image/jpeg"
                   />
                   <source
@@ -1103,7 +1215,7 @@ Object {
                     type="image/png"
                   />
                   <img
-                    alt="The Commando"
+                    alt="Kimi"
                     class="emotion-5"
                   />
                 </picture>
@@ -1112,7 +1224,7 @@ Object {
                 class="emotion-6"
               >
                 <p>
-                  The Commando
+                  Kimi
                 </p>
               </div>
             </a>
@@ -1122,7 +1234,7 @@ Object {
             style="opacity: 0;"
           >
             <a
-              href="/movie/803114"
+              href="/movie/524434"
             >
               <div
                 class="emotion-3"
@@ -1139,7 +1251,7 @@ Object {
                   />
                 </svg>
                 <p>
-                  4.7
+                  7.2
                 </p>
               </div>
               <div
@@ -1147,7 +1259,7 @@ Object {
               >
                 <picture>
                   <source
-                    srcset="https://image.tmdb.org/t/p/w500/i0z8g2VRZP3dhVvvSMilbOZMKqR.jpg"
+                    srcset="https://image.tmdb.org/t/p/w500/bcCBq9N1EMo3daNIjWJ8kYvrQm6.jpg"
                     type="image/jpeg"
                   />
                   <source
@@ -1159,7 +1271,7 @@ Object {
                     type="image/png"
                   />
                   <img
-                    alt="The Requin"
+                    alt="Eternals"
                     class="emotion-5"
                   />
                 </picture>
@@ -1168,119 +1280,7 @@ Object {
                 class="emotion-6"
               >
                 <p>
-                  The Requin
-                </p>
-              </div>
-            </a>
-          </div>
-          <div
-            class="emotion-2"
-            style="opacity: 0;"
-          >
-            <a
-              href="/movie/476669"
-            >
-              <div
-                class="emotion-3"
-              >
-                <svg
-                  fill="currentColor"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  width="16"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
-                  />
-                </svg>
-                <p>
-                  7
-                </p>
-              </div>
-              <div
-                class="emotion-4"
-              >
-                <picture>
-                  <source
-                    srcset="https://image.tmdb.org/t/p/w500/aq4Pwv5Xeuvj6HZKtxyd23e6bE9.jpg"
-                    type="image/jpeg"
-                  />
-                  <source
-                    srcset="placeholder.png"
-                    type="image/png"
-                  />
-                  <source
-                    srcset="placeholderBack.png"
-                    type="image/png"
-                  />
-                  <img
-                    alt="The King's Man"
-                    class="emotion-5"
-                  />
-                </picture>
-              </div>
-              <div
-                class="emotion-6"
-              >
-                <p>
-                  The King's Man
-                </p>
-              </div>
-            </a>
-          </div>
-          <div
-            class="emotion-2"
-            style="opacity: 0;"
-          >
-            <a
-              href="/movie/585083"
-            >
-              <div
-                class="emotion-3"
-              >
-                <svg
-                  fill="currentColor"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  width="16"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
-                  />
-                </svg>
-                <p>
-                  7.1
-                </p>
-              </div>
-              <div
-                class="emotion-4"
-              >
-                <picture>
-                  <source
-                    srcset="https://image.tmdb.org/t/p/w500/teCy1egGQa0y8ULJvlrDHQKnxBL.jpg"
-                    type="image/jpeg"
-                  />
-                  <source
-                    srcset="placeholder.png"
-                    type="image/png"
-                  />
-                  <source
-                    srcset="placeholderBack.png"
-                    type="image/png"
-                  />
-                  <img
-                    alt="Hotel Transylvania: Transformania"
-                    class="emotion-5"
-                  />
-                </picture>
-              </div>
-              <div
-                class="emotion-6"
-              >
-                <p>
-                  Hotel Transylvania: Transformania
+                  Eternals
                 </p>
               </div>
             </a>
@@ -1297,19 +1297,19 @@ Object {
   height: 100%;
 }
 
-@media screen and (max-width: 1199.98px) {
+@media screen and (max-width: 1199.98px) and (min-width: 991.99px) {
   .emotion-0 {
     padding: 1rem 2rem;
   }
 }
 
-@media screen and (max-width: 991.98px) {
+@media screen and (max-width: 991.98px) and (min-width: 816.99px) {
   .emotion-0 {
     padding: 1rem 1.5rem;
   }
 }
 
-@media screen and (max-width: 816.98px) {
+@media screen and (max-width: 816.98px) and (min-width: 575.99px) {
   .emotion-0 {
     padding: 1rem 1.2rem;
   }
@@ -1333,7 +1333,7 @@ Object {
   align-items: start;
 }
 
-@media screen and (max-width: 1199.98px) {
+@media screen and (max-width: 1199.98px) and (min-width: 991.99px) {
   .emotion-1 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     -webkit-transition: all 0.5s;
@@ -1341,7 +1341,7 @@ Object {
   }
 }
 
-@media screen and (max-width: 991.98px) {
+@media screen and (max-width: 991.98px) and (min-width: 816.99px) {
   .emotion-1 {
     row-gap: 0.8rem;
     -webkit-column-gap: 0.8rem;
@@ -1351,7 +1351,7 @@ Object {
   }
 }
 
-@media screen and (max-width: 816.98px) {
+@media screen and (max-width: 816.98px) and (min-width: 575.99px) {
   .emotion-1 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     row-gap: 0.8rem;
@@ -1567,6 +1567,62 @@ Object {
           style="opacity: 0;"
         >
           <a
+            href="/movie/760868"
+          >
+            <div
+              class="emotion-3"
+            >
+              <svg
+                fill="currentColor"
+                height="16"
+                viewBox="0 0 24 24"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
+                />
+              </svg>
+              <p>
+                6
+              </p>
+            </div>
+            <div
+              class="emotion-4"
+            >
+              <picture>
+                <source
+                  srcset="https://image.tmdb.org/t/p/w500/mcIYHZYwUbvhvUt8Lb5nENJ7AlX.jpg"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="placeholder.png"
+                  type="image/png"
+                />
+                <source
+                  srcset="placeholderBack.png"
+                  type="image/png"
+                />
+                <img
+                  alt="Black Crab"
+                  class="emotion-5"
+                />
+              </picture>
+            </div>
+            <div
+              class="emotion-6"
+            >
+              <p>
+                Black Crab
+              </p>
+            </div>
+          </a>
+        </div>
+        <div
+          class="emotion-2"
+          style="opacity: 0;"
+        >
+          <a
             href="/movie/696806"
           >
             <div
@@ -1735,118 +1791,6 @@ Object {
           style="opacity: 0;"
         >
           <a
-            href="/movie/760868"
-          >
-            <div
-              class="emotion-3"
-            >
-              <svg
-                fill="currentColor"
-                height="16"
-                viewBox="0 0 24 24"
-                width="16"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
-                />
-              </svg>
-              <p>
-                6.1
-              </p>
-            </div>
-            <div
-              class="emotion-4"
-            >
-              <picture>
-                <source
-                  srcset="https://image.tmdb.org/t/p/w500/mcIYHZYwUbvhvUt8Lb5nENJ7AlX.jpg"
-                  type="image/jpeg"
-                />
-                <source
-                  srcset="placeholder.png"
-                  type="image/png"
-                />
-                <source
-                  srcset="placeholderBack.png"
-                  type="image/png"
-                />
-                <img
-                  alt="Black Crab"
-                  class="emotion-5"
-                />
-              </picture>
-            </div>
-            <div
-              class="emotion-6"
-            >
-              <p>
-                Black Crab
-              </p>
-            </div>
-          </a>
-        </div>
-        <div
-          class="emotion-2"
-          style="opacity: 0;"
-        >
-          <a
-            href="/movie/656663"
-          >
-            <div
-              class="emotion-3"
-            >
-              <svg
-                fill="currentColor"
-                height="16"
-                viewBox="0 0 24 24"
-                width="16"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
-                />
-              </svg>
-              <p>
-                7.1
-              </p>
-            </div>
-            <div
-              class="emotion-4"
-            >
-              <picture>
-                <source
-                  srcset="https://image.tmdb.org/t/p/w500/ugIdyvtAzHWOguD91UjHKoAvfum.jpg"
-                  type="image/jpeg"
-                />
-                <source
-                  srcset="placeholder.png"
-                  type="image/png"
-                />
-                <source
-                  srcset="placeholderBack.png"
-                  type="image/png"
-                />
-                <img
-                  alt="Jackass Forever"
-                  class="emotion-5"
-                />
-              </picture>
-            </div>
-            <div
-              class="emotion-6"
-            >
-              <p>
-                Jackass Forever
-              </p>
-            </div>
-          </a>
-        </div>
-        <div
-          class="emotion-2"
-          style="opacity: 0;"
-        >
-          <a
             href="/movie/414906"
           >
             <div
@@ -1894,62 +1838,6 @@ Object {
             >
               <p>
                 The Batman
-              </p>
-            </div>
-          </a>
-        </div>
-        <div
-          class="emotion-2"
-          style="opacity: 0;"
-        >
-          <a
-            href="/movie/833425"
-          >
-            <div
-              class="emotion-3"
-            >
-              <svg
-                fill="currentColor"
-                height="16"
-                viewBox="0 0 24 24"
-                width="16"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
-                />
-              </svg>
-              <p>
-                6.5
-              </p>
-            </div>
-            <div
-              class="emotion-4"
-            >
-              <picture>
-                <source
-                  srcset="https://image.tmdb.org/t/p/w500/5cnLoWq9o5tuLe1Zq4BTX4LwZ2B.jpg"
-                  type="image/jpeg"
-                />
-                <source
-                  srcset="placeholder.png"
-                  type="image/png"
-                />
-                <source
-                  srcset="placeholderBack.png"
-                  type="image/png"
-                />
-                <img
-                  alt="No Exit"
-                  class="emotion-5"
-                />
-              </picture>
-            </div>
-            <div
-              class="emotion-6"
-            >
-              <p>
-                No Exit
               </p>
             </div>
           </a>
@@ -2015,6 +1903,62 @@ Object {
           style="opacity: 0;"
         >
           <a
+            href="/movie/656663"
+          >
+            <div
+              class="emotion-3"
+            >
+              <svg
+                fill="currentColor"
+                height="16"
+                viewBox="0 0 24 24"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
+                />
+              </svg>
+              <p>
+                7.1
+              </p>
+            </div>
+            <div
+              class="emotion-4"
+            >
+              <picture>
+                <source
+                  srcset="https://image.tmdb.org/t/p/w500/ugIdyvtAzHWOguD91UjHKoAvfum.jpg"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="placeholder.png"
+                  type="image/png"
+                />
+                <source
+                  srcset="placeholderBack.png"
+                  type="image/png"
+                />
+                <img
+                  alt="Jackass Forever"
+                  class="emotion-5"
+                />
+              </picture>
+            </div>
+            <div
+              class="emotion-6"
+            >
+              <p>
+                Jackass Forever
+              </p>
+            </div>
+          </a>
+        </div>
+        <div
+          class="emotion-2"
+          style="opacity: 0;"
+        >
+          <a
             href="/movie/661791"
           >
             <div
@@ -2062,6 +2006,62 @@ Object {
             >
               <p>
                 The Grandmother
+              </p>
+            </div>
+          </a>
+        </div>
+        <div
+          class="emotion-2"
+          style="opacity: 0;"
+        >
+          <a
+            href="/movie/833425"
+          >
+            <div
+              class="emotion-3"
+            >
+              <svg
+                fill="currentColor"
+                height="16"
+                viewBox="0 0 24 24"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
+                />
+              </svg>
+              <p>
+                6.5
+              </p>
+            </div>
+            <div
+              class="emotion-4"
+            >
+              <picture>
+                <source
+                  srcset="https://image.tmdb.org/t/p/w500/5cnLoWq9o5tuLe1Zq4BTX4LwZ2B.jpg"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="placeholder.png"
+                  type="image/png"
+                />
+                <source
+                  srcset="placeholderBack.png"
+                  type="image/png"
+                />
+                <img
+                  alt="No Exit"
+                  class="emotion-5"
+                />
+              </picture>
+            </div>
+            <div
+              class="emotion-6"
+            >
+              <p>
+                No Exit
               </p>
             </div>
           </a>
@@ -2239,6 +2239,118 @@ Object {
           style="opacity: 0;"
         >
           <a
+            href="/movie/476669"
+          >
+            <div
+              class="emotion-3"
+            >
+              <svg
+                fill="currentColor"
+                height="16"
+                viewBox="0 0 24 24"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
+                />
+              </svg>
+              <p>
+                7
+              </p>
+            </div>
+            <div
+              class="emotion-4"
+            >
+              <picture>
+                <source
+                  srcset="https://image.tmdb.org/t/p/w500/aq4Pwv5Xeuvj6HZKtxyd23e6bE9.jpg"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="placeholder.png"
+                  type="image/png"
+                />
+                <source
+                  srcset="placeholderBack.png"
+                  type="image/png"
+                />
+                <img
+                  alt="The King's Man"
+                  class="emotion-5"
+                />
+              </picture>
+            </div>
+            <div
+              class="emotion-6"
+            >
+              <p>
+                The King's Man
+              </p>
+            </div>
+          </a>
+        </div>
+        <div
+          class="emotion-2"
+          style="opacity: 0;"
+        >
+          <a
+            href="/movie/585083"
+          >
+            <div
+              class="emotion-3"
+            >
+              <svg
+                fill="currentColor"
+                height="16"
+                viewBox="0 0 24 24"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
+                />
+              </svg>
+              <p>
+                7.1
+              </p>
+            </div>
+            <div
+              class="emotion-4"
+            >
+              <picture>
+                <source
+                  srcset="https://image.tmdb.org/t/p/w500/teCy1egGQa0y8ULJvlrDHQKnxBL.jpg"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="placeholder.png"
+                  type="image/png"
+                />
+                <source
+                  srcset="placeholderBack.png"
+                  type="image/png"
+                />
+                <img
+                  alt="Hotel Transylvania: Transformania"
+                  class="emotion-5"
+                />
+              </picture>
+            </div>
+            <div
+              class="emotion-6"
+            >
+              <p>
+                Hotel Transylvania: Transformania
+              </p>
+            </div>
+          </a>
+        </div>
+        <div
+          class="emotion-2"
+          style="opacity: 0;"
+        >
+          <a
             href="/movie/619979"
           >
             <div
@@ -2351,7 +2463,7 @@ Object {
           style="opacity: 0;"
         >
           <a
-            href="/movie/753232"
+            href="/movie/800510"
           >
             <div
               class="emotion-3"
@@ -2368,7 +2480,7 @@ Object {
                 />
               </svg>
               <p>
-                6.6
+                6.2
               </p>
             </div>
             <div
@@ -2376,7 +2488,7 @@ Object {
             >
               <picture>
                 <source
-                  srcset="https://image.tmdb.org/t/p/w500/mn1GYIQ1tvFuuu0YBNZBvrHyrkO.jpg"
+                  srcset="https://image.tmdb.org/t/p/w500/okNgwtxIWzGsNlR3GsOS0i0Qgbn.jpg"
                   type="image/jpeg"
                 />
                 <source
@@ -2388,7 +2500,7 @@ Object {
                   type="image/png"
                 />
                 <img
-                  alt="The Commando"
+                  alt="Kimi"
                   class="emotion-5"
                 />
               </picture>
@@ -2397,7 +2509,7 @@ Object {
               class="emotion-6"
             >
               <p>
-                The Commando
+                Kimi
               </p>
             </div>
           </a>
@@ -2407,7 +2519,7 @@ Object {
           style="opacity: 0;"
         >
           <a
-            href="/movie/803114"
+            href="/movie/524434"
           >
             <div
               class="emotion-3"
@@ -2424,7 +2536,7 @@ Object {
                 />
               </svg>
               <p>
-                4.7
+                7.2
               </p>
             </div>
             <div
@@ -2432,7 +2544,7 @@ Object {
             >
               <picture>
                 <source
-                  srcset="https://image.tmdb.org/t/p/w500/i0z8g2VRZP3dhVvvSMilbOZMKqR.jpg"
+                  srcset="https://image.tmdb.org/t/p/w500/bcCBq9N1EMo3daNIjWJ8kYvrQm6.jpg"
                   type="image/jpeg"
                 />
                 <source
@@ -2444,7 +2556,7 @@ Object {
                   type="image/png"
                 />
                 <img
-                  alt="The Requin"
+                  alt="Eternals"
                   class="emotion-5"
                 />
               </picture>
@@ -2453,119 +2565,7 @@ Object {
               class="emotion-6"
             >
               <p>
-                The Requin
-              </p>
-            </div>
-          </a>
-        </div>
-        <div
-          class="emotion-2"
-          style="opacity: 0;"
-        >
-          <a
-            href="/movie/476669"
-          >
-            <div
-              class="emotion-3"
-            >
-              <svg
-                fill="currentColor"
-                height="16"
-                viewBox="0 0 24 24"
-                width="16"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
-                />
-              </svg>
-              <p>
-                7
-              </p>
-            </div>
-            <div
-              class="emotion-4"
-            >
-              <picture>
-                <source
-                  srcset="https://image.tmdb.org/t/p/w500/aq4Pwv5Xeuvj6HZKtxyd23e6bE9.jpg"
-                  type="image/jpeg"
-                />
-                <source
-                  srcset="placeholder.png"
-                  type="image/png"
-                />
-                <source
-                  srcset="placeholderBack.png"
-                  type="image/png"
-                />
-                <img
-                  alt="The King's Man"
-                  class="emotion-5"
-                />
-              </picture>
-            </div>
-            <div
-              class="emotion-6"
-            >
-              <p>
-                The King's Man
-              </p>
-            </div>
-          </a>
-        </div>
-        <div
-          class="emotion-2"
-          style="opacity: 0;"
-        >
-          <a
-            href="/movie/585083"
-          >
-            <div
-              class="emotion-3"
-            >
-              <svg
-                fill="currentColor"
-                height="16"
-                viewBox="0 0 24 24"
-                width="16"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
-                />
-              </svg>
-              <p>
-                7.1
-              </p>
-            </div>
-            <div
-              class="emotion-4"
-            >
-              <picture>
-                <source
-                  srcset="https://image.tmdb.org/t/p/w500/teCy1egGQa0y8ULJvlrDHQKnxBL.jpg"
-                  type="image/jpeg"
-                />
-                <source
-                  srcset="placeholder.png"
-                  type="image/png"
-                />
-                <source
-                  srcset="placeholderBack.png"
-                  type="image/png"
-                />
-                <img
-                  alt="Hotel Transylvania: Transformania"
-                  class="emotion-5"
-                />
-              </picture>
-            </div>
-            <div
-              class="emotion-6"
-            >
-              <p>
-                Hotel Transylvania: Transformania
+                Eternals
               </p>
             </div>
           </a>

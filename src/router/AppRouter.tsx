@@ -6,6 +6,7 @@ import Series from '../pages/Series';
 import Chart from '../pages/Chart';
 import MediaDetails from '../pages/MediaDetails';
 import NotFound from '../pages/NotFound';
+import Register from '../pages/Register';
 
 function AppRouter() {
   return (
@@ -15,6 +16,7 @@ function AppRouter() {
       <Route path="/series" element={<Series />} />
       <Route path="/chart" element={<Chart />} />
       <Route path="/:mediaType/:id" element={<MediaDetails />} />
+      <Route path="/register" element={<Register />} />
       <Route path="/*" element={<NotFound />} />
     </Routes>
   );

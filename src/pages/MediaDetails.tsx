@@ -38,7 +38,7 @@ const MediaDetailsTitle = styled(motion.div)`
   max-width: 560px;
   margin-top: -4.5rem;
   margin-left: 5rem;
-  background: ${(props) => props.theme.colors.grey900_80};
+  background: ${({ theme }) => theme.colors.grey900_80};
   backdrop-filter: blur(24px);
 `;
 
@@ -46,13 +46,13 @@ export const MediaDetailsWrapper = styled(motion.div)`
   margin: 5rem;
   display: flex;
 
-  @media screen and (max-width: 1199.98px) {
+  @media ${({ theme }) => theme.media.largeDesktop} {
     margin: 5rem 2rem;
   }
-  @media screen and (max-width: 816.98px) {
+  @media ${({ theme }) => theme.media.tablet} {
     margin: 5rem 0;
   }
-  @media screen and (max-width: 575.98px) {
+  @media ${({ theme }) => theme.media.phone} {
     margin: 5rem 0;
   }
 `;

@@ -9,16 +9,16 @@ const StyledContainer = styled.div`
   padding: 1rem 5rem;
   margin: 0 auto 2rem auto;
   height: 100%;
-  @media screen and (max-width: 1199.98px) {
+  @media ${({ theme }) => theme.media.largeDesktop} {
     padding: 1rem 2rem;
   }
-  @media screen and (max-width: 991.98px) {
+  @media ${({ theme }) => theme.media.desktop} {
     padding: 1rem 1.5rem;
   }
-  @media screen and (max-width: 816.98px) {
+  @media ${({ theme }) => theme.media.tablet} {
     padding: 1rem 1.2rem;
   }
-  @media screen and (max-width: 575.98px) {
+  @media ${({ theme }) => theme.media.phone} {
     padding: 1rem 1rem;
   }
 `;

@@ -7,22 +7,22 @@ const StyledGrid = styled(motion.div)`
   row-gap: 1.4rem;
   column-gap: 1.4rem;
   align-items: start;
-  @media screen and (max-width: 1199.98px) {
+  @media ${({ theme }) => theme.media.largeDesktop} {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     transition: all 0.5s;
   }
-  @media screen and (max-width: 991.98px) {
+  @media ${({ theme }) => theme.media.desktop} {
     row-gap: 0.8rem;
     column-gap: 0.8rem;
     transition: all 0.5s;
   }
-  @media screen and (max-width: 816.98px) {
+  @media ${({ theme }) => theme.media.tablet} {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     row-gap: 0.8rem;
     column-gap: 0.8rem;
     transition: all 0.5s;
   }
-  @media screen and (max-width: 575.98px) {
+  @media ${({ theme }) => theme.media.phone} {
     grid-template-columns: repeat(1, minmax(0, 1fr));
     transition: all 0.5s;
   }

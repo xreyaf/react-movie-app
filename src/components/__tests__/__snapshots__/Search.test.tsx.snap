@@ -204,6 +204,12 @@ exports[`Search component renders Search 1`] = `
         "white65": "hsla(0, 0%, 100%, 0.65)",
         "white75": "hsla(0, 0%, 100%, 0.75)",
       },
+      "media": Object {
+        "desktop": "screen and (max-width: 991.98px) and (min-width: 816.99px)",
+        "largeDesktop": "screen and (max-width: 1199.98px) and (min-width: 991.99px)",
+        "phone": "screen and (max-width: 575.98px)",
+        "tablet": "screen and (max-width: 816.98px) and (min-width: 575.99px)",
+      },
     }
   }
 >

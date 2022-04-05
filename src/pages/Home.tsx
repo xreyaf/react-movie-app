@@ -9,7 +9,7 @@ import {
 import debounce from 'lodash/debounce';
 
 import Spinner from '../components/Spinner';
-import Search from '../components/Search';
+import Input from '../components/Input';
 import Grid from '../components/Grid';
 import Container from '../components/Container';
 
@@ -47,10 +47,13 @@ const Home = () => {
   return (
     <Container>
       <h1>Trending now</h1>
-      <Search
+      <Input
+        name={'search'}
         onChange={onChangeInput}
         placeholder="eg. Spider-Man"
         label="Search movies or TV series"
+        type="text"
+        icon={<Unicons.UilSearch size={24} />}
       />
       {isLoadingTrending && isLoadingSearch && <Spinner />}
       {errorTrending && errorSearch && <h1>Some error occurred...</h1>}

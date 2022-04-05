@@ -4,9 +4,13 @@ declare module '@emotion/react' {
   type Color = {
     [key: string]: string;
   };
+  type Media = {
+    [key: string]: string;
+  };
 
   export interface Theme {
     colors: Color;
+    media: Media;
   }
 }
 
@@ -107,5 +111,11 @@ export const theme = {
     white65: 'hsla(0, 0%, 100%, 0.65)',
     white75: 'hsla(0, 0%, 100%, 0.75)',
     white100: 'hsla(0, 0%, 100%, 1)',
+  },
+  media: {
+    phone: 'screen and (max-width: 575.98px)',
+    tablet: 'screen and (max-width: 816.98px) and (min-width: 575.99px)',
+    desktop: 'screen and (max-width: 991.98px) and (min-width: 816.99px)',
+    largeDesktop: 'screen and (max-width: 1199.98px) and (min-width: 991.99px)',
   },
 };

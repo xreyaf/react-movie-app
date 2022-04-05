@@ -1,5 +1,5 @@
 import { css, Global, useTheme } from '@emotion/react';
-import back from '../assets/img/bg-min.png';
+import back from '../assets/img/bg.webp';
 
 const GlobalStyles = () => {
   const theme = useTheme();
