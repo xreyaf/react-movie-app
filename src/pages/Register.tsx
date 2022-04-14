@@ -11,11 +11,12 @@ import Input from '../components/Input';
 import Flex from '../components/Flex';
 import ImgWithFallback from '../components/ImgWithFallback';
 import * as Yup from 'yup';
+import { motion } from 'framer-motion';
 
-const ImageBackRectangle = styled.div`
+const ImageBackRectangle = styled(motion.div)`
   background-color: ${(props) => props.theme.colors.grey900};
   width: 35rem;
-  height: 47.5rem;
+  height: 40rem;
   border-radius: 2.25rem;
   position: absolute;
   z-index: -1;
@@ -25,10 +26,10 @@ const FormWrapper = styled.div`
   margin: 5rem 0;
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  gap: 7rem;
 `;
 
-const Form = styled.form`
+const Form = styled(motion.form)`
   width: 100%;
   margin: auto 0;
 `;
@@ -68,9 +69,26 @@ const Register = () => {
   return (
     <Container>
       <FormWrapper>
-        <ImageBackRectangle />
-        <ImgWithFallback src={reg} alt="Register form" />
-        <Form onSubmit={formik.handleSubmit}>
+        <ImageBackRectangle
+          initial={{ opacity: 0 }}
+          transition={{ duration: 2 }}
+          animate={{ opacity: 1 }}
+        />
+        <motion.div
+          style={{ width: '80%' }}
+          initial={{ y: -50, opacity: 0 }}
+          transition={{ type: 'spring', duration: 2 }}
+          animate={{ y: 0, opacity: 1 }}
+        >
+          <ImgWithFallback src={reg} alt="Register form" />
+        </motion.div>
+
+        <Form
+          initial={{ opacity: 0 }}
+          transition={{ duration: 1 }}
+          animate={{ opacity: 1 }}
+          onSubmit={formik.handleSubmit}
+        >
           <h2>Register</h2>
           <br />
           <Input

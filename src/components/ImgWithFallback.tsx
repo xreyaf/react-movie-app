@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import styled from '@emotion/styled';
 import placeholder from '../assets/img/placeholder.png';
 import placeholderBack from '../assets/img/placeholderBack.png';
-
 export const w500ImagesURL = 'https://image.tmdb.org/t/p/w500';
 export const w1280ImagesURL = 'https://image.tmdb.org/t/p/w1280';
 
