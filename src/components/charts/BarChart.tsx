@@ -17,6 +17,7 @@ import faker from '@faker-js/faker';
 import * as Unicons from '@iconscout/react-unicons';
 import Button from '../Button';
 import { useTheme } from '@emotion/react';
+import Heading from '../Heading';
 
 ChartJS.register(
   CategoryScale,
@@ -91,7 +92,7 @@ const BarChart = () => {
 
   return (
     <>
-      <h1>Bar Chart</h1>
+      <Heading>Гистограмма</Heading>
       <Button
         onClick={downloadImage}
         whileHover={{
@@ -101,7 +102,7 @@ const BarChart = () => {
         whileTap={{ scale: 0.9, y: 3 }}
       >
         <Unicons.UilImageDownload size={16} />
-        Download
+        Скачать
       </Button>
       <br />
       <br />

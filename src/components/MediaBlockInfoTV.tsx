@@ -34,11 +34,11 @@ function MediaBlockInfoTV(details: IDetails) {
       <MediaInfoRating>
         <Unicons.UilStar size={16} />
         <p>{details.vote_average}</p>
-        <p>({details.vote_count} votes)</p>
+        <p>({details.vote_count} оценок)</p>
       </MediaInfoRating>
       <MediaFlex>
         <MediaInfoBlock>
-          <Label>Network</Label>
+          <Label>Сервис</Label>
           <a href={details.homepage}>
             <Logo>
               <img
@@ -50,33 +50,33 @@ function MediaBlockInfoTV(details: IDetails) {
           </a>
         </MediaInfoBlock>
         <MediaInfoBlock>
-          <Label>Status</Label>
+          <Label>Статус</Label>
           <LargeText>{details.status}</LargeText>
         </MediaInfoBlock>
       </MediaFlex>
 
       <MediaFlex>
         <MediaInfoBlock>
-          <Label>First air date</Label>
+          <Label>Первый эфир</Label>
           <LargeText>{details.first_air_date}</LargeText>
         </MediaInfoBlock>
         <MediaInfoBlock>
-          <Label>Last air date</Label>
+          <Label>Последний эфир</Label>
           <LargeText>{details.last_air_date}</LargeText>
         </MediaInfoBlock>
       </MediaFlex>
       <MediaFlex>
         <MediaInfoBlock>
-          <Label>No. of seasons</Label>
+          <Label>Число сезонов</Label>
           <LargeText>{details.number_of_seasons}</LargeText>
         </MediaInfoBlock>
         <MediaInfoBlock>
-          <Label>No. of episodes</Label>
+          <Label>Число эпизодов</Label>
           <LargeText>{details.number_of_episodes}</LargeText>
         </MediaInfoBlock>
       </MediaFlex>
       <MediaInfoBlock>
-        <Label>Genres</Label>
+        <Label>Жанры</Label>
         {details.genres.map((item: any) => (
           <span key={item.id}>{item.name}</span>
         ))}

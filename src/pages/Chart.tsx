@@ -19,7 +19,7 @@ const Chart = () => {
       <br />
       <Player />
       <br />
-      <h5>Network state:</h5>
+      <h5>Состояние сети:</h5>
       {isOnline ? (
         <Unicons.UilCloudCheck color={theme.colors.success500} />
       ) : (

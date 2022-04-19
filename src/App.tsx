@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from './components/layouts/Navbar';
+import Header from './components/layouts/Header';
 import Footer from './components/layouts/Footer';
 import AppRouter from './router/AppRouter';
 import GlobalStyles from './styles/globalStyle';
@@ -10,7 +10,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <Navbar />
+      <Header />
       <AppRouter />
       <Footer />
     </ThemeProvider>

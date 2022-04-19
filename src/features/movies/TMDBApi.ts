@@ -11,7 +11,8 @@ import {
 } from './types';
 
 const API_KEY = process.env.TMDB_KEY;
-const enLANG = process.env.EN_US;
+// const enLANG = process.env.en_US;
+const ruLANG = process.env.ru_RU;
 
 const axiosBaseQuery =
   (
@@ -51,7 +52,7 @@ const TMDBApi = createApi({
         method: 'GET',
         params: {
           api_key: API_KEY,
-          language: enLANG,
+          language: ruLANG,
         },
       }),
       transformResponse: (response: IResponse) => response.results,
@@ -62,7 +63,7 @@ const TMDBApi = createApi({
         method: 'GET',
         params: {
           api_key: API_KEY,
-          language: enLANG,
+          language: ruLANG,
         },
       }),
       transformResponse: (response: IResponse) => response.results,
@@ -73,7 +74,7 @@ const TMDBApi = createApi({
         method: 'GET',
         params: {
           api_key: API_KEY,
-          language: enLANG,
+          language: ruLANG,
           query: searchTitle,
         },
       }),
@@ -86,7 +87,7 @@ const TMDBApi = createApi({
         method: 'GET',
         params: {
           api_key: API_KEY,
-          language: enLANG,
+          language: ruLANG,
         },
       }),
     }),

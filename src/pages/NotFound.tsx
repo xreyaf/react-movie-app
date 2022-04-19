@@ -5,6 +5,7 @@ import Button from '../components/Button';
 import Container from '../components/Container';
 import styled from '@emotion/styled';
 import { useTheme } from '@emotion/react';
+import Heading from '../components/Heading';
 
 const NotFoundWrapper = styled.div`
   min-height: calc(100vh - 184px);
@@ -38,11 +39,8 @@ const NotFound = () => {
           src={nf}
           alt="Not found"
         />
-        <h2>Lost your way?</h2>
-        <p>
-          Oops! This is awkward. You are looking for something that doesn&apos;t
-          actually exist.
-        </p>
+        <Heading>Потерялся, странник?</Heading>
+        <p>Ууупс! Вот так незадача... Вы ищете несуществующую страницу</p>
         <Link to="/">
           <Button
             whileHover={{
@@ -50,7 +48,7 @@ const NotFound = () => {
               cursor: 'pointer',
             }}
           >
-            Go Home
+            Вернуться домой
           </Button>
         </Link>
       </NotFoundWrapper>

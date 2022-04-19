@@ -7,7 +7,7 @@ const StyledContainer = styled.div`
   width: 100%;
   max-width: 1440px;
   padding: 1rem 5rem;
-  margin: 0 auto 2rem auto;
+  margin: 5rem auto 2rem auto;
   height: 100%;
   @media ${({ theme }) => theme.media.largeDesktop} {
     padding: 1rem 2rem;
@@ -17,9 +17,11 @@ const StyledContainer = styled.div`
   }
   @media ${({ theme }) => theme.media.tablet} {
     padding: 1rem 1.2rem;
+    margin: 2rem 0 0 0;
   }
   @media ${({ theme }) => theme.media.phone} {
     padding: 1rem 1rem;
+    margin: 2rem 0 0 0;
   }
 `;
 

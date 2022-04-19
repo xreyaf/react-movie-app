@@ -4,6 +4,7 @@ import { useGetPopularQuery } from '../features/movies/TMDBApi';
 import Spinner from '../components/Spinner';
 import Grid from '../components/Grid';
 import Container from '../components/Container';
+import Heading from '../components/Heading';
 
 function Movies() {
   const type = 'movie';
@@ -11,10 +12,10 @@ function Movies() {
   return (
     <Container>
       {isLoading && <Spinner />}
-      {error && <h1>Some error occurred...</h1>}
+      {error && <Heading>Произошла ошибка...</Heading>}
       {data && (
         <>
-          <h1>Popular movies</h1>
+          <Heading>Популярные Фильмы</Heading>
           <br />
           <Grid>
             {data &&

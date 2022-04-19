@@ -1,8 +1,5 @@
 import React from 'react';
-import { css } from '@emotion/react';
-import logo from '../../assets/svg/logo.svg';
 import styled from '@emotion/styled';
-import { Logo } from './Navbar';
 
 const FooterStyled = styled.footer`
   background: ${(props) => props.theme.colors.grey900_80};
@@ -12,12 +9,18 @@ const FooterStyled = styled.footer`
   width: 100%;
   margin: 0 auto;
   height: 100%;
-  @media screen and (max-width: 1199.98px) {
+  @media ${({ theme }) => theme.media.largeDesktop} {
     padding: 3rem 2rem;
   }
 
-  @media screen and (max-width: 575.98px) {
-    padding: 1rem 1rem;
+  @media ${({ theme }) => theme.media.phone} {
+    padding: 1rem 1rem 6rem 1rem;
+  }
+
+  *p {
+    max-width: 560px;
+    margin: auto;
+    line-height: 1.5rem;
   }
 `;
 
@@ -47,25 +50,21 @@ const ExternalLink = styled.a`
 function Footer() {
   return (
     <FooterStyled>
-      <Logo src={logo} alt="Logo" />
-      <p
-        css={css`
-          max-width: 560px;
-          margin: auto;
-          line-height: 1.5rem;
-        `}
-      >
-        A pet project created by
+      {/*<Logo src={logo} alt="Logo" />*/}
+      <p>Приложение с информациоей о фильмах и сериалах</p>
+      <p>
+        Написал
         <span> </span>
         <ExternalLink href="https://github.com/xreyaf" target="_blank">
           xreyaf
-        </ExternalLink>
-        <br />
-        Inspired by
-        <span> </span>
-        <ExternalLink href="https://pramodpoudel.com.np" target="_blank">
-          Pramod Poudel
-        </ExternalLink>
+        </ExternalLink>{' '}
+        в 2022 году
+        {/*<br />*/}
+        {/*Inspired by*/}
+        {/*<span> </span>*/}
+        {/*<ExternalLink href="https://pramodpoudel.com.np" target="_blank">*/}
+        {/*  Pramod Poudel*/}
+        {/*</ExternalLink>*/}
       </p>
     </FooterStyled>
   );

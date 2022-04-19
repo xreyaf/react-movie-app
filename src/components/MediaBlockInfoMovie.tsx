@@ -7,6 +7,14 @@ import styled from '@emotion/styled';
 export const MediaInfoContainer = styled.div`
   width: 50%;
   padding-left: 5rem;
+  @media ${({ theme }) => theme.media.tablet} {
+    width: 100%;
+    padding: 0;
+  }
+  @media ${({ theme }) => theme.media.phone} {
+    width: 100%;
+    padding: 0;
+  }
 `;
 
 export const MediaInfoBlock = styled.div`
@@ -62,10 +70,10 @@ const MediaBlockInfoMovie = (details: IDetails) => {
       <MediaInfoRating>
         <Unicons.UilStar size={16} />
         <p>{details.vote_average}</p>
-        <p>({details.vote_count} votes)</p>
+        <p>({details.vote_count} оценок)</p>
       </MediaInfoRating>
       <MediaInfoBlock>
-        <Label>Budget</Label>
+        <Label>Бюджет</Label>
         <LargeText>
           {new Intl.NumberFormat('en-US', {
             style: 'currency',
@@ -75,15 +83,15 @@ const MediaBlockInfoMovie = (details: IDetails) => {
         </LargeText>
       </MediaInfoBlock>
       <MediaInfoBlock>
-        <Label>Release Date</Label>
+        <Label>Дата выхода</Label>
         <LargeText>{details.release_date}</LargeText>
       </MediaInfoBlock>
       <MediaInfoBlock>
-        <Label>Runtime</Label>
+        <Label>Время</Label>
         <LargeText>{details.runtime} min</LargeText>
       </MediaInfoBlock>
       <MediaInfoBlock>
-        <Label>Genres</Label>
+        <Label>Жанры</Label>
         {details.genres.map((item: any) => (
           <span key={item.id}>{item.name}</span>
         ))}

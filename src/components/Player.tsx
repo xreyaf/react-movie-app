@@ -4,6 +4,7 @@ import * as Unicons from '@iconscout/react-unicons';
 import useAudio from '../hooks/useAudio';
 import Button from './Button';
 import { useTheme } from '@emotion/react';
+import Heading from './Heading';
 
 const url = 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3';
 
@@ -12,7 +13,7 @@ const Player = () => {
   const theme = useTheme();
   return (
     <>
-      <h1>Feel the beat</h1>
+      <Heading>Почувствуй бит</Heading>
       <audio controls>
         <track kind="captions" />
         <source src={url} type="audio/mp3" />

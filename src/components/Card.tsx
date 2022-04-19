@@ -39,7 +39,7 @@ const CardInfo = styled.div`
   }
 `;
 
-const RatingStyled = styled.div`
+const Rating = styled.div`
   color: ${({ theme }) => theme.colors.warning400};
   background-color: ${({ theme }) => theme.colors.black75};
   border-radius: 0.5rem;
@@ -52,8 +52,25 @@ const RatingStyled = styled.div`
   left: 0.6rem;
   position: absolute;
   padding: 0.25rem 0.5rem;
+  svg {
+    display: block;
+  }
   p {
     color: ${({ theme }) => theme.colors.warning400};
+  }
+`;
+
+const Favourite = styled.div`
+  color: ${({ theme }) => theme.colors.error500};
+  background-color: ${({ theme }) => theme.colors.black75};
+  border-radius: 0.5rem;
+  z-index: 2;
+  top: 0.6rem;
+  right: 0.6rem;
+  position: absolute;
+  padding: 0.5rem 0.5rem;
+  svg {
+    display: block;
   }
 `;
 
@@ -67,10 +84,13 @@ const Card = ({ item, type }: { item: ICard; type: string }) => {
       transition={{ scale: { type: 'spring', stiffness: 300 } }}
     >
       <Link to={`/${type}/${item.id}`}>
-        <RatingStyled>
+        <Rating>
           <Unicons.UilStar size={16} />
           <p>{item.vote_average}</p>
-        </RatingStyled>
+        </Rating>
+        <Favourite>
+          <Unicons.UilHeart size={16} />
+        </Favourite>
         <CardImageWrapper>
           <ImgWithFallback
             src={w500ImagesURL + item.poster_path}

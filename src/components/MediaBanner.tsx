@@ -56,6 +56,7 @@ const MediaBanner = ({ mediaType, id }: any) => {
               <ImgWithFallback
                 src={w1280ImagesURL + el.file_path}
                 alt={'backdrop'}
+                isBack={true}
               />
             )}
           </SwiperSlide>

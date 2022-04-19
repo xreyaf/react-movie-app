@@ -12,6 +12,7 @@ import Spinner from '../components/Spinner';
 import Input from '../components/Input';
 import Grid from '../components/Grid';
 import Container from '../components/Container';
+import Heading from '../components/Heading';
 
 const Home = () => {
   const [searchTitle, setSearchTitle] = useState('');
@@ -46,17 +47,17 @@ const Home = () => {
 
   return (
     <Container>
-      <h1>Trending now</h1>
+      <Heading>Сейчас в тренде</Heading>
       <Input
         name={'search'}
         onChange={onChangeInput}
-        placeholder="eg. Spider-Man"
-        label="Search movies or TV series"
+        placeholder="напр. Брат"
+        label="Найти фильм или сериал"
         type="text"
         icon={<Unicons.UilSearch size={24} />}
       />
       {isLoadingTrending && isLoadingSearch && <Spinner />}
-      {errorTrending && errorSearch && <h1>Some error occurred...</h1>}
+      {errorTrending && errorSearch && <Heading>Произошла ошибка...</Heading>}
       {data && data.length != 0 ? (
         <>
           <Grid>
@@ -66,7 +67,7 @@ const Home = () => {
           </Grid>
         </>
       ) : (
-        <h3>There are no results :(</h3>
+        <Heading>Не нашлось результатов :(</Heading>
       )}
     </Container>
   );

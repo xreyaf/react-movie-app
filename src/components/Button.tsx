@@ -19,6 +19,12 @@ const StyledButton = styled(motion.button)`
   }
 `;
 
+export const ButtonDisabled = styled(StyledButton)`
+  background: ${(props) => props.theme.colors.grey900_80};
+  width: 100%;
+  margin: 2rem 0;
+`;
+
 const Button = (props: any) => {
   return <StyledButton {...props} />;
 };

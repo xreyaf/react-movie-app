@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled from '@emotion/styled';
 import placeholder from '../assets/img/placeholder.png';
 import placeholderBack from '../assets/img/placeholderBack.png';
+
 export const w500ImagesURL = 'https://image.tmdb.org/t/p/w500';
 export const w1280ImagesURL = 'https://image.tmdb.org/t/p/w1280';
 
@@ -16,15 +17,20 @@ const ImageStyled = styled.img`
 const ImgWithFallback = ({
   src,
   alt,
+  isBack,
 }: {
   src: string | undefined;
   alt: string | undefined;
+  isBack?: boolean | undefined;
 }) => {
   const [imageError, setImageError] = useState(false);
 
   return (
     <picture>
-      <source srcSet={imageError ? placeholder : src} type="image/jpeg" />
+      <source
+        srcSet={imageError ? (isBack ? placeholderBack : placeholder) : src}
+        type="image/jpeg"
+      />
       <source srcSet={placeholder} type="image/png" />
       <source srcSet={placeholderBack} type="image/png" />
       <ImageStyled alt={alt} onError={() => setImageError(true)} />

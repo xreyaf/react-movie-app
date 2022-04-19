@@ -4,6 +4,7 @@ import Card from '../components/Card';
 import Spinner from '../components/Spinner';
 import Grid from '../components/Grid';
 import Container from '../components/Container';
+import Heading from '../components/Heading';
 
 function Series() {
   const type = 'tv';
@@ -11,10 +12,10 @@ function Series() {
   return (
     <Container>
       {isLoading && <Spinner />}
-      {error && <h1>Some error occurred...</h1>}
+      {error && <Heading>Some error occurred...</Heading>}
       {data && (
         <>
-          <h1>Popular TV Series</h1>
+          <Heading>Популярные Сериалы</Heading>
           <br />
           <Grid>
             {data &&

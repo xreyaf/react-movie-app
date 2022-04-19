@@ -12,6 +12,7 @@ import Flex from '../components/Flex';
 import ImgWithFallback from '../components/ImgWithFallback';
 import * as Yup from 'yup';
 import { motion } from 'framer-motion';
+import Heading from '../components/Heading';
 
 const ImageBackRectangle = styled(motion.div)`
   background-color: ${(props) => props.theme.colors.grey900};
@@ -89,7 +90,7 @@ const Register = () => {
           animate={{ opacity: 1 }}
           onSubmit={formik.handleSubmit}
         >
-          <h2>Register</h2>
+          <Heading>Register</Heading>
           <br />
           <Input
             name="name"

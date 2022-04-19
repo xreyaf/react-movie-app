@@ -94,6 +94,5 @@
   },
   "prettier": {
     "singleQuote": true
-  },
-  "proxy": "62.75.229.77:5566"
+  }
 }

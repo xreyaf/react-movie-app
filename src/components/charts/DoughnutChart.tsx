@@ -5,6 +5,7 @@ import { Doughnut } from 'react-chartjs-2';
 import useAxios from '../../hooks/useAxios';
 import { ICoin, RootObject } from '../../features/movies/types';
 import Spinner from '../Spinner';
+import Heading from '../Heading';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -63,9 +64,9 @@ function DoughnutChart() {
   };
   return (
     <>
-      <h1>Doughnut Chart</h1>
+      <Heading>Doughnut Chart</Heading>
       {loading && <Spinner />}
-      {error && <h3>Some error occurred...</h3>}
+      {error && <Heading>Some error occurred...</Heading>}
       <Doughnut style={{ maxHeight: '500px' }} data={data} options={options} />
     </>
   );
