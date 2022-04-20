@@ -51,7 +51,7 @@ function Footer() {
   return (
     <FooterStyled>
       {/*<Logo src={logo} alt="Logo" />*/}
-      <p>Приложение с информациоей о фильмах и сериалах</p>
+      <p>Приложение с информацией о фильмах и сериалах</p>
       <p>
         Написал
         <span> </span>

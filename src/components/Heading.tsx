@@ -24,9 +24,10 @@ const StyledHeading = styled(motion.h1)`
   }
   @media ${({ theme }) => theme.media.phone} {
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 1.5;
     margin-bottom: 1rem;
+    text-align: center;
   }
 `;
 

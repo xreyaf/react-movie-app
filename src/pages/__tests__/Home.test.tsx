@@ -39,10 +39,8 @@ describe('Home page', () => {
         </ThemeProvider>
       </MemoryRouter>
     );
-    expect(container.find('h1').text()).toEqual('Trending now');
-    expect(container.find('label').text()).toEqual(
-      'Search movies or TV series'
-    );
+    expect(container.find('h1').text()).toEqual('Сейчас в тренде');
+    expect(container.find('label').text()).toEqual('Найти фильм или сериал ');
     expect(container.find(Card)).toHaveLength(20);
   });
 });

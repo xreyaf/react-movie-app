@@ -15,6 +15,6 @@ describe('Not found page', () => {
     );
     expect(container.find('img')).toHaveLength(1);
     expect(container.find('p')).toHaveLength(1);
-    expect(container.find('h2').text()).toEqual('Lost your way?');
+    expect(container.find('h1').text()).toEqual('Потерялся, странник?');
   });
 });

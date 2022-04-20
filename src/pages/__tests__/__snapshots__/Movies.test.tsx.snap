@@ -7,7 +7,7 @@ Object {
   width: 100%;
   max-width: 1440px;
   padding: 1rem 5rem;
-  margin: 0 auto 2rem auto;
+  margin: 5rem auto 2rem auto;
   height: 100%;
 }
 
@@ -26,16 +26,60 @@ Object {
 @media screen and (max-width: 816.98px) and (min-width: 575.99px) {
   .emotion-0 {
     padding: 1rem 1.2rem;
+    margin: 1rem 0 0 0;
   }
 }
 
 @media screen and (max-width: 575.98px) {
   .emotion-0 {
     padding: 1rem 1rem;
+    margin: 1rem 0 0 0;
   }
 }
 
 .emotion-1 {
+  font-weight: 600;
+  font-size: 3.8rem;
+  line-height: 5rem;
+  color: hsla(222, 33.3%, 94.1%, 1);
+}
+
+@media screen and (max-width: 1199.98px) and (min-width: 991.99px) {
+  .emotion-1 {
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 991.98px) and (min-width: 816.99px) {
+  .emotion-1 {
+    font-weight: 600;
+    font-size: 3.4rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 816.98px) and (min-width: 575.99px) {
+  .emotion-1 {
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .emotion-1 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+}
+
+.emotion-2 {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   row-gap: 1.4rem;
@@ -48,7 +92,7 @@ Object {
 }
 
 @media screen and (max-width: 1199.98px) and (min-width: 991.99px) {
-  .emotion-1 {
+  .emotion-2 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
@@ -56,7 +100,7 @@ Object {
 }
 
 @media screen and (max-width: 991.98px) and (min-width: 816.99px) {
-  .emotion-1 {
+  .emotion-2 {
     row-gap: 0.8rem;
     -webkit-column-gap: 0.8rem;
     column-gap: 0.8rem;
@@ -66,7 +110,7 @@ Object {
 }
 
 @media screen and (max-width: 816.98px) and (min-width: 575.99px) {
-  .emotion-1 {
+  .emotion-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     row-gap: 0.8rem;
     -webkit-column-gap: 0.8rem;
@@ -77,14 +121,14 @@ Object {
 }
 
 @media screen and (max-width: 575.98px) {
-  .emotion-1 {
+  .emotion-2 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
 }
 
-.emotion-2 {
+.emotion-3 {
   position: relative;
   border-radius: 1rem;
   overflow: hidden;
@@ -93,7 +137,7 @@ Object {
   min-height: 100%;
 }
 
-.emotion-3 {
+.emotion-4 {
   color: hsla(33, 100%, 71.4%, 1);
   background-color: hsla(0, 0%, 0%, 0.75);
   border-radius: 0.5rem;
@@ -116,11 +160,30 @@ Object {
   padding: 0.25rem 0.5rem;
 }
 
-.emotion-3 p {
+.emotion-4 svg {
+  display: block;
+}
+
+.emotion-4 p {
   color: hsla(33, 100%, 71.4%, 1);
 }
 
-.emotion-4 {
+.emotion-5 {
+  color: hsla(0, 100%, 69%, 1);
+  background-color: hsla(0, 0%, 0%, 0.75);
+  border-radius: 0.5rem;
+  z-index: 2;
+  top: 0.6rem;
+  right: 0.6rem;
+  position: absolute;
+  padding: 0.5rem 0.5rem;
+}
+
+.emotion-5 svg {
+  display: block;
+}
+
+.emotion-6 {
   display: inline-block;
   border-radius: 1rem;
   width: 100%;
@@ -128,7 +191,7 @@ Object {
   overflow: hidden;
 }
 
-.emotion-5 {
+.emotion-7 {
   display: block;
   object-fit: cover;
   width: 100%;
@@ -136,18 +199,18 @@ Object {
   vertical-align: middle;
 }
 
-.emotion-6 {
+.emotion-8 {
   padding: 0.5rem;
   margin-bottom: 0.5rem;
   overflow: hidden;
 }
 
-.emotion-6 p {
+.emotion-8 p {
   color: hsla(222, 33.3%, 94.1%, 1);
   font-weight: 600;
 }
 
-.emotion-6 p:hover {
+.emotion-8 p:hover {
   color: hsla(0, 0%, 100%, 1);
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
@@ -158,78 +221,24 @@ Object {
       <div
         class="emotion-0"
       >
-        <h1>
-          Popular movies
+        <h1
+          class="emotion-1"
+        >
+          Популярные Фильмы
         </h1>
         <br />
         <div
-          class="emotion-1"
+          class="emotion-2"
         >
           <div
-            class="emotion-2"
-            style="opacity: 0;"
-          >
-            <a
-              href="/movie/508947"
-            >
-              <div
-                class="emotion-3"
-              >
-                <svg
-                  fill="currentColor"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  width="16"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
-                  />
-                </svg>
-                <p>
-                  7.5
-                </p>
-              </div>
-              <div
-                class="emotion-4"
-              >
-                <picture>
-                  <source
-                    srcset="https://image.tmdb.org/t/p/w500/qsdjk9oAKSQMWs0Vt5Pyfh6O4GZ.jpg"
-                    type="image/jpeg"
-                  />
-                  <source
-                    srcset="placeholder.png"
-                    type="image/png"
-                  />
-                  <source
-                    srcset="placeholderBack.png"
-                    type="image/png"
-                  />
-                  <img
-                    alt="Turning Red"
-                    class="emotion-5"
-                  />
-                </picture>
-              </div>
-              <div
-                class="emotion-6"
-              >
-                <p>
-                  Turning Red
-                </p>
-              </div>
-            </a>
-          </div>
-          <div
-            class="emotion-2"
+            class="emotion-3"
             style="opacity: 0;"
           >
             <a
               href="/movie/634649"
             >
               <div
-                class="emotion-3"
+                class="emotion-4"
               >
                 <svg
                   fill="currentColor"
@@ -247,11 +256,26 @@ Object {
                 </p>
               </div>
               <div
-                class="emotion-4"
+                class="emotion-5"
+              >
+                <svg
+                  fill="currentColor"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"
+                  />
+                </svg>
+              </div>
+              <div
+                class="emotion-6"
               >
                 <picture>
                   <source
-                    srcset="https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg"
+                    srcset="https://image.tmdb.org/t/p/w500/3hLU5V1XDF0oHT9YUHvYC4j0Ix5.jpg"
                     type="image/jpeg"
                   />
                   <source
@@ -263,29 +287,29 @@ Object {
                     type="image/png"
                   />
                   <img
-                    alt="Spider-Man: No Way Home"
-                    class="emotion-5"
+                    alt="Человек-паук: Нет пути домой"
+                    class="emotion-7"
                   />
                 </picture>
               </div>
               <div
-                class="emotion-6"
+                class="emotion-8"
               >
                 <p>
-                  Spider-Man: No Way Home
+                  Человек-паук: Нет пути домой
                 </p>
               </div>
             </a>
           </div>
           <div
-            class="emotion-2"
+            class="emotion-3"
             style="opacity: 0;"
           >
             <a
-              href="/movie/760868"
+              href="/movie/508947"
             >
               <div
-                class="emotion-3"
+                class="emotion-4"
               >
                 <svg
                   fill="currentColor"
@@ -299,49 +323,11 @@ Object {
                   />
                 </svg>
                 <p>
-                  6
+                  7.5
                 </p>
               </div>
               <div
-                class="emotion-4"
-              >
-                <picture>
-                  <source
-                    srcset="https://image.tmdb.org/t/p/w500/mcIYHZYwUbvhvUt8Lb5nENJ7AlX.jpg"
-                    type="image/jpeg"
-                  />
-                  <source
-                    srcset="placeholder.png"
-                    type="image/png"
-                  />
-                  <source
-                    srcset="placeholderBack.png"
-                    type="image/png"
-                  />
-                  <img
-                    alt="Black Crab"
-                    class="emotion-5"
-                  />
-                </picture>
-              </div>
-              <div
-                class="emotion-6"
-              >
-                <p>
-                  Black Crab
-                </p>
-              </div>
-            </a>
-          </div>
-          <div
-            class="emotion-2"
-            style="opacity: 0;"
-          >
-            <a
-              href="/movie/696806"
-            >
-              <div
-                class="emotion-3"
+                class="emotion-5"
               >
                 <svg
                   fill="currentColor"
@@ -351,19 +337,16 @@ Object {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
+                    d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"
                   />
                 </svg>
-                <p>
-                  7.1
-                </p>
               </div>
               <div
-                class="emotion-4"
+                class="emotion-6"
               >
                 <picture>
                   <source
-                    srcset="https://image.tmdb.org/t/p/w500/wFjboE0aFZNbVOF05fzrka9Fqyx.jpg"
+                    srcset="https://image.tmdb.org/t/p/w500/1pCx1fyB4w0tCtuhTFfMxqhiHZa.jpg"
                     type="image/jpeg"
                   />
                   <source
@@ -375,141 +358,29 @@ Object {
                     type="image/png"
                   />
                   <img
-                    alt="The Adam Project"
-                    class="emotion-5"
+                    alt="Я краснею"
+                    class="emotion-7"
                   />
                 </picture>
               </div>
               <div
-                class="emotion-6"
+                class="emotion-8"
               >
                 <p>
-                  The Adam Project
+                  Я краснею
                 </p>
               </div>
             </a>
           </div>
           <div
-            class="emotion-2"
-            style="opacity: 0;"
-          >
-            <a
-              href="/movie/568124"
-            >
-              <div
-                class="emotion-3"
-              >
-                <svg
-                  fill="currentColor"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  width="16"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
-                  />
-                </svg>
-                <p>
-                  7.7
-                </p>
-              </div>
-              <div
-                class="emotion-4"
-              >
-                <picture>
-                  <source
-                    srcset="https://image.tmdb.org/t/p/w500/4j0PNHkMr5ax3IA8tjtxcmPU3QT.jpg"
-                    type="image/jpeg"
-                  />
-                  <source
-                    srcset="placeholder.png"
-                    type="image/png"
-                  />
-                  <source
-                    srcset="placeholderBack.png"
-                    type="image/png"
-                  />
-                  <img
-                    alt="Encanto"
-                    class="emotion-5"
-                  />
-                </picture>
-              </div>
-              <div
-                class="emotion-6"
-              >
-                <p>
-                  Encanto
-                </p>
-              </div>
-            </a>
-          </div>
-          <div
-            class="emotion-2"
-            style="opacity: 0;"
-          >
-            <a
-              href="/movie/823625"
-            >
-              <div
-                class="emotion-3"
-              >
-                <svg
-                  fill="currentColor"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  width="16"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
-                  />
-                </svg>
-                <p>
-                  5.9
-                </p>
-              </div>
-              <div
-                class="emotion-4"
-              >
-                <picture>
-                  <source
-                    srcset="https://image.tmdb.org/t/p/w500/7gFo1PEbe1CoSgNTnjCGdZbw0zP.jpg"
-                    type="image/jpeg"
-                  />
-                  <source
-                    srcset="placeholder.png"
-                    type="image/png"
-                  />
-                  <source
-                    srcset="placeholderBack.png"
-                    type="image/png"
-                  />
-                  <img
-                    alt="Blacklight"
-                    class="emotion-5"
-                  />
-                </picture>
-              </div>
-              <div
-                class="emotion-6"
-              >
-                <p>
-                  Blacklight
-                </p>
-              </div>
-            </a>
-          </div>
-          <div
-            class="emotion-2"
+            class="emotion-3"
             style="opacity: 0;"
           >
             <a
               href="/movie/414906"
             >
               <div
-                class="emotion-3"
+                class="emotion-4"
               >
                 <svg
                   fill="currentColor"
@@ -527,11 +398,26 @@ Object {
                 </p>
               </div>
               <div
-                class="emotion-4"
+                class="emotion-5"
+              >
+                <svg
+                  fill="currentColor"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"
+                  />
+                </svg>
+              </div>
+              <div
+                class="emotion-6"
               >
                 <picture>
                   <source
-                    srcset="https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg"
+                    srcset="https://image.tmdb.org/t/p/w500/3EXgl14Wmr5NcbYnBy1kavGHnvh.jpg"
                     type="image/jpeg"
                   />
                   <source
@@ -543,29 +429,29 @@ Object {
                     type="image/png"
                   />
                   <img
-                    alt="The Batman"
-                    class="emotion-5"
+                    alt="Бэтмен"
+                    class="emotion-7"
                   />
                 </picture>
               </div>
               <div
-                class="emotion-6"
+                class="emotion-8"
               >
                 <p>
-                  The Batman
+                  Бэтмен
                 </p>
               </div>
             </a>
           </div>
           <div
-            class="emotion-2"
+            class="emotion-3"
             style="opacity: 0;"
           >
             <a
-              href="/movie/676705"
+              href="/movie/919689"
             >
               <div
-                class="emotion-3"
+                class="emotion-4"
               >
                 <svg
                   fill="currentColor"
@@ -579,15 +465,30 @@ Object {
                   />
                 </svg>
                 <p>
-                  7
+                  5.9
                 </p>
               </div>
               <div
-                class="emotion-4"
+                class="emotion-5"
+              >
+                <svg
+                  fill="currentColor"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"
+                  />
+                </svg>
+              </div>
+              <div
+                class="emotion-6"
               >
                 <picture>
                   <source
-                    srcset="https://image.tmdb.org/t/p/w500/xy6wQ09rMIN2FfWPHJXCWyRZ3P9.jpg"
+                    srcset="https://image.tmdb.org/t/p/w500/9eiUNsUAw2iwVyMeXNNiNQQad4E.jpg"
                     type="image/jpeg"
                   />
                   <source
@@ -599,29 +500,29 @@ Object {
                     type="image/png"
                   />
                   <img
-                    alt="Pil's Adventures"
-                    class="emotion-5"
+                    alt="Война миров: Аннигиляция"
+                    class="emotion-7"
                   />
                 </picture>
               </div>
               <div
-                class="emotion-6"
+                class="emotion-8"
               >
                 <p>
-                  Pil's Adventures
+                  Война миров: Аннигиляция
                 </p>
               </div>
             </a>
           </div>
           <div
-            class="emotion-2"
+            class="emotion-3"
             style="opacity: 0;"
           >
             <a
-              href="/movie/656663"
+              href="/movie/675353"
             >
               <div
-                class="emotion-3"
+                class="emotion-4"
               >
                 <svg
                   fill="currentColor"
@@ -635,49 +536,11 @@ Object {
                   />
                 </svg>
                 <p>
-                  7.1
+                  7.7
                 </p>
               </div>
               <div
-                class="emotion-4"
-              >
-                <picture>
-                  <source
-                    srcset="https://image.tmdb.org/t/p/w500/ugIdyvtAzHWOguD91UjHKoAvfum.jpg"
-                    type="image/jpeg"
-                  />
-                  <source
-                    srcset="placeholder.png"
-                    type="image/png"
-                  />
-                  <source
-                    srcset="placeholderBack.png"
-                    type="image/png"
-                  />
-                  <img
-                    alt="Jackass Forever"
-                    class="emotion-5"
-                  />
-                </picture>
-              </div>
-              <div
-                class="emotion-6"
-              >
-                <p>
-                  Jackass Forever
-                </p>
-              </div>
-            </a>
-          </div>
-          <div
-            class="emotion-2"
-            style="opacity: 0;"
-          >
-            <a
-              href="/movie/661791"
-            >
-              <div
-                class="emotion-3"
+                class="emotion-5"
               >
                 <svg
                   fill="currentColor"
@@ -687,19 +550,16 @@ Object {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
+                    d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"
                   />
                 </svg>
-                <p>
-                  6.2
-                </p>
               </div>
               <div
-                class="emotion-4"
+                class="emotion-6"
               >
                 <picture>
                   <source
-                    srcset="https://image.tmdb.org/t/p/w500/cdzUKycvzn0X6mQMxDZP9el81lz.jpg"
+                    srcset="https://image.tmdb.org/t/p/w500/nhZiYAVeEBVHwnNVRVGvyZWkTCm.jpg"
                     type="image/jpeg"
                   />
                   <source
@@ -711,29 +571,29 @@ Object {
                     type="image/png"
                   />
                   <img
-                    alt="The Grandmother"
-                    class="emotion-5"
+                    alt="Соник 2 в кино"
+                    class="emotion-7"
                   />
                 </picture>
               </div>
               <div
-                class="emotion-6"
+                class="emotion-8"
               >
                 <p>
-                  The Grandmother
+                  Соник 2 в кино
                 </p>
               </div>
             </a>
           </div>
           <div
-            class="emotion-2"
+            class="emotion-3"
             style="opacity: 0;"
           >
             <a
-              href="/movie/833425"
+              href="/movie/406759"
             >
               <div
-                class="emotion-3"
+                class="emotion-4"
               >
                 <svg
                   fill="currentColor"
@@ -751,7 +611,590 @@ Object {
                 </p>
               </div>
               <div
+                class="emotion-5"
+              >
+                <svg
+                  fill="currentColor"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"
+                  />
+                </svg>
+              </div>
+              <div
+                class="emotion-6"
+              >
+                <picture>
+                  <source
+                    srcset="https://image.tmdb.org/t/p/w500/1ISchVuArjUHuP51pTwHPnsYfxF.jpg"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="placeholder.png"
+                    type="image/png"
+                  />
+                  <source
+                    srcset="placeholderBack.png"
+                    type="image/png"
+                  />
+                  <img
+                    alt="Падение Луны"
+                    class="emotion-7"
+                  />
+                </picture>
+              </div>
+              <div
+                class="emotion-8"
+              >
+                <p>
+                  Падение Луны
+                </p>
+              </div>
+            </a>
+          </div>
+          <div
+            class="emotion-3"
+            style="opacity: 0;"
+          >
+            <a
+              href="/movie/823625"
+            >
+              <div
                 class="emotion-4"
+              >
+                <svg
+                  fill="currentColor"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
+                  />
+                </svg>
+                <p>
+                  6.1
+                </p>
+              </div>
+              <div
+                class="emotion-5"
+              >
+                <svg
+                  fill="currentColor"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"
+                  />
+                </svg>
+              </div>
+              <div
+                class="emotion-6"
+              >
+                <picture>
+                  <source
+                    srcset="https://image.tmdb.org/t/p/w500/NTfg2QM2Rl7EIzb6kOe3ZsHFbI.jpg"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="placeholder.png"
+                    type="image/png"
+                  />
+                  <source
+                    srcset="placeholderBack.png"
+                    type="image/png"
+                  />
+                  <img
+                    alt="Игра теней"
+                    class="emotion-7"
+                  />
+                </picture>
+              </div>
+              <div
+                class="emotion-8"
+              >
+                <p>
+                  Игра теней
+                </p>
+              </div>
+            </a>
+          </div>
+          <div
+            class="emotion-3"
+            style="opacity: 0;"
+          >
+            <a
+              href="/movie/696806"
+            >
+              <div
+                class="emotion-4"
+              >
+                <svg
+                  fill="currentColor"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
+                  />
+                </svg>
+                <p>
+                  7
+                </p>
+              </div>
+              <div
+                class="emotion-5"
+              >
+                <svg
+                  fill="currentColor"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"
+                  />
+                </svg>
+              </div>
+              <div
+                class="emotion-6"
+              >
+                <picture>
+                  <source
+                    srcset="https://image.tmdb.org/t/p/w500/gaaKw5juuCeWL0BEOEzOjvDtTMX.jpg"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="placeholder.png"
+                    type="image/png"
+                  />
+                  <source
+                    srcset="placeholderBack.png"
+                    type="image/png"
+                  />
+                  <img
+                    alt="Проект «Адам»"
+                    class="emotion-7"
+                  />
+                </picture>
+              </div>
+              <div
+                class="emotion-8"
+              >
+                <p>
+                  Проект «Адам»
+                </p>
+              </div>
+            </a>
+          </div>
+          <div
+            class="emotion-3"
+            style="opacity: 0;"
+          >
+            <a
+              href="/movie/568124"
+            >
+              <div
+                class="emotion-4"
+              >
+                <svg
+                  fill="currentColor"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
+                  />
+                </svg>
+                <p>
+                  7.7
+                </p>
+              </div>
+              <div
+                class="emotion-5"
+              >
+                <svg
+                  fill="currentColor"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"
+                  />
+                </svg>
+              </div>
+              <div
+                class="emotion-6"
+              >
+                <picture>
+                  <source
+                    srcset="https://image.tmdb.org/t/p/w500/wBNoLSPaQ6RQFFnPZ9MllfgqqHS.jpg"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="placeholder.png"
+                    type="image/png"
+                  />
+                  <source
+                    srcset="placeholderBack.png"
+                    type="image/png"
+                  />
+                  <img
+                    alt="Энканто"
+                    class="emotion-7"
+                  />
+                </picture>
+              </div>
+              <div
+                class="emotion-8"
+              >
+                <p>
+                  Энканто
+                </p>
+              </div>
+            </a>
+          </div>
+          <div
+            class="emotion-3"
+            style="opacity: 0;"
+          >
+            <a
+              href="/movie/294793"
+            >
+              <div
+                class="emotion-4"
+              >
+                <svg
+                  fill="currentColor"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
+                  />
+                </svg>
+                <p>
+                  6
+                </p>
+              </div>
+              <div
+                class="emotion-5"
+              >
+                <svg
+                  fill="currentColor"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"
+                  />
+                </svg>
+              </div>
+              <div
+                class="emotion-6"
+              >
+                <picture>
+                  <source
+                    srcset="https://image.tmdb.org/t/p/w500/g4tMniKxol1TBJrHlAtiDjjlx4Q.jpg"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="placeholder.png"
+                    type="image/png"
+                  />
+                  <source
+                    srcset="placeholderBack.png"
+                    type="image/png"
+                  />
+                  <img
+                    alt="Все старые ножи"
+                    class="emotion-7"
+                  />
+                </picture>
+              </div>
+              <div
+                class="emotion-8"
+              >
+                <p>
+                  Все старые ножи
+                </p>
+              </div>
+            </a>
+          </div>
+          <div
+            class="emotion-3"
+            style="opacity: 0;"
+          >
+            <a
+              href="/movie/760868"
+            >
+              <div
+                class="emotion-4"
+              >
+                <svg
+                  fill="currentColor"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
+                  />
+                </svg>
+                <p>
+                  6.3
+                </p>
+              </div>
+              <div
+                class="emotion-5"
+              >
+                <svg
+                  fill="currentColor"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"
+                  />
+                </svg>
+              </div>
+              <div
+                class="emotion-6"
+              >
+                <picture>
+                  <source
+                    srcset="https://image.tmdb.org/t/p/w500/3WBcQlVTeoLelZghABwmhe4b9C5.jpg"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="placeholder.png"
+                    type="image/png"
+                  />
+                  <source
+                    srcset="placeholderBack.png"
+                    type="image/png"
+                  />
+                  <img
+                    alt="Чёрный краб"
+                    class="emotion-7"
+                  />
+                </picture>
+              </div>
+              <div
+                class="emotion-8"
+              >
+                <p>
+                  Чёрный краб
+                </p>
+              </div>
+            </a>
+          </div>
+          <div
+            class="emotion-3"
+            style="opacity: 0;"
+          >
+            <a
+              href="/movie/676705"
+            >
+              <div
+                class="emotion-4"
+              >
+                <svg
+                  fill="currentColor"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
+                  />
+                </svg>
+                <p>
+                  6.9
+                </p>
+              </div>
+              <div
+                class="emotion-5"
+              >
+                <svg
+                  fill="currentColor"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"
+                  />
+                </svg>
+              </div>
+              <div
+                class="emotion-6"
+              >
+                <picture>
+                  <source
+                    srcset="https://image.tmdb.org/t/p/w500/3pHmxQUwJRNv8FpkucdNoi5HNBp.jpg"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="placeholder.png"
+                    type="image/png"
+                  />
+                  <source
+                    srcset="placeholderBack.png"
+                    type="image/png"
+                  />
+                  <img
+                    alt="Приключения Пильи"
+                    class="emotion-7"
+                  />
+                </picture>
+              </div>
+              <div
+                class="emotion-8"
+              >
+                <p>
+                  Приключения Пильи
+                </p>
+              </div>
+            </a>
+          </div>
+          <div
+            class="emotion-3"
+            style="opacity: 0;"
+          >
+            <a
+              href="/movie/338953"
+            >
+              <div
+                class="emotion-4"
+              >
+                <svg
+                  fill="currentColor"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
+                  />
+                </svg>
+                <p>
+                  6.9
+                </p>
+              </div>
+              <div
+                class="emotion-5"
+              >
+                <svg
+                  fill="currentColor"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"
+                  />
+                </svg>
+              </div>
+              <div
+                class="emotion-6"
+              >
+                <picture>
+                  <source
+                    srcset="https://image.tmdb.org/t/p/w500/o0mzIW5xQJmjsgQJoWsC1rnkoN3.jpg"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="placeholder.png"
+                    type="image/png"
+                  />
+                  <source
+                    srcset="placeholderBack.png"
+                    type="image/png"
+                  />
+                  <img
+                    alt="Фантастические твари: Тайны Дамблдора"
+                    class="emotion-7"
+                  />
+                </picture>
+              </div>
+              <div
+                class="emotion-8"
+              >
+                <p>
+                  Фантастические твари: Тайны Дамблдора
+                </p>
+              </div>
+            </a>
+          </div>
+          <div
+            class="emotion-3"
+            style="opacity: 0;"
+          >
+            <a
+              href="/movie/833425"
+            >
+              <div
+                class="emotion-4"
+              >
+                <svg
+                  fill="currentColor"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
+                  />
+                </svg>
+                <p>
+                  6.6
+                </p>
+              </div>
+              <div
+                class="emotion-5"
+              >
+                <svg
+                  fill="currentColor"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"
+                  />
+                </svg>
+              </div>
+              <div
+                class="emotion-6"
               >
                 <picture>
                   <source
@@ -767,29 +1210,29 @@ Object {
                     type="image/png"
                   />
                   <img
-                    alt="No Exit"
-                    class="emotion-5"
+                    alt="Выхода нет"
+                    class="emotion-7"
                   />
                 </picture>
               </div>
               <div
-                class="emotion-6"
+                class="emotion-8"
               >
                 <p>
-                  No Exit
+                  Выхода нет
                 </p>
               </div>
             </a>
           </div>
           <div
-            class="emotion-2"
+            class="emotion-3"
             style="opacity: 0;"
           >
             <a
-              href="/movie/760926"
+              href="/movie/661791"
             >
               <div
-                class="emotion-3"
+                class="emotion-4"
               >
                 <svg
                   fill="currentColor"
@@ -803,49 +1246,11 @@ Object {
                   />
                 </svg>
                 <p>
-                  6.5
+                  6.1
                 </p>
               </div>
               <div
-                class="emotion-4"
-              >
-                <picture>
-                  <source
-                    srcset="https://image.tmdb.org/t/p/w500/ejXBuNLvK4kZ7YcqeKqUWnCxdJq.jpg"
-                    type="image/jpeg"
-                  />
-                  <source
-                    srcset="placeholder.png"
-                    type="image/png"
-                  />
-                  <source
-                    srcset="placeholderBack.png"
-                    type="image/png"
-                  />
-                  <img
-                    alt="Gold"
-                    class="emotion-5"
-                  />
-                </picture>
-              </div>
-              <div
-                class="emotion-6"
-              >
-                <p>
-                  Gold
-                </p>
-              </div>
-            </a>
-          </div>
-          <div
-            class="emotion-2"
-            style="opacity: 0;"
-          >
-            <a
-              href="/movie/512195"
-            >
-              <div
-                class="emotion-3"
+                class="emotion-5"
               >
                 <svg
                   fill="currentColor"
@@ -855,19 +1260,16 @@ Object {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
+                    d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"
                   />
                 </svg>
-                <p>
-                  6.8
-                </p>
               </div>
               <div
-                class="emotion-4"
+                class="emotion-6"
               >
                 <picture>
                   <source
-                    srcset="https://image.tmdb.org/t/p/w500/lAXONuqg41NwUMuzMiFvicDET9Y.jpg"
+                    srcset="https://image.tmdb.org/t/p/w500/3jPVnBTjuV27UK4Dv9zc1depiMw.jpg"
                     type="image/jpeg"
                   />
                   <source
@@ -879,85 +1281,29 @@ Object {
                     type="image/png"
                   />
                   <img
-                    alt="Red Notice"
-                    class="emotion-5"
+                    alt="Бабушка"
+                    class="emotion-7"
                   />
                 </picture>
               </div>
               <div
-                class="emotion-6"
+                class="emotion-8"
               >
                 <p>
-                  Red Notice
+                  Бабушка
                 </p>
               </div>
             </a>
           </div>
           <div
-            class="emotion-2"
+            class="emotion-3"
             style="opacity: 0;"
           >
             <a
-              href="/movie/928381"
+              href="/movie/818750"
             >
-              <div
-                class="emotion-3"
-              >
-                <svg
-                  fill="currentColor"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  width="16"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
-                  />
-                </svg>
-                <p>
-                  5.8
-                </p>
-              </div>
               <div
                 class="emotion-4"
-              >
-                <picture>
-                  <source
-                    srcset="https://image.tmdb.org/t/p/w500/9MP21x0OPv0R72obd63tMHssmGt.jpg"
-                    type="image/jpeg"
-                  />
-                  <source
-                    srcset="placeholder.png"
-                    type="image/png"
-                  />
-                  <source
-                    srcset="placeholderBack.png"
-                    type="image/png"
-                  />
-                  <img
-                    alt="Restless"
-                    class="emotion-5"
-                  />
-                </picture>
-              </div>
-              <div
-                class="emotion-6"
-              >
-                <p>
-                  Restless
-                </p>
-              </div>
-            </a>
-          </div>
-          <div
-            class="emotion-2"
-            style="opacity: 0;"
-          >
-            <a
-              href="/movie/476669"
-            >
-              <div
-                class="emotion-3"
               >
                 <svg
                   fill="currentColor"
@@ -975,11 +1321,26 @@ Object {
                 </p>
               </div>
               <div
-                class="emotion-4"
+                class="emotion-5"
+              >
+                <svg
+                  fill="currentColor"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"
+                  />
+                </svg>
+              </div>
+              <div
+                class="emotion-6"
               >
                 <picture>
                   <source
-                    srcset="https://image.tmdb.org/t/p/w500/aq4Pwv5Xeuvj6HZKtxyd23e6bE9.jpg"
+                    srcset="https://image.tmdb.org/t/p/w500/7RcyjraM1cB1Uxy2W9ZWrab4KCw.jpg"
                     type="image/jpeg"
                   />
                   <source
@@ -991,29 +1352,29 @@ Object {
                     type="image/png"
                   />
                   <img
-                    alt="The King's Man"
-                    class="emotion-5"
+                    alt="Между небом и землей"
+                    class="emotion-7"
                   />
                 </picture>
               </div>
               <div
-                class="emotion-6"
+                class="emotion-8"
               >
                 <p>
-                  The King's Man
+                  Между небом и землей
                 </p>
               </div>
             </a>
           </div>
           <div
-            class="emotion-2"
+            class="emotion-3"
             style="opacity: 0;"
           >
             <a
-              href="/movie/585083"
+              href="/movie/760926"
             >
               <div
-                class="emotion-3"
+                class="emotion-4"
               >
                 <svg
                   fill="currentColor"
@@ -1027,49 +1388,11 @@ Object {
                   />
                 </svg>
                 <p>
-                  7.1
+                  6.5
                 </p>
               </div>
               <div
-                class="emotion-4"
-              >
-                <picture>
-                  <source
-                    srcset="https://image.tmdb.org/t/p/w500/teCy1egGQa0y8ULJvlrDHQKnxBL.jpg"
-                    type="image/jpeg"
-                  />
-                  <source
-                    srcset="placeholder.png"
-                    type="image/png"
-                  />
-                  <source
-                    srcset="placeholderBack.png"
-                    type="image/png"
-                  />
-                  <img
-                    alt="Hotel Transylvania: Transformania"
-                    class="emotion-5"
-                  />
-                </picture>
-              </div>
-              <div
-                class="emotion-6"
-              >
-                <p>
-                  Hotel Transylvania: Transformania
-                </p>
-              </div>
-            </a>
-          </div>
-          <div
-            class="emotion-2"
-            style="opacity: 0;"
-          >
-            <a
-              href="/movie/619979"
-            >
-              <div
-                class="emotion-3"
+                class="emotion-5"
               >
                 <svg
                   fill="currentColor"
@@ -1079,19 +1402,16 @@ Object {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
+                    d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"
                   />
                 </svg>
-                <p>
-                  5.6
-                </p>
               </div>
               <div
-                class="emotion-4"
+                class="emotion-6"
               >
                 <picture>
                   <source
-                    srcset="https://image.tmdb.org/t/p/w500/6yRMyWwjuhKg6IU66uiZIGhaSc8.jpg"
+                    srcset="https://image.tmdb.org/t/p/w500/iFpLsMwo9eJvN28RKxufQIZmdse.jpg"
                     type="image/jpeg"
                   />
                   <source
@@ -1103,29 +1423,29 @@ Object {
                     type="image/png"
                   />
                   <img
-                    alt="Deep Water"
-                    class="emotion-5"
+                    alt="Жажда золота"
+                    class="emotion-7"
                   />
                 </picture>
               </div>
               <div
-                class="emotion-6"
+                class="emotion-8"
               >
                 <p>
-                  Deep Water
+                  Жажда золота
                 </p>
               </div>
             </a>
           </div>
           <div
-            class="emotion-2"
+            class="emotion-3"
             style="opacity: 0;"
           >
             <a
-              href="/movie/768744"
+              href="/movie/454626"
             >
               <div
-                class="emotion-3"
+                class="emotion-4"
               >
                 <svg
                   fill="currentColor"
@@ -1143,11 +1463,26 @@ Object {
                 </p>
               </div>
               <div
-                class="emotion-4"
+                class="emotion-5"
+              >
+                <svg
+                  fill="currentColor"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"
+                  />
+                </svg>
+              </div>
+              <div
+                class="emotion-6"
               >
                 <picture>
                   <source
-                    srcset="https://image.tmdb.org/t/p/w500/4NUzcKtYPKkfTwKsLjwNt8nRIXV.jpg"
+                    srcset="https://image.tmdb.org/t/p/w500/z7S7EX1YHOhCX9afC9aSyStJFEE.jpg"
                     type="image/jpeg"
                   />
                   <source
@@ -1159,29 +1494,100 @@ Object {
                     type="image/png"
                   />
                   <img
-                    alt="My Hero Academia: World Heroes' Mission"
-                    class="emotion-5"
+                    alt="Соник в кино"
+                    class="emotion-7"
                   />
                 </picture>
               </div>
               <div
-                class="emotion-6"
+                class="emotion-8"
               >
                 <p>
-                  My Hero Academia: World Heroes' Mission
+                  Соник в кино
                 </p>
               </div>
             </a>
           </div>
           <div
-            class="emotion-2"
+            class="emotion-3"
             style="opacity: 0;"
           >
             <a
-              href="/movie/800510"
+              href="/movie/799876"
             >
               <div
-                class="emotion-3"
+                class="emotion-4"
+              >
+                <svg
+                  fill="currentColor"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
+                  />
+                </svg>
+                <p>
+                  7.1
+                </p>
+              </div>
+              <div
+                class="emotion-5"
+              >
+                <svg
+                  fill="currentColor"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"
+                  />
+                </svg>
+              </div>
+              <div
+                class="emotion-6"
+              >
+                <picture>
+                  <source
+                    srcset="https://image.tmdb.org/t/p/w500/lZa5EB6PVJBT5mxhgZS5ftqdAm6.jpg"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="placeholder.png"
+                    type="image/png"
+                  />
+                  <source
+                    srcset="placeholderBack.png"
+                    type="image/png"
+                  />
+                  <img
+                    alt="Костюм"
+                    class="emotion-7"
+                  />
+                </picture>
+              </div>
+              <div
+                class="emotion-8"
+              >
+                <p>
+                  Костюм
+                </p>
+              </div>
+            </a>
+          </div>
+          <div
+            class="emotion-3"
+            style="opacity: 0;"
+          >
+            <a
+              href="/movie/606402"
+            >
+              <div
+                class="emotion-4"
               >
                 <svg
                   fill="currentColor"
@@ -1199,45 +1605,7 @@ Object {
                 </p>
               </div>
               <div
-                class="emotion-4"
-              >
-                <picture>
-                  <source
-                    srcset="https://image.tmdb.org/t/p/w500/okNgwtxIWzGsNlR3GsOS0i0Qgbn.jpg"
-                    type="image/jpeg"
-                  />
-                  <source
-                    srcset="placeholder.png"
-                    type="image/png"
-                  />
-                  <source
-                    srcset="placeholderBack.png"
-                    type="image/png"
-                  />
-                  <img
-                    alt="Kimi"
-                    class="emotion-5"
-                  />
-                </picture>
-              </div>
-              <div
-                class="emotion-6"
-              >
-                <p>
-                  Kimi
-                </p>
-              </div>
-            </a>
-          </div>
-          <div
-            class="emotion-2"
-            style="opacity: 0;"
-          >
-            <a
-              href="/movie/524434"
-            >
-              <div
-                class="emotion-3"
+                class="emotion-5"
               >
                 <svg
                   fill="currentColor"
@@ -1247,19 +1615,16 @@ Object {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
+                    d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"
                   />
                 </svg>
-                <p>
-                  7.2
-                </p>
               </div>
               <div
-                class="emotion-4"
+                class="emotion-6"
               >
                 <picture>
                   <source
-                    srcset="https://image.tmdb.org/t/p/w500/bcCBq9N1EMo3daNIjWJ8kYvrQm6.jpg"
+                    srcset="https://image.tmdb.org/t/p/w500/nOYyuJ2mNo6RWsFsTwApEyG3F4J.jpg"
                     type="image/jpeg"
                   />
                   <source
@@ -1271,16 +1636,16 @@ Object {
                     type="image/png"
                   />
                   <img
-                    alt="Eternals"
-                    class="emotion-5"
+                    alt="Якша: Суровые методы"
+                    class="emotion-7"
                   />
                 </picture>
               </div>
               <div
-                class="emotion-6"
+                class="emotion-8"
               >
                 <p>
-                  Eternals
+                  Якша: Суровые методы
                 </p>
               </div>
             </a>
@@ -1293,7 +1658,7 @@ Object {
   width: 100%;
   max-width: 1440px;
   padding: 1rem 5rem;
-  margin: 0 auto 2rem auto;
+  margin: 5rem auto 2rem auto;
   height: 100%;
 }
 
@@ -1312,16 +1677,60 @@ Object {
 @media screen and (max-width: 816.98px) and (min-width: 575.99px) {
   .emotion-0 {
     padding: 1rem 1.2rem;
+    margin: 1rem 0 0 0;
   }
 }
 
 @media screen and (max-width: 575.98px) {
   .emotion-0 {
     padding: 1rem 1rem;
+    margin: 1rem 0 0 0;
   }
 }
 
 .emotion-1 {
+  font-weight: 600;
+  font-size: 3.8rem;
+  line-height: 5rem;
+  color: hsla(222, 33.3%, 94.1%, 1);
+}
+
+@media screen and (max-width: 1199.98px) and (min-width: 991.99px) {
+  .emotion-1 {
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 991.98px) and (min-width: 816.99px) {
+  .emotion-1 {
+    font-weight: 600;
+    font-size: 3.4rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 816.98px) and (min-width: 575.99px) {
+  .emotion-1 {
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .emotion-1 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+}
+
+.emotion-2 {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   row-gap: 1.4rem;
@@ -1334,7 +1743,7 @@ Object {
 }
 
 @media screen and (max-width: 1199.98px) and (min-width: 991.99px) {
-  .emotion-1 {
+  .emotion-2 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
@@ -1342,7 +1751,7 @@ Object {
 }
 
 @media screen and (max-width: 991.98px) and (min-width: 816.99px) {
-  .emotion-1 {
+  .emotion-2 {
     row-gap: 0.8rem;
     -webkit-column-gap: 0.8rem;
     column-gap: 0.8rem;
@@ -1352,7 +1761,7 @@ Object {
 }
 
 @media screen and (max-width: 816.98px) and (min-width: 575.99px) {
-  .emotion-1 {
+  .emotion-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     row-gap: 0.8rem;
     -webkit-column-gap: 0.8rem;
@@ -1363,14 +1772,14 @@ Object {
 }
 
 @media screen and (max-width: 575.98px) {
-  .emotion-1 {
+  .emotion-2 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
 }
 
-.emotion-2 {
+.emotion-3 {
   position: relative;
   border-radius: 1rem;
   overflow: hidden;
@@ -1379,7 +1788,7 @@ Object {
   min-height: 100%;
 }
 
-.emotion-3 {
+.emotion-4 {
   color: hsla(33, 100%, 71.4%, 1);
   background-color: hsla(0, 0%, 0%, 0.75);
   border-radius: 0.5rem;
@@ -1402,11 +1811,30 @@ Object {
   padding: 0.25rem 0.5rem;
 }
 
-.emotion-3 p {
+.emotion-4 svg {
+  display: block;
+}
+
+.emotion-4 p {
   color: hsla(33, 100%, 71.4%, 1);
 }
 
-.emotion-4 {
+.emotion-5 {
+  color: hsla(0, 100%, 69%, 1);
+  background-color: hsla(0, 0%, 0%, 0.75);
+  border-radius: 0.5rem;
+  z-index: 2;
+  top: 0.6rem;
+  right: 0.6rem;
+  position: absolute;
+  padding: 0.5rem 0.5rem;
+}
+
+.emotion-5 svg {
+  display: block;
+}
+
+.emotion-6 {
   display: inline-block;
   border-radius: 1rem;
   width: 100%;
@@ -1414,7 +1842,7 @@ Object {
   overflow: hidden;
 }
 
-.emotion-5 {
+.emotion-7 {
   display: block;
   object-fit: cover;
   width: 100%;
@@ -1422,18 +1850,18 @@ Object {
   vertical-align: middle;
 }
 
-.emotion-6 {
+.emotion-8 {
   padding: 0.5rem;
   margin-bottom: 0.5rem;
   overflow: hidden;
 }
 
-.emotion-6 p {
+.emotion-8 p {
   color: hsla(222, 33.3%, 94.1%, 1);
   font-weight: 600;
 }
 
-.emotion-6 p:hover {
+.emotion-8 p:hover {
   color: hsla(0, 0%, 100%, 1);
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
@@ -1443,78 +1871,24 @@ Object {
     <div
       class="emotion-0"
     >
-      <h1>
-        Popular movies
+      <h1
+        class="emotion-1"
+      >
+        Популярные Фильмы
       </h1>
       <br />
       <div
-        class="emotion-1"
+        class="emotion-2"
       >
         <div
-          class="emotion-2"
-          style="opacity: 0;"
-        >
-          <a
-            href="/movie/508947"
-          >
-            <div
-              class="emotion-3"
-            >
-              <svg
-                fill="currentColor"
-                height="16"
-                viewBox="0 0 24 24"
-                width="16"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
-                />
-              </svg>
-              <p>
-                7.5
-              </p>
-            </div>
-            <div
-              class="emotion-4"
-            >
-              <picture>
-                <source
-                  srcset="https://image.tmdb.org/t/p/w500/qsdjk9oAKSQMWs0Vt5Pyfh6O4GZ.jpg"
-                  type="image/jpeg"
-                />
-                <source
-                  srcset="placeholder.png"
-                  type="image/png"
-                />
-                <source
-                  srcset="placeholderBack.png"
-                  type="image/png"
-                />
-                <img
-                  alt="Turning Red"
-                  class="emotion-5"
-                />
-              </picture>
-            </div>
-            <div
-              class="emotion-6"
-            >
-              <p>
-                Turning Red
-              </p>
-            </div>
-          </a>
-        </div>
-        <div
-          class="emotion-2"
+          class="emotion-3"
           style="opacity: 0;"
         >
           <a
             href="/movie/634649"
           >
             <div
-              class="emotion-3"
+              class="emotion-4"
             >
               <svg
                 fill="currentColor"
@@ -1532,11 +1906,26 @@ Object {
               </p>
             </div>
             <div
-              class="emotion-4"
+              class="emotion-5"
+            >
+              <svg
+                fill="currentColor"
+                height="16"
+                viewBox="0 0 24 24"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"
+                />
+              </svg>
+            </div>
+            <div
+              class="emotion-6"
             >
               <picture>
                 <source
-                  srcset="https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg"
+                  srcset="https://image.tmdb.org/t/p/w500/3hLU5V1XDF0oHT9YUHvYC4j0Ix5.jpg"
                   type="image/jpeg"
                 />
                 <source
@@ -1548,29 +1937,29 @@ Object {
                   type="image/png"
                 />
                 <img
-                  alt="Spider-Man: No Way Home"
-                  class="emotion-5"
+                  alt="Человек-паук: Нет пути домой"
+                  class="emotion-7"
                 />
               </picture>
             </div>
             <div
-              class="emotion-6"
+              class="emotion-8"
             >
               <p>
-                Spider-Man: No Way Home
+                Человек-паук: Нет пути домой
               </p>
             </div>
           </a>
         </div>
         <div
-          class="emotion-2"
+          class="emotion-3"
           style="opacity: 0;"
         >
           <a
-            href="/movie/760868"
+            href="/movie/508947"
           >
             <div
-              class="emotion-3"
+              class="emotion-4"
             >
               <svg
                 fill="currentColor"
@@ -1584,49 +1973,11 @@ Object {
                 />
               </svg>
               <p>
-                6
+                7.5
               </p>
             </div>
             <div
-              class="emotion-4"
-            >
-              <picture>
-                <source
-                  srcset="https://image.tmdb.org/t/p/w500/mcIYHZYwUbvhvUt8Lb5nENJ7AlX.jpg"
-                  type="image/jpeg"
-                />
-                <source
-                  srcset="placeholder.png"
-                  type="image/png"
-                />
-                <source
-                  srcset="placeholderBack.png"
-                  type="image/png"
-                />
-                <img
-                  alt="Black Crab"
-                  class="emotion-5"
-                />
-              </picture>
-            </div>
-            <div
-              class="emotion-6"
-            >
-              <p>
-                Black Crab
-              </p>
-            </div>
-          </a>
-        </div>
-        <div
-          class="emotion-2"
-          style="opacity: 0;"
-        >
-          <a
-            href="/movie/696806"
-          >
-            <div
-              class="emotion-3"
+              class="emotion-5"
             >
               <svg
                 fill="currentColor"
@@ -1636,19 +1987,16 @@ Object {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
+                  d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"
                 />
               </svg>
-              <p>
-                7.1
-              </p>
             </div>
             <div
-              class="emotion-4"
+              class="emotion-6"
             >
               <picture>
                 <source
-                  srcset="https://image.tmdb.org/t/p/w500/wFjboE0aFZNbVOF05fzrka9Fqyx.jpg"
+                  srcset="https://image.tmdb.org/t/p/w500/1pCx1fyB4w0tCtuhTFfMxqhiHZa.jpg"
                   type="image/jpeg"
                 />
                 <source
@@ -1660,141 +2008,29 @@ Object {
                   type="image/png"
                 />
                 <img
-                  alt="The Adam Project"
-                  class="emotion-5"
+                  alt="Я краснею"
+                  class="emotion-7"
                 />
               </picture>
             </div>
             <div
-              class="emotion-6"
+              class="emotion-8"
             >
               <p>
-                The Adam Project
+                Я краснею
               </p>
             </div>
           </a>
         </div>
         <div
-          class="emotion-2"
-          style="opacity: 0;"
-        >
-          <a
-            href="/movie/568124"
-          >
-            <div
-              class="emotion-3"
-            >
-              <svg
-                fill="currentColor"
-                height="16"
-                viewBox="0 0 24 24"
-                width="16"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
-                />
-              </svg>
-              <p>
-                7.7
-              </p>
-            </div>
-            <div
-              class="emotion-4"
-            >
-              <picture>
-                <source
-                  srcset="https://image.tmdb.org/t/p/w500/4j0PNHkMr5ax3IA8tjtxcmPU3QT.jpg"
-                  type="image/jpeg"
-                />
-                <source
-                  srcset="placeholder.png"
-                  type="image/png"
-                />
-                <source
-                  srcset="placeholderBack.png"
-                  type="image/png"
-                />
-                <img
-                  alt="Encanto"
-                  class="emotion-5"
-                />
-              </picture>
-            </div>
-            <div
-              class="emotion-6"
-            >
-              <p>
-                Encanto
-              </p>
-            </div>
-          </a>
-        </div>
-        <div
-          class="emotion-2"
-          style="opacity: 0;"
-        >
-          <a
-            href="/movie/823625"
-          >
-            <div
-              class="emotion-3"
-            >
-              <svg
-                fill="currentColor"
-                height="16"
-                viewBox="0 0 24 24"
-                width="16"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
-                />
-              </svg>
-              <p>
-                5.9
-              </p>
-            </div>
-            <div
-              class="emotion-4"
-            >
-              <picture>
-                <source
-                  srcset="https://image.tmdb.org/t/p/w500/7gFo1PEbe1CoSgNTnjCGdZbw0zP.jpg"
-                  type="image/jpeg"
-                />
-                <source
-                  srcset="placeholder.png"
-                  type="image/png"
-                />
-                <source
-                  srcset="placeholderBack.png"
-                  type="image/png"
-                />
-                <img
-                  alt="Blacklight"
-                  class="emotion-5"
-                />
-              </picture>
-            </div>
-            <div
-              class="emotion-6"
-            >
-              <p>
-                Blacklight
-              </p>
-            </div>
-          </a>
-        </div>
-        <div
-          class="emotion-2"
+          class="emotion-3"
           style="opacity: 0;"
         >
           <a
             href="/movie/414906"
           >
             <div
-              class="emotion-3"
+              class="emotion-4"
             >
               <svg
                 fill="currentColor"
@@ -1812,11 +2048,26 @@ Object {
               </p>
             </div>
             <div
-              class="emotion-4"
+              class="emotion-5"
+            >
+              <svg
+                fill="currentColor"
+                height="16"
+                viewBox="0 0 24 24"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"
+                />
+              </svg>
+            </div>
+            <div
+              class="emotion-6"
             >
               <picture>
                 <source
-                  srcset="https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg"
+                  srcset="https://image.tmdb.org/t/p/w500/3EXgl14Wmr5NcbYnBy1kavGHnvh.jpg"
                   type="image/jpeg"
                 />
                 <source
@@ -1828,29 +2079,29 @@ Object {
                   type="image/png"
                 />
                 <img
-                  alt="The Batman"
-                  class="emotion-5"
+                  alt="Бэтмен"
+                  class="emotion-7"
                 />
               </picture>
             </div>
             <div
-              class="emotion-6"
+              class="emotion-8"
             >
               <p>
-                The Batman
+                Бэтмен
               </p>
             </div>
           </a>
         </div>
         <div
-          class="emotion-2"
+          class="emotion-3"
           style="opacity: 0;"
         >
           <a
-            href="/movie/676705"
+            href="/movie/919689"
           >
             <div
-              class="emotion-3"
+              class="emotion-4"
             >
               <svg
                 fill="currentColor"
@@ -1864,15 +2115,30 @@ Object {
                 />
               </svg>
               <p>
-                7
+                5.9
               </p>
             </div>
             <div
-              class="emotion-4"
+              class="emotion-5"
+            >
+              <svg
+                fill="currentColor"
+                height="16"
+                viewBox="0 0 24 24"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"
+                />
+              </svg>
+            </div>
+            <div
+              class="emotion-6"
             >
               <picture>
                 <source
-                  srcset="https://image.tmdb.org/t/p/w500/xy6wQ09rMIN2FfWPHJXCWyRZ3P9.jpg"
+                  srcset="https://image.tmdb.org/t/p/w500/9eiUNsUAw2iwVyMeXNNiNQQad4E.jpg"
                   type="image/jpeg"
                 />
                 <source
@@ -1884,29 +2150,29 @@ Object {
                   type="image/png"
                 />
                 <img
-                  alt="Pil's Adventures"
-                  class="emotion-5"
+                  alt="Война миров: Аннигиляция"
+                  class="emotion-7"
                 />
               </picture>
             </div>
             <div
-              class="emotion-6"
+              class="emotion-8"
             >
               <p>
-                Pil's Adventures
+                Война миров: Аннигиляция
               </p>
             </div>
           </a>
         </div>
         <div
-          class="emotion-2"
+          class="emotion-3"
           style="opacity: 0;"
         >
           <a
-            href="/movie/656663"
+            href="/movie/675353"
           >
             <div
-              class="emotion-3"
+              class="emotion-4"
             >
               <svg
                 fill="currentColor"
@@ -1920,49 +2186,11 @@ Object {
                 />
               </svg>
               <p>
-                7.1
+                7.7
               </p>
             </div>
             <div
-              class="emotion-4"
-            >
-              <picture>
-                <source
-                  srcset="https://image.tmdb.org/t/p/w500/ugIdyvtAzHWOguD91UjHKoAvfum.jpg"
-                  type="image/jpeg"
-                />
-                <source
-                  srcset="placeholder.png"
-                  type="image/png"
-                />
-                <source
-                  srcset="placeholderBack.png"
-                  type="image/png"
-                />
-                <img
-                  alt="Jackass Forever"
-                  class="emotion-5"
-                />
-              </picture>
-            </div>
-            <div
-              class="emotion-6"
-            >
-              <p>
-                Jackass Forever
-              </p>
-            </div>
-          </a>
-        </div>
-        <div
-          class="emotion-2"
-          style="opacity: 0;"
-        >
-          <a
-            href="/movie/661791"
-          >
-            <div
-              class="emotion-3"
+              class="emotion-5"
             >
               <svg
                 fill="currentColor"
@@ -1972,19 +2200,16 @@ Object {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
+                  d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"
                 />
               </svg>
-              <p>
-                6.2
-              </p>
             </div>
             <div
-              class="emotion-4"
+              class="emotion-6"
             >
               <picture>
                 <source
-                  srcset="https://image.tmdb.org/t/p/w500/cdzUKycvzn0X6mQMxDZP9el81lz.jpg"
+                  srcset="https://image.tmdb.org/t/p/w500/nhZiYAVeEBVHwnNVRVGvyZWkTCm.jpg"
                   type="image/jpeg"
                 />
                 <source
@@ -1996,29 +2221,29 @@ Object {
                   type="image/png"
                 />
                 <img
-                  alt="The Grandmother"
-                  class="emotion-5"
+                  alt="Соник 2 в кино"
+                  class="emotion-7"
                 />
               </picture>
             </div>
             <div
-              class="emotion-6"
+              class="emotion-8"
             >
               <p>
-                The Grandmother
+                Соник 2 в кино
               </p>
             </div>
           </a>
         </div>
         <div
-          class="emotion-2"
+          class="emotion-3"
           style="opacity: 0;"
         >
           <a
-            href="/movie/833425"
+            href="/movie/406759"
           >
             <div
-              class="emotion-3"
+              class="emotion-4"
             >
               <svg
                 fill="currentColor"
@@ -2036,7 +2261,590 @@ Object {
               </p>
             </div>
             <div
+              class="emotion-5"
+            >
+              <svg
+                fill="currentColor"
+                height="16"
+                viewBox="0 0 24 24"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"
+                />
+              </svg>
+            </div>
+            <div
+              class="emotion-6"
+            >
+              <picture>
+                <source
+                  srcset="https://image.tmdb.org/t/p/w500/1ISchVuArjUHuP51pTwHPnsYfxF.jpg"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="placeholder.png"
+                  type="image/png"
+                />
+                <source
+                  srcset="placeholderBack.png"
+                  type="image/png"
+                />
+                <img
+                  alt="Падение Луны"
+                  class="emotion-7"
+                />
+              </picture>
+            </div>
+            <div
+              class="emotion-8"
+            >
+              <p>
+                Падение Луны
+              </p>
+            </div>
+          </a>
+        </div>
+        <div
+          class="emotion-3"
+          style="opacity: 0;"
+        >
+          <a
+            href="/movie/823625"
+          >
+            <div
               class="emotion-4"
+            >
+              <svg
+                fill="currentColor"
+                height="16"
+                viewBox="0 0 24 24"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
+                />
+              </svg>
+              <p>
+                6.1
+              </p>
+            </div>
+            <div
+              class="emotion-5"
+            >
+              <svg
+                fill="currentColor"
+                height="16"
+                viewBox="0 0 24 24"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"
+                />
+              </svg>
+            </div>
+            <div
+              class="emotion-6"
+            >
+              <picture>
+                <source
+                  srcset="https://image.tmdb.org/t/p/w500/NTfg2QM2Rl7EIzb6kOe3ZsHFbI.jpg"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="placeholder.png"
+                  type="image/png"
+                />
+                <source
+                  srcset="placeholderBack.png"
+                  type="image/png"
+                />
+                <img
+                  alt="Игра теней"
+                  class="emotion-7"
+                />
+              </picture>
+            </div>
+            <div
+              class="emotion-8"
+            >
+              <p>
+                Игра теней
+              </p>
+            </div>
+          </a>
+        </div>
+        <div
+          class="emotion-3"
+          style="opacity: 0;"
+        >
+          <a
+            href="/movie/696806"
+          >
+            <div
+              class="emotion-4"
+            >
+              <svg
+                fill="currentColor"
+                height="16"
+                viewBox="0 0 24 24"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
+                />
+              </svg>
+              <p>
+                7
+              </p>
+            </div>
+            <div
+              class="emotion-5"
+            >
+              <svg
+                fill="currentColor"
+                height="16"
+                viewBox="0 0 24 24"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"
+                />
+              </svg>
+            </div>
+            <div
+              class="emotion-6"
+            >
+              <picture>
+                <source
+                  srcset="https://image.tmdb.org/t/p/w500/gaaKw5juuCeWL0BEOEzOjvDtTMX.jpg"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="placeholder.png"
+                  type="image/png"
+                />
+                <source
+                  srcset="placeholderBack.png"
+                  type="image/png"
+                />
+                <img
+                  alt="Проект «Адам»"
+                  class="emotion-7"
+                />
+              </picture>
+            </div>
+            <div
+              class="emotion-8"
+            >
+              <p>
+                Проект «Адам»
+              </p>
+            </div>
+          </a>
+        </div>
+        <div
+          class="emotion-3"
+          style="opacity: 0;"
+        >
+          <a
+            href="/movie/568124"
+          >
+            <div
+              class="emotion-4"
+            >
+              <svg
+                fill="currentColor"
+                height="16"
+                viewBox="0 0 24 24"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
+                />
+              </svg>
+              <p>
+                7.7
+              </p>
+            </div>
+            <div
+              class="emotion-5"
+            >
+              <svg
+                fill="currentColor"
+                height="16"
+                viewBox="0 0 24 24"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"
+                />
+              </svg>
+            </div>
+            <div
+              class="emotion-6"
+            >
+              <picture>
+                <source
+                  srcset="https://image.tmdb.org/t/p/w500/wBNoLSPaQ6RQFFnPZ9MllfgqqHS.jpg"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="placeholder.png"
+                  type="image/png"
+                />
+                <source
+                  srcset="placeholderBack.png"
+                  type="image/png"
+                />
+                <img
+                  alt="Энканто"
+                  class="emotion-7"
+                />
+              </picture>
+            </div>
+            <div
+              class="emotion-8"
+            >
+              <p>
+                Энканто
+              </p>
+            </div>
+          </a>
+        </div>
+        <div
+          class="emotion-3"
+          style="opacity: 0;"
+        >
+          <a
+            href="/movie/294793"
+          >
+            <div
+              class="emotion-4"
+            >
+              <svg
+                fill="currentColor"
+                height="16"
+                viewBox="0 0 24 24"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
+                />
+              </svg>
+              <p>
+                6
+              </p>
+            </div>
+            <div
+              class="emotion-5"
+            >
+              <svg
+                fill="currentColor"
+                height="16"
+                viewBox="0 0 24 24"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"
+                />
+              </svg>
+            </div>
+            <div
+              class="emotion-6"
+            >
+              <picture>
+                <source
+                  srcset="https://image.tmdb.org/t/p/w500/g4tMniKxol1TBJrHlAtiDjjlx4Q.jpg"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="placeholder.png"
+                  type="image/png"
+                />
+                <source
+                  srcset="placeholderBack.png"
+                  type="image/png"
+                />
+                <img
+                  alt="Все старые ножи"
+                  class="emotion-7"
+                />
+              </picture>
+            </div>
+            <div
+              class="emotion-8"
+            >
+              <p>
+                Все старые ножи
+              </p>
+            </div>
+          </a>
+        </div>
+        <div
+          class="emotion-3"
+          style="opacity: 0;"
+        >
+          <a
+            href="/movie/760868"
+          >
+            <div
+              class="emotion-4"
+            >
+              <svg
+                fill="currentColor"
+                height="16"
+                viewBox="0 0 24 24"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
+                />
+              </svg>
+              <p>
+                6.3
+              </p>
+            </div>
+            <div
+              class="emotion-5"
+            >
+              <svg
+                fill="currentColor"
+                height="16"
+                viewBox="0 0 24 24"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"
+                />
+              </svg>
+            </div>
+            <div
+              class="emotion-6"
+            >
+              <picture>
+                <source
+                  srcset="https://image.tmdb.org/t/p/w500/3WBcQlVTeoLelZghABwmhe4b9C5.jpg"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="placeholder.png"
+                  type="image/png"
+                />
+                <source
+                  srcset="placeholderBack.png"
+                  type="image/png"
+                />
+                <img
+                  alt="Чёрный краб"
+                  class="emotion-7"
+                />
+              </picture>
+            </div>
+            <div
+              class="emotion-8"
+            >
+              <p>
+                Чёрный краб
+              </p>
+            </div>
+          </a>
+        </div>
+        <div
+          class="emotion-3"
+          style="opacity: 0;"
+        >
+          <a
+            href="/movie/676705"
+          >
+            <div
+              class="emotion-4"
+            >
+              <svg
+                fill="currentColor"
+                height="16"
+                viewBox="0 0 24 24"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
+                />
+              </svg>
+              <p>
+                6.9
+              </p>
+            </div>
+            <div
+              class="emotion-5"
+            >
+              <svg
+                fill="currentColor"
+                height="16"
+                viewBox="0 0 24 24"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"
+                />
+              </svg>
+            </div>
+            <div
+              class="emotion-6"
+            >
+              <picture>
+                <source
+                  srcset="https://image.tmdb.org/t/p/w500/3pHmxQUwJRNv8FpkucdNoi5HNBp.jpg"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="placeholder.png"
+                  type="image/png"
+                />
+                <source
+                  srcset="placeholderBack.png"
+                  type="image/png"
+                />
+                <img
+                  alt="Приключения Пильи"
+                  class="emotion-7"
+                />
+              </picture>
+            </div>
+            <div
+              class="emotion-8"
+            >
+              <p>
+                Приключения Пильи
+              </p>
+            </div>
+          </a>
+        </div>
+        <div
+          class="emotion-3"
+          style="opacity: 0;"
+        >
+          <a
+            href="/movie/338953"
+          >
+            <div
+              class="emotion-4"
+            >
+              <svg
+                fill="currentColor"
+                height="16"
+                viewBox="0 0 24 24"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
+                />
+              </svg>
+              <p>
+                6.9
+              </p>
+            </div>
+            <div
+              class="emotion-5"
+            >
+              <svg
+                fill="currentColor"
+                height="16"
+                viewBox="0 0 24 24"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"
+                />
+              </svg>
+            </div>
+            <div
+              class="emotion-6"
+            >
+              <picture>
+                <source
+                  srcset="https://image.tmdb.org/t/p/w500/o0mzIW5xQJmjsgQJoWsC1rnkoN3.jpg"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="placeholder.png"
+                  type="image/png"
+                />
+                <source
+                  srcset="placeholderBack.png"
+                  type="image/png"
+                />
+                <img
+                  alt="Фантастические твари: Тайны Дамблдора"
+                  class="emotion-7"
+                />
+              </picture>
+            </div>
+            <div
+              class="emotion-8"
+            >
+              <p>
+                Фантастические твари: Тайны Дамблдора
+              </p>
+            </div>
+          </a>
+        </div>
+        <div
+          class="emotion-3"
+          style="opacity: 0;"
+        >
+          <a
+            href="/movie/833425"
+          >
+            <div
+              class="emotion-4"
+            >
+              <svg
+                fill="currentColor"
+                height="16"
+                viewBox="0 0 24 24"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
+                />
+              </svg>
+              <p>
+                6.6
+              </p>
+            </div>
+            <div
+              class="emotion-5"
+            >
+              <svg
+                fill="currentColor"
+                height="16"
+                viewBox="0 0 24 24"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"
+                />
+              </svg>
+            </div>
+            <div
+              class="emotion-6"
             >
               <picture>
                 <source
@@ -2052,29 +2860,29 @@ Object {
                   type="image/png"
                 />
                 <img
-                  alt="No Exit"
-                  class="emotion-5"
+                  alt="Выхода нет"
+                  class="emotion-7"
                 />
               </picture>
             </div>
             <div
-              class="emotion-6"
+              class="emotion-8"
             >
               <p>
-                No Exit
+                Выхода нет
               </p>
             </div>
           </a>
         </div>
         <div
-          class="emotion-2"
+          class="emotion-3"
           style="opacity: 0;"
         >
           <a
-            href="/movie/760926"
+            href="/movie/661791"
           >
             <div
-              class="emotion-3"
+              class="emotion-4"
             >
               <svg
                 fill="currentColor"
@@ -2088,49 +2896,11 @@ Object {
                 />
               </svg>
               <p>
-                6.5
+                6.1
               </p>
             </div>
             <div
-              class="emotion-4"
-            >
-              <picture>
-                <source
-                  srcset="https://image.tmdb.org/t/p/w500/ejXBuNLvK4kZ7YcqeKqUWnCxdJq.jpg"
-                  type="image/jpeg"
-                />
-                <source
-                  srcset="placeholder.png"
-                  type="image/png"
-                />
-                <source
-                  srcset="placeholderBack.png"
-                  type="image/png"
-                />
-                <img
-                  alt="Gold"
-                  class="emotion-5"
-                />
-              </picture>
-            </div>
-            <div
-              class="emotion-6"
-            >
-              <p>
-                Gold
-              </p>
-            </div>
-          </a>
-        </div>
-        <div
-          class="emotion-2"
-          style="opacity: 0;"
-        >
-          <a
-            href="/movie/512195"
-          >
-            <div
-              class="emotion-3"
+              class="emotion-5"
             >
               <svg
                 fill="currentColor"
@@ -2140,19 +2910,16 @@ Object {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
+                  d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"
                 />
               </svg>
-              <p>
-                6.8
-              </p>
             </div>
             <div
-              class="emotion-4"
+              class="emotion-6"
             >
               <picture>
                 <source
-                  srcset="https://image.tmdb.org/t/p/w500/lAXONuqg41NwUMuzMiFvicDET9Y.jpg"
+                  srcset="https://image.tmdb.org/t/p/w500/3jPVnBTjuV27UK4Dv9zc1depiMw.jpg"
                   type="image/jpeg"
                 />
                 <source
@@ -2164,85 +2931,29 @@ Object {
                   type="image/png"
                 />
                 <img
-                  alt="Red Notice"
-                  class="emotion-5"
+                  alt="Бабушка"
+                  class="emotion-7"
                 />
               </picture>
             </div>
             <div
-              class="emotion-6"
+              class="emotion-8"
             >
               <p>
-                Red Notice
+                Бабушка
               </p>
             </div>
           </a>
         </div>
         <div
-          class="emotion-2"
+          class="emotion-3"
           style="opacity: 0;"
         >
           <a
-            href="/movie/928381"
+            href="/movie/818750"
           >
-            <div
-              class="emotion-3"
-            >
-              <svg
-                fill="currentColor"
-                height="16"
-                viewBox="0 0 24 24"
-                width="16"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
-                />
-              </svg>
-              <p>
-                5.8
-              </p>
-            </div>
             <div
               class="emotion-4"
-            >
-              <picture>
-                <source
-                  srcset="https://image.tmdb.org/t/p/w500/9MP21x0OPv0R72obd63tMHssmGt.jpg"
-                  type="image/jpeg"
-                />
-                <source
-                  srcset="placeholder.png"
-                  type="image/png"
-                />
-                <source
-                  srcset="placeholderBack.png"
-                  type="image/png"
-                />
-                <img
-                  alt="Restless"
-                  class="emotion-5"
-                />
-              </picture>
-            </div>
-            <div
-              class="emotion-6"
-            >
-              <p>
-                Restless
-              </p>
-            </div>
-          </a>
-        </div>
-        <div
-          class="emotion-2"
-          style="opacity: 0;"
-        >
-          <a
-            href="/movie/476669"
-          >
-            <div
-              class="emotion-3"
             >
               <svg
                 fill="currentColor"
@@ -2260,11 +2971,26 @@ Object {
               </p>
             </div>
             <div
-              class="emotion-4"
+              class="emotion-5"
+            >
+              <svg
+                fill="currentColor"
+                height="16"
+                viewBox="0 0 24 24"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"
+                />
+              </svg>
+            </div>
+            <div
+              class="emotion-6"
             >
               <picture>
                 <source
-                  srcset="https://image.tmdb.org/t/p/w500/aq4Pwv5Xeuvj6HZKtxyd23e6bE9.jpg"
+                  srcset="https://image.tmdb.org/t/p/w500/7RcyjraM1cB1Uxy2W9ZWrab4KCw.jpg"
                   type="image/jpeg"
                 />
                 <source
@@ -2276,29 +3002,29 @@ Object {
                   type="image/png"
                 />
                 <img
-                  alt="The King's Man"
-                  class="emotion-5"
+                  alt="Между небом и землей"
+                  class="emotion-7"
                 />
               </picture>
             </div>
             <div
-              class="emotion-6"
+              class="emotion-8"
             >
               <p>
-                The King's Man
+                Между небом и землей
               </p>
             </div>
           </a>
         </div>
         <div
-          class="emotion-2"
+          class="emotion-3"
           style="opacity: 0;"
         >
           <a
-            href="/movie/585083"
+            href="/movie/760926"
           >
             <div
-              class="emotion-3"
+              class="emotion-4"
             >
               <svg
                 fill="currentColor"
@@ -2312,49 +3038,11 @@ Object {
                 />
               </svg>
               <p>
-                7.1
+                6.5
               </p>
             </div>
             <div
-              class="emotion-4"
-            >
-              <picture>
-                <source
-                  srcset="https://image.tmdb.org/t/p/w500/teCy1egGQa0y8ULJvlrDHQKnxBL.jpg"
-                  type="image/jpeg"
-                />
-                <source
-                  srcset="placeholder.png"
-                  type="image/png"
-                />
-                <source
-                  srcset="placeholderBack.png"
-                  type="image/png"
-                />
-                <img
-                  alt="Hotel Transylvania: Transformania"
-                  class="emotion-5"
-                />
-              </picture>
-            </div>
-            <div
-              class="emotion-6"
-            >
-              <p>
-                Hotel Transylvania: Transformania
-              </p>
-            </div>
-          </a>
-        </div>
-        <div
-          class="emotion-2"
-          style="opacity: 0;"
-        >
-          <a
-            href="/movie/619979"
-          >
-            <div
-              class="emotion-3"
+              class="emotion-5"
             >
               <svg
                 fill="currentColor"
@@ -2364,19 +3052,16 @@ Object {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
+                  d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"
                 />
               </svg>
-              <p>
-                5.6
-              </p>
             </div>
             <div
-              class="emotion-4"
+              class="emotion-6"
             >
               <picture>
                 <source
-                  srcset="https://image.tmdb.org/t/p/w500/6yRMyWwjuhKg6IU66uiZIGhaSc8.jpg"
+                  srcset="https://image.tmdb.org/t/p/w500/iFpLsMwo9eJvN28RKxufQIZmdse.jpg"
                   type="image/jpeg"
                 />
                 <source
@@ -2388,29 +3073,29 @@ Object {
                   type="image/png"
                 />
                 <img
-                  alt="Deep Water"
-                  class="emotion-5"
+                  alt="Жажда золота"
+                  class="emotion-7"
                 />
               </picture>
             </div>
             <div
-              class="emotion-6"
+              class="emotion-8"
             >
               <p>
-                Deep Water
+                Жажда золота
               </p>
             </div>
           </a>
         </div>
         <div
-          class="emotion-2"
+          class="emotion-3"
           style="opacity: 0;"
         >
           <a
-            href="/movie/768744"
+            href="/movie/454626"
           >
             <div
-              class="emotion-3"
+              class="emotion-4"
             >
               <svg
                 fill="currentColor"
@@ -2428,11 +3113,26 @@ Object {
               </p>
             </div>
             <div
-              class="emotion-4"
+              class="emotion-5"
+            >
+              <svg
+                fill="currentColor"
+                height="16"
+                viewBox="0 0 24 24"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"
+                />
+              </svg>
+            </div>
+            <div
+              class="emotion-6"
             >
               <picture>
                 <source
-                  srcset="https://image.tmdb.org/t/p/w500/4NUzcKtYPKkfTwKsLjwNt8nRIXV.jpg"
+                  srcset="https://image.tmdb.org/t/p/w500/z7S7EX1YHOhCX9afC9aSyStJFEE.jpg"
                   type="image/jpeg"
                 />
                 <source
@@ -2444,29 +3144,100 @@ Object {
                   type="image/png"
                 />
                 <img
-                  alt="My Hero Academia: World Heroes' Mission"
-                  class="emotion-5"
+                  alt="Соник в кино"
+                  class="emotion-7"
                 />
               </picture>
             </div>
             <div
-              class="emotion-6"
+              class="emotion-8"
             >
               <p>
-                My Hero Academia: World Heroes' Mission
+                Соник в кино
               </p>
             </div>
           </a>
         </div>
         <div
-          class="emotion-2"
+          class="emotion-3"
           style="opacity: 0;"
         >
           <a
-            href="/movie/800510"
+            href="/movie/799876"
           >
             <div
-              class="emotion-3"
+              class="emotion-4"
+            >
+              <svg
+                fill="currentColor"
+                height="16"
+                viewBox="0 0 24 24"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
+                />
+              </svg>
+              <p>
+                7.1
+              </p>
+            </div>
+            <div
+              class="emotion-5"
+            >
+              <svg
+                fill="currentColor"
+                height="16"
+                viewBox="0 0 24 24"
+                width="16"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"
+                />
+              </svg>
+            </div>
+            <div
+              class="emotion-6"
+            >
+              <picture>
+                <source
+                  srcset="https://image.tmdb.org/t/p/w500/lZa5EB6PVJBT5mxhgZS5ftqdAm6.jpg"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="placeholder.png"
+                  type="image/png"
+                />
+                <source
+                  srcset="placeholderBack.png"
+                  type="image/png"
+                />
+                <img
+                  alt="Костюм"
+                  class="emotion-7"
+                />
+              </picture>
+            </div>
+            <div
+              class="emotion-8"
+            >
+              <p>
+                Костюм
+              </p>
+            </div>
+          </a>
+        </div>
+        <div
+          class="emotion-3"
+          style="opacity: 0;"
+        >
+          <a
+            href="/movie/606402"
+          >
+            <div
+              class="emotion-4"
             >
               <svg
                 fill="currentColor"
@@ -2484,45 +3255,7 @@ Object {
               </p>
             </div>
             <div
-              class="emotion-4"
-            >
-              <picture>
-                <source
-                  srcset="https://image.tmdb.org/t/p/w500/okNgwtxIWzGsNlR3GsOS0i0Qgbn.jpg"
-                  type="image/jpeg"
-                />
-                <source
-                  srcset="placeholder.png"
-                  type="image/png"
-                />
-                <source
-                  srcset="placeholderBack.png"
-                  type="image/png"
-                />
-                <img
-                  alt="Kimi"
-                  class="emotion-5"
-                />
-              </picture>
-            </div>
-            <div
-              class="emotion-6"
-            >
-              <p>
-                Kimi
-              </p>
-            </div>
-          </a>
-        </div>
-        <div
-          class="emotion-2"
-          style="opacity: 0;"
-        >
-          <a
-            href="/movie/524434"
-          >
-            <div
-              class="emotion-3"
+              class="emotion-5"
             >
               <svg
                 fill="currentColor"
@@ -2532,19 +3265,16 @@ Object {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68a1,1,0,0,0,.4,1,1,1,0,0,0,1.05.07L12,18.76l5.1,2.68a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.89l.72,4.19-3.76-2a1,1,0,0,0-.94,0l-3.76,2,.72-4.19a1,1,0,0,0-.29-.89l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"
+                  d="M20.16,5A6.29,6.29,0,0,0,12,4.36a6.27,6.27,0,0,0-8.16,9.48l6.21,6.22a2.78,2.78,0,0,0,3.9,0l6.21-6.22A6.27,6.27,0,0,0,20.16,5Zm-1.41,7.46-6.21,6.21a.76.76,0,0,1-1.08,0L5.25,12.43a4.29,4.29,0,0,1,0-6,4.27,4.27,0,0,1,6,0,1,1,0,0,0,1.42,0,4.27,4.27,0,0,1,6,0A4.29,4.29,0,0,1,18.75,12.43Z"
                 />
               </svg>
-              <p>
-                7.2
-              </p>
             </div>
             <div
-              class="emotion-4"
+              class="emotion-6"
             >
               <picture>
                 <source
-                  srcset="https://image.tmdb.org/t/p/w500/bcCBq9N1EMo3daNIjWJ8kYvrQm6.jpg"
+                  srcset="https://image.tmdb.org/t/p/w500/nOYyuJ2mNo6RWsFsTwApEyG3F4J.jpg"
                   type="image/jpeg"
                 />
                 <source
@@ -2556,16 +3286,16 @@ Object {
                   type="image/png"
                 />
                 <img
-                  alt="Eternals"
-                  class="emotion-5"
+                  alt="Якша: Суровые методы"
+                  class="emotion-7"
                 />
               </picture>
             </div>
             <div
-              class="emotion-6"
+              class="emotion-8"
             >
               <p>
-                Eternals
+                Якша: Суровые методы
               </p>
             </div>
           </a>

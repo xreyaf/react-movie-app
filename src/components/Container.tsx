@@ -17,11 +17,11 @@ const StyledContainer = styled.div`
   }
   @media ${({ theme }) => theme.media.tablet} {
     padding: 1rem 1.2rem;
-    margin: 2rem 0 0 0;
+    margin: 1rem 0 0 0;
   }
   @media ${({ theme }) => theme.media.phone} {
     padding: 1rem 1rem;
-    margin: 2rem 0 0 0;
+    margin: 1rem 0 0 0;
   }
 `;
 

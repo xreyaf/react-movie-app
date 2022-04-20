@@ -8,7 +8,7 @@ import { useTheme } from '@emotion/react';
 import Heading from '../components/Heading';
 
 const NotFoundWrapper = styled.div`
-  min-height: calc(100vh - 184px);
+  height: calc(100vh - 184px);
   max-width: 880px;
   display: flex;
   flex-direction: column;
@@ -22,6 +22,15 @@ const NotFoundWrapper = styled.div`
 
   p {
     margin-bottom: 2rem;
+  }
+
+  @media ${({ theme }) => theme.media.tablet} {
+    height: 90%;
+    margin: 5rem 0;
+  }
+  @media ${({ theme }) => theme.media.phone} {
+    height: 90%;
+    margin: 5rem 0;
   }
 `;
 

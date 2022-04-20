@@ -5,14 +5,25 @@ import Spinner from '../components/Spinner';
 import Grid from '../components/Grid';
 import Container from '../components/Container';
 import Heading from '../components/Heading';
+import { Space } from '../components/layouts/Space';
 
 function Movies() {
   const type = 'movie';
   const { data, isLoading, error } = useGetPopularQuery(type);
   return (
     <Container>
-      {isLoading && <Spinner />}
-      {error && <Heading>Произошла ошибка...</Heading>}
+      {isLoading && (
+        <>
+          <Spinner />
+          <Space />
+        </>
+      )}
+      {error && (
+        <>
+          <Heading>Произошла ошибка...</Heading>
+          <Space />
+        </>
+      )}
       {data && (
         <>
           <Heading>Популярные Фильмы</Heading>

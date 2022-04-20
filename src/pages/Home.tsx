@@ -13,6 +13,7 @@ import Input from '../components/Input';
 import Grid from '../components/Grid';
 import Container from '../components/Container';
 import Heading from '../components/Heading';
+import { Space } from '../components/layouts/Space';
 
 const Home = () => {
   const [searchTitle, setSearchTitle] = useState('');
@@ -56,8 +57,18 @@ const Home = () => {
         type="text"
         icon={<Unicons.UilSearch size={24} />}
       />
-      {isLoadingTrending && isLoadingSearch && <Spinner />}
-      {errorTrending && errorSearch && <Heading>Произошла ошибка...</Heading>}
+      {isLoadingTrending && isLoadingSearch && (
+        <>
+          <Spinner />
+          <Space />
+        </>
+      )}
+      {errorTrending && errorSearch && (
+        <>
+          <Heading>Произошла ошибка...</Heading>
+          <Space />
+        </>
+      )}
       {data && data.length != 0 ? (
         <>
           <Grid>
@@ -67,7 +78,10 @@ const Home = () => {
           </Grid>
         </>
       ) : (
-        <Heading>Не нашлось результатов :(</Heading>
+        <>
+          <Heading>Не нашлось результатов :(</Heading>
+          <Space />
+        </>
       )}
     </Container>
   );

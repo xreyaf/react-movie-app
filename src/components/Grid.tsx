@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { motion } from 'framer-motion';
 
-const StyledHeading = styled(motion.div)`
+const StyledGrid = styled(motion.div)`
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   row-gap: 1.4rem;
@@ -29,7 +29,7 @@ const StyledHeading = styled(motion.div)`
 `;
 
 const Grid = (props: any) => {
-  return <StyledHeading {...props} />;
+  return <StyledGrid {...props} />;
 };
 
 export default Grid;
