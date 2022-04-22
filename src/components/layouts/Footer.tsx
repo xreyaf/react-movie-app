@@ -50,21 +50,18 @@ const ExternalLink = styled.a`
 function Footer() {
   return (
     <FooterStyled>
-      {/*<Logo src={logo} alt="Logo" />*/}
-      <p>Приложение с информацией о фильмах и сериалах</p>
       <p>
-        Написал
+        Писал
         <span> </span>
         <ExternalLink href="https://github.com/xreyaf" target="_blank">
           xreyaf
-        </ExternalLink>{' '}
-        в 2022 году
-        {/*<br />*/}
-        {/*Inspired by*/}
-        {/*<span> </span>*/}
-        {/*<ExternalLink href="https://pramodpoudel.com.np" target="_blank">*/}
-        {/*  Pramod Poudel*/}
-        {/*</ExternalLink>*/}
+        </ExternalLink>
+        <br />
+        Источник вдохновения
+        <span> </span>
+        <ExternalLink href="https://pramodpoudel.com.np" target="_blank">
+          Pramod Poudel
+        </ExternalLink>
       </p>
     </FooterStyled>
   );

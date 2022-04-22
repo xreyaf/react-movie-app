@@ -3,6 +3,7 @@ import React from 'react';
 import * as Unicons from '@iconscout/react-unicons';
 import { IDetails } from '../features/movies/types';
 import styled from '@emotion/styled';
+import moment from 'moment';
 
 export const MediaInfoContainer = styled.div`
   width: 50%;
@@ -61,16 +62,19 @@ export const MediaInfoRating = styled.div`
 `;
 
 const MediaBlockInfoMovie = (details: IDetails) => {
+  let release_date = moment(details.release_date).locale('ru').format('LL');
+  let { tagline, overview, vote_average, vote_count, budget, runtime, genres } =
+    details;
   return (
     <MediaInfoContainer>
       <MediaInfoBlock>
-        <h3>{details.tagline}</h3>
-        <p>{details.overview}</p>
+        <h3>{tagline}</h3>
+        <p>{overview}</p>
       </MediaInfoBlock>
       <MediaInfoRating>
         <Unicons.UilStar size={16} />
-        <p>{details.vote_average}</p>
-        <p>({details.vote_count} оценок)</p>
+        <p>{vote_average}</p>
+        <p>({vote_count} оценок)</p>
       </MediaInfoRating>
       <MediaInfoBlock>
         <Label>Бюджет</Label>
@@ -79,20 +83,20 @@ const MediaBlockInfoMovie = (details: IDetails) => {
             style: 'currency',
             currency: 'USD',
             minimumFractionDigits: 0,
-          }).format(details.budget)}
+          }).format(budget)}
         </LargeText>
       </MediaInfoBlock>
       <MediaInfoBlock>
         <Label>Дата выхода</Label>
-        <LargeText>{details.release_date}</LargeText>
+        <LargeText>{release_date}</LargeText>
       </MediaInfoBlock>
       <MediaInfoBlock>
         <Label>Время</Label>
-        <LargeText>{details.runtime} min</LargeText>
+        <LargeText>{runtime} мин</LargeText>
       </MediaInfoBlock>
       <MediaInfoBlock>
         <Label>Жанры</Label>
-        {details.genres.map((item: any) => (
+        {genres.map((item: any) => (
           <span key={item.id}>{item.name}</span>
         ))}
       </MediaInfoBlock>

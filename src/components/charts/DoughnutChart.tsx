@@ -64,7 +64,7 @@ function DoughnutChart() {
   };
   return (
     <>
-      <Heading>Doughnut Chart</Heading>
+      <Heading>Круговая диаграмма</Heading>
       {loading && <Spinner />}
       {error && <Heading>Some error occurred...</Heading>}
       <Doughnut style={{ maxHeight: '500px' }} data={data} options={options} />

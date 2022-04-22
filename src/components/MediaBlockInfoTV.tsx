@@ -11,6 +11,7 @@ import {
   MediaInfoContainer,
   MediaInfoRating,
 } from './MediaBlockInfoMovie';
+import moment from 'moment';
 
 const MediaFlex = styled.div`
   display: flex;
@@ -25,59 +26,73 @@ const Logo = styled.div`
 `;
 
 function MediaBlockInfoTV(details: IDetails) {
+  let first_air_date = moment(details.first_air_date).locale('ru').format('LL');
+  let last_air_date = moment(details.last_air_date).locale('ru').format('LL');
+  let {
+    tagline,
+    overview,
+    vote_average,
+    vote_count,
+    homepage,
+    networks,
+    status,
+    number_of_seasons,
+    number_of_episodes,
+    genres,
+  } = details;
   return (
     <MediaInfoContainer>
       <MediaInfoBlock>
-        <h4>{details.tagline}</h4>
-        <p>{details.overview}</p>
+        <h4>{tagline}</h4>
+        <p>{overview}</p>
       </MediaInfoBlock>
       <MediaInfoRating>
         <Unicons.UilStar size={16} />
-        <p>{details.vote_average}</p>
-        <p>({details.vote_count} оценок)</p>
+        <p>{vote_average}</p>
+        <p>({vote_count} оценок)</p>
       </MediaInfoRating>
       <MediaFlex>
         <MediaInfoBlock>
           <Label>Сервис</Label>
-          <a href={details.homepage}>
+          <a href={homepage}>
             <Logo>
               <img
                 style={{ display: 'block', verticalAlign: 'center' }}
-                src={w500ImagesURL + details.networks[0].logo_path}
-                alt={details.networks[0].name}
+                src={w500ImagesURL + networks[0].logo_path}
+                alt={networks[0].name}
               />
             </Logo>
           </a>
         </MediaInfoBlock>
         <MediaInfoBlock>
           <Label>Статус</Label>
-          <LargeText>{details.status}</LargeText>
+          <LargeText>{status}</LargeText>
         </MediaInfoBlock>
       </MediaFlex>
 
       <MediaFlex>
         <MediaInfoBlock>
           <Label>Первый эфир</Label>
-          <LargeText>{details.first_air_date}</LargeText>
+          <LargeText>{first_air_date}</LargeText>
         </MediaInfoBlock>
         <MediaInfoBlock>
           <Label>Последний эфир</Label>
-          <LargeText>{details.last_air_date}</LargeText>
+          <LargeText>{last_air_date}</LargeText>
         </MediaInfoBlock>
       </MediaFlex>
       <MediaFlex>
         <MediaInfoBlock>
           <Label>Число сезонов</Label>
-          <LargeText>{details.number_of_seasons}</LargeText>
+          <LargeText>{number_of_seasons}</LargeText>
         </MediaInfoBlock>
         <MediaInfoBlock>
           <Label>Число эпизодов</Label>
-          <LargeText>{details.number_of_episodes}</LargeText>
+          <LargeText>{number_of_episodes}</LargeText>
         </MediaInfoBlock>
       </MediaFlex>
       <MediaInfoBlock>
         <Label>Жанры</Label>
-        {details.genres.map((item: any) => (
+        {genres.map((item: any) => (
           <span key={item.id}>{item.name}</span>
         ))}
       </MediaInfoBlock>
