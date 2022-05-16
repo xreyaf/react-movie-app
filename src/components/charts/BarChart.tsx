@@ -38,7 +38,6 @@ const labels: string[] = makeArray(10, faker.random.word);
 
 export const options = {
   responsive: true,
-
   hoverRadius: 15,
   scales: {
     x: {
@@ -62,7 +61,6 @@ const BarChart = () => {
     const link = document.createElement('a');
     link.download = 'chart.png';
     link.href = ref.current.toBase64Image();
-    console.log(typeof ref.current);
     link.click();
   }, []);
 
