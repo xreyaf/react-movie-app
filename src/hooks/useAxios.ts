@@ -1,10 +1,11 @@
 import { useState, useEffect, SetStateAction } from 'react';
 import axios, { AxiosError, AxiosRequestConfig } from 'axios';
+import useBoolean from './useBoolean';
 
 const useAxios = <T>(axiosParams: AxiosRequestConfig) => {
   const [response, setResponse] = useState<T>();
   const [error, setError] = useState<AxiosError>();
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useBoolean();
 
   const fetchData = async (params: AxiosRequestConfig) => {
     try {
@@ -13,7 +14,7 @@ const useAxios = <T>(axiosParams: AxiosRequestConfig) => {
     } catch (err: SetStateAction<any> | undefined) {
       setError(err);
     } finally {
-      setLoading(false);
+      setLoading.off();
     }
   };
 

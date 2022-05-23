@@ -48,7 +48,7 @@ const MediaDetailsTitle = styled(motion.div)`
   padding: 2.5rem;
   border-radius: 2rem;
   width: 100%;
-  max-width: 560px;
+  max-width: 700px;
   margin-top: -4.5rem;
   margin-left: 5rem;
   background: ${({ theme }) => theme.colors.grey900_80};

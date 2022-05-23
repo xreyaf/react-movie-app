@@ -3,8 +3,7 @@ import { motion } from 'framer-motion';
 
 const StyledHeading = styled(motion.h1)`
   font-weight: 600;
-  font-size: 3.8rem;
-  line-height: 5rem;
+  font-size: 3.4rem;
   color: ${({ theme }) => theme.colors.grey50};
   @media ${({ theme }) => theme.media.largeDesktop} {
     font-weight: 600;

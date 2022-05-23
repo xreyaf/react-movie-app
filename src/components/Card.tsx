@@ -1,13 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 // @ts-ignore
 import * as Unicons from '@iconscout/react-unicons';
 import { ICard } from '../features/movies/types';
 import ImgWithFallback, { w500ImagesURL } from './ImgWithFallback';
 import styled from '@emotion/styled';
-import { motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import Modal from './Modal';
 import Heading from './Heading';
+import useBoolean from '../hooks/useBoolean';
 
 const CardStyled = styled(motion.div)`
   position: relative;
@@ -54,9 +55,11 @@ const Rating = styled.div`
   left: 0.6rem;
   position: absolute;
   padding: 0.25rem 0.5rem;
+
   svg {
     display: block;
   }
+
   p {
     color: ${({ theme }) => theme.colors.warning400};
   }
@@ -72,24 +75,24 @@ const Favourite = styled.div`
   position: absolute;
   padding: 0.5rem 0.5rem;
   cursor: pointer;
+
   &:hover {
     background-color: ${({ theme }) => theme.colors.white75};
     transition: all 0.2s;
   }
+
   svg {
     display: block;
   }
 `;
 
 const Card = ({ item, type }: { item: ICard; type: string }) => {
-  const [isActive, setActive] = useState(false);
+  const [isActive, setActive] = useBoolean();
 
+  const close = () => setActive.off();
+  const open = () => setActive.on();
   return (
     <>
-      <Modal isActive={isActive} close={() => setActive(false)}>
-        <Heading>Excellent!</Heading>
-        <p>Your list of favourites has been updated</p>
-      </Modal>
       <CardStyled
         animate={{ opacity: 1 }}
         initial={{ opacity: 0 }}
@@ -97,7 +100,7 @@ const Card = ({ item, type }: { item: ICard; type: string }) => {
         whileHover={{ scale: 1.02 }}
         transition={{ scale: { type: 'spring', stiffness: 300 } }}
       >
-        <Favourite onClick={() => setActive(true)}>
+        <Favourite onClick={() => (isActive ? close() : open())}>
           <Unicons.UilHeart size={16} />
         </Favourite>
 
@@ -117,6 +120,18 @@ const Card = ({ item, type }: { item: ICard; type: string }) => {
           </CardInfo>
         </Link>
       </CardStyled>
+      <AnimatePresence
+        initial={false}
+        exitBeforeEnter={true}
+        onExitComplete={() => null}
+      >
+        {isActive && (
+          <Modal isActive={isActive} handleClose={close}>
+            <Heading>Excellent!</Heading>
+            <p>Your list of favourites has been updated</p>
+          </Modal>
+        )}
+      </AnimatePresence>
     </>
   );
 };

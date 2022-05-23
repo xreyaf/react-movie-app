@@ -4,10 +4,11 @@ import styled from '@emotion/styled';
 // @ts-ignore
 import * as Unicons from '@iconscout/react-unicons';
 import { css, Global } from '@emotion/react';
+import { motion } from 'framer-motion';
 
 const portalRoot = document.getElementById('portal-root')!;
 
-const PopupBackground = styled.div`
+const PopupBackground = styled(motion.div)`
   width: 100vw;
   height: 100vh;
   background-color: ${(props) => props.theme.colors.black75};
@@ -20,7 +21,7 @@ const PopupBackground = styled.div`
   z-index: 1000;
 `;
 
-const PopupContent = styled.div`
+const PopupContent = styled(motion.div)`
   background-color: ${(props) => props.theme.colors.grey900_80};
   width: 50vw;
   padding: 2rem;
@@ -57,11 +58,11 @@ const ScrollDisabler = css`
 
 const Modal = ({
   isActive,
-  close,
+  handleClose,
   children,
 }: {
   isActive: boolean;
-  close: MouseEventHandler<HTMLDivElement>;
+  handleClose: MouseEventHandler<HTMLDivElement>;
   children: any;
 }) => {
   if (!isActive) return null;
@@ -73,7 +74,7 @@ const Modal = ({
 
     function listener(e: any) {
       if (contentRef.current.contains(e.target)) return;
-      close(e);
+      handleClose(e);
     }
 
     window.addEventListener('click', listener);
@@ -81,9 +82,18 @@ const Modal = ({
 
   return ReactDOM.createPortal(
     <>
-      <PopupBackground>
-        <PopupContent ref={contentRef}>
-          <PopupClose onClick={close}>
+      <PopupBackground
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+      >
+        <PopupContent
+          ref={contentRef}
+          initial={{ y: 50 }}
+          animate={{ y: 0 }}
+          exit={{ opacity: 0 }}
+        >
+          <PopupClose onClick={handleClose}>
             <Unicons.UilMultiply size={20} />
           </PopupClose>
           {children}

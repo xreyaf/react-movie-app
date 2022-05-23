@@ -13,7 +13,7 @@ const StyledButton = styled(motion.button)`
   color: ${(props) => props.theme.colors.white100};
   padding: 1rem 2rem;
   font-size: 1rem;
-  margin-bottom: 0.6rem;
+  //margin-bottom: 0.6rem;
   svg {
     align-self: baseline;
   }
