@@ -54,7 +54,7 @@ function MediaBlockInfoTV(details: IDetails) {
       <MediaFlex>
         <MediaInfoBlock>
           <Label>Сервис</Label>
-          <a href={homepage}>
+          <a href={homepage} target="_blank">
             <Logo>
               <img
                 style={{ display: 'block', verticalAlign: 'center' }}

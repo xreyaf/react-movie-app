@@ -55,10 +55,10 @@ const Register = () => {
         .email('please provide valid email')
         .required('email is required'),
       password: Yup.string()
-        .matches(/^(?=.*[0-9]).{8,20}\S$/, 'only nums, size[8,20]')
+        .matches(/^(?=.*[0-9]).{7,19}\S$/, 'only nums, size[8,20]')
         .required('password is required'),
       confirmPassword: Yup.string()
-        .matches(/^(?=.*[0-9]).{8,20}\S$/, 'only nums, size[8,20]')
+        .matches(/^(?=.*[0-9]).{7,19}\S$/, 'only nums, size[8,20]')
         .oneOf([Yup.ref('password')], 'passwords do not match')
         .required('password is required'),
     }),
@@ -66,6 +66,12 @@ const Register = () => {
       alert(JSON.stringify(values, null, 2));
     },
   });
+
+  const ref = React.useRef<HTMLInputElement>(null);
+
+  const focus = () => {
+    ref?.current?.focus();
+  };
 
   return (
     <Container>
@@ -93,6 +99,7 @@ const Register = () => {
           <Heading>Register</Heading>
           <br />
           <Input
+            ref={ref}
             name="name"
             type="text"
             label={formik.touched.name ? formik.errors.name ?? 'name' : 'name'}
@@ -180,6 +187,7 @@ const Register = () => {
                 width: '40%',
                 backgroundColor: `${theme.colors.error500}`,
               }}
+              onClick={focus}
             >
               Reset
             </Button>

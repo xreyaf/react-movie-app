@@ -1,4 +1,4 @@
-import React, { ChangeEventHandler, FocusEventHandler } from 'react';
+import React, { forwardRef, LegacyRef } from 'react';
 
 // @ts-ignore
 import * as Unicons from '@iconscout/react-unicons';
@@ -33,6 +33,7 @@ const errorCss = css`
       border: 3px solid ${theme.colors.error600};
     }
   }
+
   label {
     color: ${theme.colors.error500};
   }
@@ -53,6 +54,7 @@ const StyledInput = styled.input`
 
   &:focus {
     border: 3px solid ${(props) => props.theme.colors.primary500};
+
     & + label {
       transform: translateY(-1.2rem);
       font-size: 1rem;
@@ -82,40 +84,29 @@ const IconWrapper = styled.div`
   color: ${(props) => props.theme.colors.grey600};
 `;
 
-const Input = ({
-  name,
-  icon,
-  type,
-  label,
-  placeholder,
-  onChange,
-  onBlur,
-  error,
-}: {
-  name?: string;
-  icon?: ReactJSXElement;
-  type?: string;
-  label?: string;
-  placeholder?: string;
-  onChange?: ChangeEventHandler<HTMLInputElement>;
-  onBlur?: FocusEventHandler<HTMLInputElement>;
-  error?: boolean;
-}) => {
-  return (
-    <InputWrapper css={error ? errorCss : null}>
-      <IconWrapper>{icon}</IconWrapper>
-
-      <StyledInput
-        name={name}
-        id="input"
-        type={type}
-        placeholder={placeholder}
-        onChange={onChange}
-        onBlur={onBlur}
-      />
-      <label htmlFor="input">{label} </label>
-    </InputWrapper>
-  );
-};
+const Input = forwardRef(
+  (
+    {
+      icon,
+      label,
+      error,
+      ...props
+    }: {
+      icon?: ReactJSXElement;
+      label?: string;
+      error?: boolean;
+      [prop: string]: any;
+    },
+    ref: LegacyRef<HTMLInputElement>
+  ) => {
+    return (
+      <InputWrapper css={error ? errorCss : null}>
+        <IconWrapper>{icon}</IconWrapper>
+        <StyledInput ref={ref} {...props} />
+        <label htmlFor="input">{label} </label>
+      </InputWrapper>
+    );
+  }
+);
 
 export default Input;

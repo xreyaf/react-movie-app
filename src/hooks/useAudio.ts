@@ -12,8 +12,10 @@ const useAudio = (url: string | undefined) => {
 
   useEffect(() => {
     audio.current.addEventListener('ended', () => setIsPlaying(false));
+    audio.current.volume = 0;
     return () => {
       audio.current.removeEventListener('ended', () => setIsPlaying(false));
+      audio.current.volume = 0;
     };
   }, []);
 
