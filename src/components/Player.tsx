@@ -9,7 +9,8 @@ import Flex from './Flex';
 import styled from '@emotion/styled';
 
 const url = 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3';
-const radioUrl = 'https://relay1.melonradio.ru:9001/deeper';
+const radioUrl =
+  'https://stream2.n340.com/12_love_64_reg_44?type=aac&UID=11AF932FDFDC975FB21D9D4721F77915';
 
 const VolumeRange = styled.input`
   -webkit-appearance: none;
